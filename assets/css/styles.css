@@ -140,6 +140,8 @@ button { border: none; background: none; font: inherit; }
 
 @font-face { font-family: 'Manrope'; font-weight: 600; src: url(../fonts/Manrope-SemiBold.woff2) format("woff2"), url(../fonts/Manrope-SemiBold.woff) format("woff"), url(../fonts/Manrope-SemiBold.ttf) format("truetype"); }
 
+html { font-family: "Poppins", sans-serif; }
+
 .tit-h1 { font-size: 5.4rem; font-weight: 600; line-height: 1.7; }
 
 .tit-h2 { font-size: 4.8rem; font-weight: 600; line-height: 1.7; }
@@ -159,5 +161,69 @@ button { border: none; background: none; font: inherit; }
 .lb-txt-1 { font-size: 1.8rem; font-weight: 500; line-height: 1.7; }
 
 .lb-txt-2 { font-size: 1.6rem; font-weight: 500; line-height: 1.7; }
+
+.royal-blue { background-color: #2405f2; }
+
+.dark-blue { background-color: #282938; }
+
+.grey { background-color: #F4F6FC; }
+
+.yellow { background-color: #FCD980; }
+
+.tint-blue { background-color: #1C1E53; }
+
+.accent { background-color: #EEF4FA; }
+
+.light-yellow { background-color: #FCD9801A; }
+
+button { cursor: pointer; }
+
+.btn-ty01 { background-color: #FCD980; transition: background-color 0.3s; color: #1b1c2b; border-radius: 40px; }
+
+.btn-ty01:hover { background-color: #FDE4A6; }
+
+.btn-ty02 { background-color: #282938; transition: background-color 0.3s; color: #ffffff; border-radius: 40px; }
+
+.btn-ty02:hover { background-color: #535460; }
+
+.style-guide .header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
+
+.style-guide .header-wrap header { max-width: 1280px; width: 100%; margin: 0 auto; }
+
+.style-guide .header-wrap header .tit-h4 { line-height: 44px; font-weight: 400; }
+
+.style-guide .style-container { max-width: 1280px; width: 100%; margin: 0 auto; padding: 90px 0; }
+
+.style-guide .style-container .style-content { margin-top: 90px; }
+
+.style-guide .style-container .style-content:first-child { margin-top: 0; }
+
+.style-guide .style-container .style-content .style-title .tit-h5 { font-weight: 400; }
+
+.style-guide .style-container .style-content ul { margin-top: 30px; }
+
+.style-guide .style-container .style-content ul li button { width: 222px; height: 64px; }
+
+.font-area { display: flex; gap: 90px; }
+
+.font-area .text-list { width: 50%; }
+
+.font-area .text-list .text-item { margin-top: 32px; }
+
+.font-area .text-list .text-item:first-child { margin-top: 0; }
+
+.font-area .text-list .text-item:last-child { display: flex; gap: 38px; }
+
+.font-area .text-list .text-item .tit-h6 { font-weight: 600; }
+
+.font-area .text-list .text-item p { margin-top: 8px; }
+
+.color-list { display: flex; flex-grow: 1; }
+
+.color-list .color-item { width: calc(100% / 7); height: 100px; }
+
+.color-list .color-item p { text-align: center; line-height: 100px; }
+
+.button-list { display: flex; gap: 50px; }
 
 /*# sourceMappingURL=../css/styles.css.map */

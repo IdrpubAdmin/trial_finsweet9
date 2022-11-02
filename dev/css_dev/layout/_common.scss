@@ -1,4 +1,7 @@
 
+html {
+  font-family: $default-font;
+}
 // title text
 .tit-h1 {
   font-size: $font-54r;
@@ -55,3 +58,48 @@
   line-height: $ln-h-w;
 }
 
+// color
+.royal-blue {
+  background-color: $royal-blue;
+}
+.dark-blue {
+  background-color: $dark-blue;
+}
+.grey {
+  background-color: $grey;
+}
+.yellow {
+  background-color: $yellow;
+}
+.tint-blue {
+  background-color: $tint-blue;
+}
+.accent {
+  background-color: $accent;
+}
+.light-yellow {
+  background-color: $light-yellow;
+}
+
+// button
+button{
+  cursor: pointer;
+}
+.btn-ty01{
+  background-color: $yellow;
+  transition: background-color 0.3s;
+  color: #1b1c2b;
+  border-radius: 40px;
+}
+.btn-ty01:hover{
+  background-color: $yellow-hover;
+}
+.btn-ty02{
+  background-color: $dark-blue;
+  transition: background-color 0.3s;
+  color: $white;
+  border-radius: 40px;
+}
+.btn-ty02:hover{
+  background-color: $dark-blue-hover;
+}

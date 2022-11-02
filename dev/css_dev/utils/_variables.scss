@@ -6,8 +6,8 @@
 
 
 // font==================================================================== //
-$default_font: 'Poppins', sans-serif;
-$second_font: 'Manrope', sans-serif; 
+$default-font: 'Poppins', sans-serif;
+$second-font: 'Manrope', sans-serif; 
 
 // font weight
 $r : 400;
@@ -16,9 +16,9 @@ $b : 600;
 $eb: 700;
 
 // 폰트 기본컬러
-$default_fc: #000000;
+$default-fc: #000000;
 // title 컬러
-$title_fc: #232536;
+$title-fc: #232536;
 
 // font size
 $font-1r: 1rem;
@@ -53,26 +53,26 @@ $ln-h-w: 1.7;
 // color===================================================================== //
 
 //테마색
-$royal_blue: #2405f2;
+$royal-blue: #2405f2;
 
 // header, footer 배경색
-$tint_blue: #1C1E53;
+$tint-blue: #1C1E53;
 // 배경색1 쿨그레이
 $grey: #F4F6FC;
 // 배경색2  웜그레이
 $accent: #EEF4FA;
 // 배경색3 연노랑
-$light_yellow: #FCD9801A;
+$light-yellow: #FCD9801A;
 
 //강조색1
-$dark_blue: #282938;
+$dark-blue: #282938;
 //강조색1 hover 시 컬러
-$dark_blue_hover: #535460;
+$dark-blue-hover: #535460;
 
 //강조색2
 $yellow: #FCD980;
 //강조색2 hover 시 컬러
-$yellow_hover: #FDE4A6;
+$yellow-hover: #FDE4A6;
 
 // 흰색
 $white: #ffffff;
