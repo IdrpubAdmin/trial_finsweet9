@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
-
 @font-face {
     font-family: 'Poppins';
-    font-weight: 700;
-    src: url(../fonts/Poppins-Bold.woff2) format("woff2"), 
-         url(../fonts/Poppins-Bold.woff) format("woff"),
-         url(../fonts/Poppins-Bold.ttf) format("truetype");
+    font-weight: 600;
+    src: url(../fonts/Poppins-SemiBold.woff2) format("woff2"), 
+         url(../fonts/Poppins-SemiBold.woff) format("woff"),
+         url(../fonts/Poppins-SemiBold.ttf) format("truetype");
 }
 @font-face {
     font-family: 'Poppins';
