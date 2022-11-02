@@ -4,5 +4,7 @@ const app = new Vue({
     router,
     components: {
         FinsweetMain,
+        HeaderMain,
+        FooterMain
     }
 })
