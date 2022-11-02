@@ -1,0 +1,96 @@
+// ======================================================================== //
+// file		: variables
+// writer	: oes
+// date		: 20221102
+// ======================================================================== //
+
+
+// font==================================================================== //
+$default_font: 'Poppins', sans-serif;
+$second_font: 'Gilroy', sans-serif;
+
+// font weight
+$r : 400;
+$md : 500;
+$b : 600;
+$eb: 700;
+
+// 폰트 기본컬러
+$default_fc: #000000;
+// title 컬러
+$title_fc: #232536;
+
+// font size
+$font-1r: 1rem;
+$font-12r: 1.2rem;
+$font-14r: 1.4rem;
+
+// 기본 font-size
+$font-16r: 1.6rem;
+// label1 font-size
+$font-18r: 1.8rem;
+
+$font-20r: 2rem;
+$font-22r: 2.2rem;
+
+// h6
+$font-24r: 2.4rem;
+// h5
+$font-32r: 3.2rem;
+// h4
+$font-36r: 3.6rem;
+// h3
+$font-38r: 3.8rem;
+// h2
+$font-48r: 4.8rem;
+// h1
+$font-54r: 5.4rem;
+
+
+// color===================================================================== //
+
+//테마색
+$royal_blue: #2405f2;
+
+// header, footer 배경색
+$tint_blue: #1C1E53;
+// 배경색1 쿨그레이
+$grey: #F4F6FC;
+// 배경색2  웜그레이
+$accent: #EEF4FA;
+// 배경색3 연노랑
+$light_yellow: #FCD9801A;
+
+//강조색1
+$dark_blue: #282938;
+//강조색1 hover 시 컬러
+$dark_blue_hover: #535460;
+
+//강조색2
+$yellow: #FCD980;
+//강조색2 hover 시 컬러
+$yellow_hover: #FDE4A6;
+
+// 흰색
+$white: #ffffff;
+
+// media queries=============================================================== //
+
+// 기본 스크린 사이즈 1600px, 콘텐츠 영역 1280px
+$p-l: 1600px;
+$p-m: 1439px;
+$p-s: 1279px;
+
+// tablet 641px - 1023px
+$t-l: 1023px;
+$t-s: 767px;
+
+// mobile 320px - 640px
+$m-l: 640px;
+$m-m: 414px;
+$m-s: 374px;
+
+// margin========================================================================= //
+
+$pc-sec-mgn: 128px;
+

@@ -1,6 +1,6 @@
 {
-  "name": "fyrre_magazine",
-  "version": "2.0.0",
+  "name": "trial_finsweet9",
+  "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,5 +33,13 @@
     "stylelint": "^14.2.0",
     "vuex": "^4.0.2"
   },
-  "description": ""
+  "description": "trial_team_project_finsweet9",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IdrpubAdmin/trial_finsweet9.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IdrpubAdmin/trial_finsweet9/issues"
+  },
+  "homepage": "https://github.com/IdrpubAdmin/trial_finsweet9#readme"
 }
