@@ -1,0 +1,89 @@
+
+// border radius
+@mixin bdrs($z: 5px) {
+  -webkit-border-radius: $z;
+  -moz-border-radius: $z;
+  border-radius: $z;
+}
+
+
+// position absolute
+@mixin posa-tl($t: 0, $l:0) {
+  position: absolute;
+  top: $t;
+  left: $l;
+}
+
+@mixin posa-tr($t: 0, $r:0) {
+  position: absolute;
+  top: $t;
+  right: $r;
+}
+
+@mixin posa-bl($b: 0, $l:0) {
+  position: absolute;
+  bottom: $b;
+  left: $l;
+}
+
+@mixin posa-br($b: 0, $r:0) {
+  position: absolute;
+  bottom: $b;
+  right: $r;
+}
+
+// clear fix
+@mixin clear-fix() {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+// center-block
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// media query
+@mixin m-s {
+  @media (max-width: $m-s) {
+    @content;
+  }
+}
+
+@mixin m-m {
+  @media (max-width: $m-m) {
+    @content;
+  }
+}
+
+@mixin m-l {
+  @media (max-width: $m-l) {
+    @content;
+  }
+}
+@mixin t-s {
+  @media (max-width: $t-s) {
+    @content;
+  }
+}
+@mixin t-l {
+  @media (max-width: $t-l) {
+    @content;
+  }
+}
+
+@mixin p-s {
+  @media (max-width: $p-s) {
+    @content;
+  }
+}
+
+@mixin p-m {
+  @media (max-width: $p-m) {
+    @content;
+  }
+}
