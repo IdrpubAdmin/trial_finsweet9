@@ -1,3 +1,26 @@
+// 기본 폰트 정의
+body {
+  font-family: $default_font;
+}
+
+// 웹접근성용 안내 문구 숨김
+.blind {
+  font-size: 0;
+  position: absolute;
+  text-indent: -9999px;
+}
+
+// input 기본 모양 설정
+input {
+  box-sizing: border-box;
+  font-size: $font-16r;
+}
+
+// address 기본 모양 설정
+address {
+  font-style: normal;
+  font-size: $font-16r;
+}
 
 html {
   font-family: $default-font;
@@ -35,12 +58,12 @@ html {
 }
 
 // text
-.txt-1 {
+.txt-r {
   font-size: $font-16r;
   font-weight: $r;
   line-height: $ln-h-r;
 }
-.txt-2 {
+.txt-md {
   font-size: $font-16r;
   font-weight: $md;
   line-height: $ln-h-r;

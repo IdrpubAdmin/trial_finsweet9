@@ -1,11 +1,14 @@
 
-// border radius
+// border
 @mixin bdrs($z: 5px) {
   -webkit-border-radius: $z;
   -moz-border-radius: $z;
   border-radius: $z;
 }
 
+@mixin bd($t: 1px, $c: #000) {
+  border: $t solid $c;
+}
 
 // position absolute
 @mixin posa-tl($t: 0, $l:0) {

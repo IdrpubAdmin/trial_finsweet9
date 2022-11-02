@@ -140,6 +140,22 @@ button { border: none; background: none; font: inherit; }
 
 @font-face { font-family: 'Manrope'; font-weight: 600; src: url(../fonts/Manrope-SemiBold.woff2) format("woff2"), url(../fonts/Manrope-SemiBold.woff) format("woff"), url(../fonts/Manrope-SemiBold.ttf) format("truetype"); }
 
+body { font-family: "Poppins", sans-serif; }
+
+.blind { font-size: 0; position: absolute; text-indent: -9999px; }
+
+input { box-sizing: border-box; font-size: 1.6rem; }
+
+address { font-style: normal; font-size: 1.6rem; }
+
+body { font-family: "Poppins", sans-serif; }
+
+.blind { font-size: 0; position: absolute; text-indent: -9999px; }
+
+input { box-sizing: border-box; font-size: 1.6rem; }
+
+address { font-style: normal; font-size: 1.6rem; }
+
 html { font-family: "Poppins", sans-serif; }
 
 .tit-h1 { font-size: 5.4rem; font-weight: 600; line-height: 1.7; }
@@ -154,9 +170,9 @@ html { font-family: "Poppins", sans-serif; }
 
 .tit-h6 { font-size: 2.4rem; font-weight: 500; line-height: 1.7; }
 
-.txt-1 { font-size: 1.6rem; font-weight: 400; line-height: 1.5; }
+.txt-r { font-size: 1.6rem; font-weight: 400; line-height: 1.5; }
 
-.txt-2 { font-size: 1.6rem; font-weight: 500; line-height: 1.5; }
+.txt-md { font-size: 1.6rem; font-weight: 500; line-height: 1.5; }
 
 .lb-txt-1 { font-size: 1.8rem; font-weight: 500; line-height: 1.7; }
 
@@ -185,6 +201,28 @@ button { cursor: pointer; }
 .btn-ty02 { background-color: #282938; transition: background-color 0.3s; color: #ffffff; border-radius: 40px; }
 
 .btn-ty02:hover { background-color: #535460; }
+
+.header-wrap { width: 100%; height: fit-content; background-color: #1C1E53; }
+
+.header-wrap #header { width: 1280px; height: 92px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+
+.header-wrap #header .hd-gnb { display: flex; justify-content: flex-end; gap: 4.8rem; align-items: center; }
+
+.gnb-list { display: flex; }
+
+.gnb-list a { display: block; padding: 1rem 1.6rem; color: #BBBBCB; }
+
+.gnb-list a:hover { color: #ffffff; }
+
+.btn-ty3 a, .btn-ty3 button { display: block; padding: 1.6rem 4.8rem; border: 2px solid #F4F6FC33; -webkit-border-radius: 4.1rem; -moz-border-radius: 4.1rem; border-radius: 4.1rem; font-size: 1.6rem; color: #ffffff; box-sizing: border-box; }
+
+#footer { width: 100%; height: fit-content; }
+
+.contact-bg-wrap { width: 100%; background-color: #1C1E53; color: #ffffff; }
+
+.ft-contact { width: 1280px; margin: 0 auto; padding-top: 9.6rem; display: flex; }
+
+.ft-gnb { width: 1280px; margin: 0 auto; }
 
 .style-guide .header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
 
@@ -225,5 +263,29 @@ button { cursor: pointer; }
 .color-list .color-item p { text-align: center; line-height: 100px; }
 
 .button-list { display: flex; gap: 50px; }
+.txt-r { font-size: 1.6rem; font-weight: 400; line-height: 1.5; }
+.txt-md { font-size: 1.6rem; font-weight: 500; line-height: 1.5; }
+
+.header-wrap { width: 100%; height: fit-content; background-color: #1C1E53; }
+
+.header-wrap #header { width: 1280px; height: 92px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+
+.header-wrap #header .hd-gnb { display: flex; justify-content: flex-end; gap: 4.8rem; align-items: center; }
+
+.gnb-list { display: flex; }
+
+.gnb-list a { display: block; padding: 1rem 1.6rem; color: #BBBBCB; }
+
+.gnb-list a:hover { color: #ffffff; }
+
+.btn-ty3 a, .btn-ty3 button { display: block; padding: 1.6rem 4.8rem; border: 2px solid #F4F6FC33; -webkit-border-radius: 4.1rem; -moz-border-radius: 4.1rem; border-radius: 4.1rem; font-size: 1.6rem; color: #ffffff; box-sizing: border-box; }
+
+#footer { width: 100%; height: fit-content; }
+
+.contact-bg-wrap { width: 100%; background-color: #1C1E53; color: #ffffff; }
+
+.ft-contact { width: 1280px; margin: 0 auto; padding-top: 9.6rem; display: flex; }
+
+.ft-gnb { width: 1280px; margin: 0 auto; }
 
 /*# sourceMappingURL=../css/styles.css.map */

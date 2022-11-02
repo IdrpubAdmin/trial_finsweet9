@@ -1,0 +1,50 @@
+.header-wrap {
+  width: 100%;
+  height: fit-content;
+  background-color: $tint_blue;
+
+  #header {
+    width: $pc-cont;
+    height: 92px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .hd-gnb {
+      display: flex;
+      justify-content: flex-end;
+      gap:  4.8rem;
+      align-items: center;
+    }
+
+  }
+
+}
+
+.gnb-list {
+  display: flex;
+  a {
+    display: block;
+    padding: 1rem 1.6rem;
+    color: #BBBBCB;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.btn-ty3 {
+  a,
+  button {
+    display: block;
+    padding: 1.6rem 4.8rem;
+    @include bd(2px, #F4F6FC33);
+    @include bdrs(4.1rem);
+    font-size: $font-16r;
+    color: $white;
+    box-sizing: border-box;
+
+  }
+}
+
