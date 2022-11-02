@@ -19,3 +19,10 @@
          url(../fonts/Poppins-Regular.woff) format("woff"),
          url(../fonts/Poppins-Regular.ttf) format("truetype");
 }
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 600;
+    src: url(../fonts/Manrope-SemiBold.woff2) format("woff2"), 
+         url(../fonts/Manrope-SemiBold.woff) format("woff"),
+         url(../fonts/Manrope-SemiBold.ttf) format("truetype");
+}
