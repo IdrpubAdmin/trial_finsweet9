@@ -18,11 +18,37 @@ var NavigationData = {
     }
 };
 
+let HeaderData = {
+    namespaced: true,
+    state: {
+        navActive: false,
+        scrollY: 0,
+        lastScrollY: 0,
+        timer: null,
+    },
+    mutations: {
+        navChange(state) {
+            state.navActive = !state.navActive;
+        },
+        handleScroll(state) {
+            if(state.timer === null) {
+                state.timer = setTimeout(function() {
+                    state.lastScrollY = state.scrollY
+                    state.scrollY = window.scrollY
+                    clearTimeout(state.timer)
+                    state.timer = null
+                }, 200)
+            }
+        }
+    }
+};
+
 
 const store = new Vuex.Store({
     namespaced: true,
     modules: {
         NavigationData: NavigationData,
+        HeaderData: HeaderData,
     },
     state: {
         path: {
@@ -37,5 +63,8 @@ const store = new Vuex.Store({
         NavigationData: function NavigationData(state) {
             return state.NavigationData;
         },
+        HeaderData: function HeaderData(state) {
+            return state.HeaderData;
+        }
     },
 });

@@ -1,30 +1,251 @@
 #footer {
   width: 100%;
   height: fit-content;
+
+  //배경 색상 설정
+  .contact-bg-wrap {
+    width: 100%;
+    background-color: $tint_blue;
+  }
 }
 
-.contact-bg-wrap {
-  width: 100%;
-  background-color: $tint_blue;
-  color: $white;
-}
+// footer contact section
 .ft-contact {
   width: $pc-cont;
   margin: 0 auto;
   padding-top: 9.6rem;
   display: flex;
+  flex-wrap: wrap;
 
+  // conatact 섹션 내부 폰트 컬러 흰색으로 전환
+  .txt-r,
+  .txt-md,
+  .tit-h2 {
+    color: $white;
+  }
+
+  // contact 섹션 자식 요소 공통 너비, 여백 설정
+  > div {
+    flex-basis: 40%;
+    margin-right: 10%;
+  }
+
+  .msg-box {
+    @include flex-col(2.4rem);
+    margin-top: 1rem;
+
+    .ft-logo {
+      width: 16rem;
+      height: auto;
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .sns-box {
+    @include flex-col(2.4rem);
+  }
+
+  .contact-box {
+    background-color: $yellow;
+    color: $dark-blue;
+    display: flex;
+    gap: 3rem;
+    padding: 1.6rem 3.6rem;
+    box-sizing: border-box;
+  }
+
+  // 각 box에 공통으로 들어가는 text box div 속성
+  .txt-wrap {
+    width: 80%;
+  }
 }
-.contact-info {
 
-}
-.sns-list {
-
-}
-
-
-
+// footer gnb section
 .ft-gnb {
   width: $pc-cont;
   margin: 0 auto;
+  padding: 2.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  .gnb-list {
+    a,
+    button {
+      color: $dark-blue;
+
+      &:hover {
+        color: $royal-blue;
+      }
+    }
+  }
+}
+
+
+// 공통 컴포넌트 SNS List
+.sns-list {
+  display: flex;
+  gap: 2.6rem;
+
+  // default white version
+  .sns-item {
+    a,
+    button {
+      display: block;
+      width: 16px;
+      height: 16px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-size: 16px 16px;
+        background-position: center center;
+      }
+
+      &.facebook {
+        &::after {
+          background-image: url("../images/ico_facebook.png");
+        }
+      }
+
+      &.instagram {
+        &::after {
+          background-image: url("../images/ico_instagram.png");
+        }
+      }
+
+      &.twitter {
+        &::after {
+          background-image: url("../images/ico_twitter.png");
+        }
+      }
+
+      &.linkedin {
+        &::after {
+          background-image: url("../images/ico_linkedin.png");
+        }
+      }
+    }
+  }
+
+  // ty2 black version
+  &.ty2 {
+    .sns-item {
+      a,
+      button {
+        &.facebook {
+          &::after {
+            background-image: url("../images/ico_facebook_b.png");
+          }
+        }
+
+        &.instagram {
+          &::after {
+            background-image: url("../images/ico_instagram_b.png");
+          }
+        }
+
+        &.twitter {
+          &::after {
+            background-image: url("../images/ico_twitter_b.png");
+          }
+        }
+
+        &.linkedin {
+          &::after {
+            background-image: url("../images/ico_linkedin_b.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+@include p-m {
+  .ft-contact {
+    width: 100%;
+    max-width: 90%;
+
+    .contact-box {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  .ft-gnb {
+    width: 100%;
+    max-width: 90%;
+    box-sizing: border-box;
+  }
+}
+
+@include p-s {
+  .ft-contact {
+    .txt-wrap {
+      width: 100%;
+    }
+  }
+}
+
+@include t-l {
+  .ft-contact {
+    box-sizing: border-box;
+    > div {
+      flex-basis: 45%;
+      margin-right: 5%;
+    }
+
+    .contact-box {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  .ft-gnb {
+    padding: 1.2rem 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    .ft-copyright {
+      align-self: center;
+    }
+  }
+}
+
+@include m-l {
+  .ft-contact {
+    padding: 4rem 0 0;
+    flex-direction: column;
+    gap: 3rem;
+    > div {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+
+    .contact-box {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  .ft-gnb {
+    padding: 1.2rem 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    .ft-copyright {
+      align-self: center;
+    }
+    .gnb-list {
+      flex-wrap: wrap;
+      .gnb-item {
+        flex-basis: 50%;
+      }
+    }
+  }
 }

@@ -48,6 +48,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+// flex direction column
+@mixin flex-col($g: 0) {
+  display: flex;
+  flex-direction: column;
+  gap: $g;
+}
 
 
 // media query
