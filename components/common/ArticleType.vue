@@ -6,7 +6,7 @@
                 <p v-if="list.subTit" class="txt-md">{{list.subTit}}</p>
                 <h6 class="tit-h6">{{list.title}}</h6>
                 <p class="txt-r">{{list.txt}}</p>
-                <div v-if="list.link === true" class="txt-md icon-link">
+                <div v-if="list.link === true" class="txt-md icon-link b">
                   <router-link :to="list.path">Read More</router-link>
                 </div>
             </div>

@@ -229,12 +229,18 @@
     }
   }
   &.w {
-    background-image: url("../images/ico_arrow_w.png");
+    a::after{
+      background-image: url("../images/ico_arrow_w.png");
+    }
   }
   &.y {
-    background-image: url("../images/ico_arrow_w.png");
+    a::after{
+      background-image: url("../images/ico_arrow_y.png");
+    }
   }
   &.b {
-    background-image: url("../images/ico_arrow_w.png");
+    a::after{
+      background-image: url("../images/ico_arrow_b.png");
+    }
   }
 }
