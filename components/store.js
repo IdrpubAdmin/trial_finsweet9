@@ -49,8 +49,28 @@ var ArticleData = {
         articleData: {
             type: "ty01",
             data: [
-                {id:1, date:"19 Jan 2022", title: "블라블라", txt: "이러쿵저러쿵어쩌구저쩌구룰루랄라", link: true},
-                {id:2, date:"19 Jan 2022", title: "블라블라", txt: "이러쿵저러쿵어쩌구저쩌구룰루랄라", link: true},
+                {   
+                    id:1, 
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
+                    subTit:"19 Jan 2022", 
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
+                    link: true,
+                    path: '/',
+                },{   
+                    id:2, 
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
+                    subTit:"19 Jan 2022", 
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
+                    link: true,
+                    path: '/',
+                },{   
+                    id:3, 
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
+                    subTit:"19 Jan 2022", 
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
+                    link: true,
+                    path: '/',
+                }
             ]
         },
         faqData : [

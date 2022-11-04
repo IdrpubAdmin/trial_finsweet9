@@ -12,11 +12,12 @@
 .faq-content {
   display: flex;
   justify-content: space-between;
-  color: $txt-fc;
+  color: $dark-blue;
   .content-header {
     flex-basis: 26%;
     .lb-txt-1 {
       color: $royal-blue;
+      margin-top: 8px;
     }
   }
   section {
@@ -25,7 +26,7 @@
       .faq-item {
         border-bottom: 1px solid rgba(194, 187, 255, 0.7);
         cursor: pointer;
-        padding: 30px 0;
+        padding: 3rem 0;
         &:first-child {
           padding-top: 0;
         }
@@ -49,7 +50,7 @@
             span {
               width: 16px;
               height: 2px;
-              background: $txt-fc;
+              background: $dark-blue;
               opacity: 0.7;
               transition: transform 0.3s;
               position: absolute;
@@ -97,61 +98,36 @@
       margin-top: 48px;
       .faq-list {
         .faq-item {
-          border-bottom: 1px solid rgba(194, 187, 255, 0.7);
-          cursor: pointer;
-          padding: 30px 0;
-          &:first-child {
-            padding-top: 0;
-          }
+          padding: 1.5rem 0;
           .item-tit {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 5rem;
-            span {
-              display: block;
-              width: 30px;
-              color: $royal-blue;
-            }
+            gap: 3rem;
             p {
-              width: calc(100% - 156px);
-            }
-            .faq-btn {
-              width: 26px;
-              height: 26px;
-              position: relative;
-              span {
-                width: 16px;
-                height: 2px;
-                background: $txt-fc;
-                opacity: 0.7;
-                transition: transform 0.3s;
-                position: absolute;
-                top: 0; bottom: 0; right: 0; left: 0;
-                margin: auto;
-              }
-              .st-ln-2 {
-                transform:  rotate(90deg);
-              }
+              width: calc(100% - 116px);
             }
           }
           .hide-txt {
-            padding: 0 8rem;
-            margin-top: 16px;
-            display: none;
+            padding: 0 6rem;
+            margin-top: 12px;
           }
-          &.slide-on {
-            .hide-txt {
-              display: block;
+        }
+      }
+    }
+  }
+}
+
+@include m-l {
+  .faq-content {
+    section {
+      .faq-list {
+        .faq-item {
+          .item-tit {
+            gap: 2rem;
+            p {
+              width: calc(100% - 96px);
             }
-            .faq-btn {
-              .st-ln-1 {
-                transform: rotate(-45deg);
-              }
-              .st-ln-2 {
-                transform: rotate(45deg);
-              }
-            }
+          }
+          .hide-txt {
+            padding: 0;
           }
         }
       }
@@ -162,27 +138,103 @@
 // 아티클 type1
 .layout-ty01{
   display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  gap: 30px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 3rem;
   article{
-    width: 100%;
+    width: calc((100% - 6rem) / 3 );
     img{
       width: 100%;
+    }
+    .art-tet{
+      margin-top: 4rem;
+      .tit-h6{
+        margin-top: 18px;
+        line-height: $ln-h-r;
+      }
+      p{
+        margin-top: 16px;
+        opacity: 0.7;
+      }
+      .icon-link{
+        margin-top: 32px;
+      }
     }
   }
 }
 
+// 아티클 type2 (교차되는 article)
 .layout-ty02{
   article{
     display: flex;
+    align-items: center;
     gap: 14rem;
+    &:nth-child(odd){
+      flex-direction: row-reverse;
+    }
     img{
       width: calc(50% - 140px);
-      flex-basis: fill;
     }
-    .text{
+    .art-tet{
       width: 50%;
+      .tit-h6{
+        line-height: $ln-h-r;
+      }
     }
+  }
+}
+
+@include t-l {
+  .layout-ty02{
+    article{
+      gap: 8rem;
+      img{
+        width: calc(50% - 80px);
+      }
+    }
+  }
+}
+
+@include m-l {
+  .layout-ty02{
+    article{
+      display: block;
+      img{
+        width: 100%;
+      }
+      .art-tet{
+        width: 100%;
+        .tit-h6{
+          line-height: $ln-h-r;
+        }
+      }
+    }
+  }
+}
+
+// 화살표 아이콘이 있는 a태그
+.icon-link{
+  a{
+    display: flex;
+    align-items: center;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 25px;
+      height: 12px;
+      background-image: url("../images/ico_arrow.png");
+      background-size: cover;
+      background-position: center;
+      margin-left: 1.3rem;
+    }
+  }
+  &.w {
+    background-image: url("../images/ico_arrow_w.png");
+  }
+  &.y {
+    background-image: url("../images/ico_arrow_w.png");
+  }
+  &.b {
+    background-image: url("../images/ico_arrow_w.png");
   }
 }
