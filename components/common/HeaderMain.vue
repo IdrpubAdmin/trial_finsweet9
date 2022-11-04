@@ -1,8 +1,10 @@
 <template>
   <div class="header-wrap" :class="{inactive : inactivate}">
     <div id="header">
-      <div class="hd-logo">
+      <!--   logo   -->
+      <h1 class="hd-logo">
         <router-link to="/">
+          <!--    finsweet9 로고 svg 파일      -->
           <svg width="122" height="25" viewBox="0 0 122 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1551_633)">
               <path
@@ -39,8 +41,10 @@
             </defs>
           </svg>
           <i class="blind">finsweet9 로고</i>
+          <!--    //finsweet9 로고 svg 파일      -->
         </router-link>
-      </div>
+      </h1>
+      <!--   //logo   -->
       <!--      mobile navigation button      -->
       <div class="nav-btn-wrap">
         <button class="nav-btn" :class="{active : navActive}"
@@ -51,18 +55,24 @@
         </button>
       </div>
       <!--      mobile navigation button      -->
+      <!--  gnb    -->
       <div class="hd-gnb" :class="{'active': navActive}">
         <nav class="gnb-list-wrap">
           <ul class="gnb-list">
+            <!--  gnb navigation list  -->
             <li class="gnb-item" v-for="item in gnbData" :key="item.id">
-              <router-link to="/" class="txt-md">{{ item.title }}</router-link>
+              <h2>
+                <router-link to="/" class="txt-md">{{ item.title }}</router-link>
+              </h2>
             </li>
+            <!--  //gnb navigation list  -->
           </ul>
         </nav>
         <div class="btn-wrap">
           <router-link to="/contact" class="btn-ty03">Contact us</router-link>
         </div>
       </div>
+      <!--  //gnb    -->
     </div>
   </div>
 </template>

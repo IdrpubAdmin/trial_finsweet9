@@ -192,6 +192,10 @@ html { font-family: "Poppins", sans-serif; }
   .lb-txt-1 { font-size: 1.4rem; line-height: 1.5; }
   .lb-txt-2 { font-size: 1.2rem; line-height: 1.5; } }
 
+.btn-ty03 { border: 2px solid #F4F6FC33; -webkit-border-radius: 4rem; -moz-border-radius: 4rem; border-radius: 4rem; color: #ffffff; transition: border 0.3s; }
+
+.btn-ty03:hover { border-color: #ffffff; }
+
 .royal-blue { background-color: #2405f2; }
 
 .dark-blue { background-color: #282938; }
@@ -222,19 +226,15 @@ button { cursor: pointer; }
 
 .header-wrap #header .hd-gnb { display: flex; justify-content: flex-end; gap: 4.8rem; align-items: center; }
 
+.header-wrap #header .hd-gnb .btn-ty03 { display: block; padding: 1.6rem 4.8rem; font-size: 1.6rem; box-sizing: border-box; background-color: #1C1E53; }
+
 .nav-btn-wrap { display: none; }
 
 .gnb-list { display: flex; }
 
-.gnb-list a { display: block; padding: 1rem 1.6rem; color: #BBBBCB; }
+.gnb-list a { display: block; padding: 1rem 1.6rem; color: #BBBBCB; transition: color 0.3s; }
 
 .gnb-list a:hover { color: #ffffff; }
-
-.btn-ty03 { display: block; padding: 1.6rem 4.8rem; border: 2px solid #F4F6FC33; -webkit-border-radius: 4.1rem; -moz-border-radius: 4.1rem; border-radius: 4.1rem; font-size: 1.6rem; color: #ffffff; box-sizing: border-box; background-color: #1C1E53; }
-
-.btn-ty03:hover { border-color: #ffffff; }
-
-@media (max-width: 1439px) { .header-wrap #header { width: 100%; max-width: 90%; box-sizing: border-box; } }
 
 @media (max-width: 1023px) { .hd-gnb .btn-wrap { display: none; }
   .gnb-list a { padding: 0.5rem 0.8rem; } }
@@ -246,7 +246,8 @@ button { cursor: pointer; }
   .header-wrap #header .hd-gnb { position: absolute; top: 50px; left: 0; width: 100%; display: block; background-color: #1C1E53; max-height: 0; overflow: hidden; box-sizing: border-box; transition: max-height 0.3s ease-in-out; }
   .header-wrap #header .hd-gnb .gnb-list-wrap { max-width: 90%; margin: 0 auto; }
   .header-wrap #header .hd-gnb .gnb-list-wrap .gnb-list { flex-wrap: wrap; }
-  .header-wrap #header .hd-gnb .gnb-list-wrap .gnb-list .gnb-item { flex-basis: 50%; }
+  .header-wrap #header .hd-gnb .gnb-list-wrap .gnb-list .gnb-item { flex-basis: 15rem; }
+  .header-wrap #header .hd-gnb .gnb-list-wrap .gnb-list .gnb-item a { padding: 1rem 1rem; }
   .header-wrap #header .hd-gnb.active { max-height: 50vh; }
   .nav-btn-wrap { display: block; }
   .nav-btn-wrap .nav-btn { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; width: 2rem; height: 2rem; background: none; border: none; padding: 0; margin-right: 0.5rem; }
@@ -327,9 +328,7 @@ button { cursor: pointer; }
   .ft-gnb .gnb-list { flex-wrap: wrap; }
   .ft-gnb .gnb-list .gnb-item { flex-basis: 50%; } }
 
-.container { max-width: 1280px; width: 90%; margin: 0 auto; }
-
-.container .content { padding: 128px 0; }
+.container .content { max-width: 1280px; width: 90%; margin: 0 auto; padding: 128px 0; }
 
 .faq-content { display: flex; justify-content: space-between; color: #282938; }
 
@@ -391,6 +390,28 @@ button { cursor: pointer; }
 .layout-ty02 article img { width: calc(50% - 140px); flex-basis: fill; }
 
 .layout-ty02 article .text { width: 50%; }
+
+.content-bg-wrap { width: 100%; height: fit-content; }
+
+.main-banner { display: flex; gap: 5%; }
+
+.main-banner .banner-txt { flex-basis: 45%; display: flex; flex-direction: column; gap: 3.5rem; box-sizing: border-box; }
+
+.main-banner .banner-txt .tit-h1, .main-banner .banner-txt .txt-md { color: #ffffff; }
+
+.main-banner .banner-txt .btn-ty01 { padding: 1.8rem 4.8rem; box-sizing: border-box; }
+
+.main-banner .banner-txt .btn-wrap a { width: fit-content; display: block; }
+
+.main-banner .banner-img { flex-basis: 50%; display: flex; align-items: center; }
+
+.m-only { display: none; }
+
+@media (max-width: 767px) { .main-banner { gap: 3.5rem; flex-direction: column; align-items: center; }
+  .main-banner .banner-txt { align-items: center; }
+  .main-banner .banner-txt .tit-h1, .main-banner .banner-txt .txt-md { text-align: center; }
+  .main-banner .banner-img { width: 66.66%; }
+  .m-only { display: block; } }
 
 .style-guide .style-header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
 

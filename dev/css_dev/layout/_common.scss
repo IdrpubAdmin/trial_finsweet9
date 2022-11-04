@@ -172,6 +172,16 @@ html {
   }
 }
 
+.btn-ty03 {
+  @include bd(2px, #F4F6FC33);
+  @include bdrs(4rem);
+  color: $white;
+  transition: border 0.3s;
+
+  &:hover {
+    border-color: $white;
+  }
+}
 // color
 .royal-blue {
   background-color: $royal-blue;

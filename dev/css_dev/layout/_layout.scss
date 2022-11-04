@@ -1,9 +1,9 @@
 // 컨테이너 설정
 .container {
-  max-width: $pc-cont;
-  width: 90%;
-  margin: 0 auto;
   .content {
+    max-width: $pc-cont;
+    width: 90%;
+    margin: 0 auto;
     padding: 128px 0;
   }
 }
