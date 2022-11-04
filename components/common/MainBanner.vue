@@ -12,7 +12,7 @@
           <a href="#" class="btn-ty01 lb-txt-1">
             View Pricing
           </a>
-          <div class="icon-arrow">
+          <div class="icon-link">
             <a href="#">
               View Pricing
             </a>
