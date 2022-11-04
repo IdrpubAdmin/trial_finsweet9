@@ -447,6 +447,34 @@ button { cursor: pointer; }
 
 @media (max-width: 640px) { .main-banner .banner-txt .btn-wrap { flex-direction: column; gap: 3rem; } }
 
+.bnf-ty { background-color: #F4F6FC; }
+
+.bnf-ty .content { display: flex; flex-direction: column; gap: 4rem; }
+
+.bnf-ty .content-header { display: flex; flex-direction: column; gap: 1.2rem; align-items: center; text-align: center; }
+
+.bnf-ty .content-header .tit-h2 { width: 60%; line-height: 1.5; }
+
+.bnf-ty .ico-list-ty { display: flex; flex-wrap: wrap; row-gap: 2.4rem; column-gap: 3.2rem; }
+
+.bnf-ty .ico-list-ty .ico-item { flex-basis: 31.33%; display: flex; flex-direction: column; gap: 2.5rem; padding: 4.8rem; box-sizing: border-box; background-color: #ffffff; }
+
+.bnf-ty .ico-list-ty .ico-item .ico-box { width: 3.5rem; height: 3.5rem; background-size: contain; background-position: center center; background-repeat: no-repeat; }
+
+.bnf-ty .ico-list-ty .ico-item .ico-box.ty1 { background-image: url("../images/ico_list_01.png"); }
+
+.bnf-ty .ico-list-ty .ico-item .ico-box.ty2 { background-image: url("../images/ico_list_02.png"); }
+
+.bnf-ty .ico-list-ty .ico-item .ico-box.ty3 { background-image: url("../images/ico_list_03.png"); }
+
+.bnf-ty .ico-list-ty .ico-item .ico-box.ty4 { background-image: url("../images/ico_list_04.png"); }
+
+.bnf-ty .ico-list-ty .ico-item .ico-box.ty5 { background-image: url("../images/ico_list_05.png"); }
+
+.bnf-ty .ico-list-ty .ico-item .ico-box.ty6 { background-image: url("../images/ico_list_06.png"); }
+
+.bnf-ty .ico-list-ty .ico-item .txt-box { display: flex; flex-direction: column; gap: 1.2rem; }
+
 .style-guide .style-header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
 
 .style-guide .style-header-wrap header { max-width: 1280px; width: 100%; margin: 0 auto; }

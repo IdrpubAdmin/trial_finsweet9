@@ -5,6 +5,7 @@ const AboutMain = httpVueLoader('../components/about/AboutMain.vue');
 const FaqContent = httpVueLoader('../components/common/FaqContent.vue');
 const ArticleType = httpVueLoader('../components/common/ArticleType.vue');
 const MainBanner = httpVueLoader('../components/common/MainBanner.vue');
+const BenefitsList = httpVueLoader('../components/common/BenefitsList.vue');
 
 const router = new VueRouter({
 	routes: [

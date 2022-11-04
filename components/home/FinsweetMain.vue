@@ -1,8 +1,8 @@
 <template>
   <div>
-    Home연결확인
     <main-banner :banner-cont="bannerCont"></main-banner>
-    <about-main></about-main>
+<!--    <about-main></about-main>-->
+    <benefits-list></benefits-list>
     <faq-content></faq-content>
 <!--    <article-type></article-type>-->
   </div>
@@ -15,6 +15,7 @@ module.exports = {
     AboutMain,
     FaqContent,
     ArticleType,
+    BenefitsList,
   },
   computed: {
     bannerCont() {

@@ -1,8 +1,11 @@
+
+// content 감싸는 background color 효과 적용용 wrap
 .content-bg-wrap {
   width: 100%;
   height: fit-content;
 }
 
+// main-banner 컴포넌트 css 시작
 .main-banner {
   display: flex;
   gap: 5%;
@@ -16,7 +19,6 @@
     .txt-md,
     .lb-txt-2{
       color: $white;
-
     }
 
     .tit-h1 {
@@ -95,5 +97,73 @@
         gap: 3rem;
       }
     }
+  }
+}
+
+
+// benefit List 컴포넌트용 css 시작
+
+// benefit list ty별 정의
+.bnf-ty {
+  background-color: $grey;
+
+  .content {
+    @include flex-col(4rem);
+  }
+
+  .content-header {
+    @include flex-col(1.2rem);
+    align-items: center;
+    text-align: center;
+
+    .tit-h2 {
+      width: 60%;
+      line-height: $ln-h-r;
+    }
+  }
+
+  .ico-list-ty {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
+    .ico-item {
+      flex-basis: 31.33%;
+      @include flex-col(2.5rem);
+      padding: 4.8rem;
+      box-sizing: border-box;
+      background-color: $white;
+
+      // ico list의 ico ty 별 클래스 정의
+      .ico-box {
+        width: 3.5rem;
+        height: 3.5rem;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        &.ty1 {
+          background-image: url("../images/ico_list_01.png");
+        }
+        &.ty2 {
+          background-image: url("../images/ico_list_02.png");
+        }
+        &.ty3 {
+          background-image: url("../images/ico_list_03.png");
+        }
+        &.ty4 {
+          background-image: url("../images/ico_list_04.png");
+        }
+        &.ty5 {
+          background-image: url("../images/ico_list_05.png");
+        }
+        &.ty6 {
+          background-image: url("../images/ico_list_06.png");
+        }
+      }
+      .txt-box {
+        @include flex-col(1.2rem);
+      }
+    }
+
   }
 }

@@ -1,12 +1,14 @@
 <template>
+  <!-- content | main-banner 컴포넌트 -->
   <div class="content-bg-wrap tint-blue">
     <div class="content main-banner">
+      <!--   banner text   -->
       <div class="banner-txt">
         <h3 class="tit-h1">
-          {{bannerCont.tit}}
+          {{ bannerCont.tit }}
         </h3>
         <p class="txt-md">
-          {{bannerCont.txt}}
+          {{ bannerCont.txt }}
         </p>
         <div class="btn-wrap">
           <a href="#" class="btn-ty01 lb-txt-1">
@@ -22,13 +24,14 @@
 
         </div>
       </div>
+      <!--   //banner text   -->
       <!--  banner img  -->
       <div class="banner-img" :class="bannerCont.img">
       </div>
     </div>
     <!--  //banner img  -->
   </div>
-
+  <!-- //content | main-banner 컴포넌트 -->
 
 </template>
 
@@ -38,10 +41,7 @@ module.exports = {
   props: {
     bannerCont: Object
   },
-  computed: {
-  },
-  methods: {
-
-  }
+  computed: {},
+  methods: {}
 }
 </script>
