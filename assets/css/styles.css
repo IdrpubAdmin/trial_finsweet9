@@ -196,7 +196,7 @@ button { cursor: pointer; }
 
 .header-wrap { width: 100%; height: fit-content; background-color: #1C1E53; }
 
-.header-wrap #header { width: 1280px; height: 92px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.header-wrap #header { max-width: 1280px; width: 90%; height: 92px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 
 .header-wrap #header .hd-gnb { display: flex; justify-content: flex-end; gap: 4.8rem; align-items: center; }
 

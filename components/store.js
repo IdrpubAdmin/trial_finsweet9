@@ -18,6 +18,7 @@ var NavigationData = {
     }
 };
 
+<<<<<<< HEAD
 let HeaderData = {
     namespaced: true,
     state: {
@@ -43,12 +44,45 @@ let HeaderData = {
     }
 };
 
+=======
+var ArticleData = {
+    namespaced: true,
+    state: {
+        articleData: {
+            type: "ty01",
+            data: [
+                {id:1, date:"19 Jan 2022", title: "블라블라", txt: "이러쿵저러쿵어쩌구저쩌구룰루랄라", link: true},
+                {id:2, date:"19 Jan 2022", title: "블라블라", txt: "이러쿵저러쿵어쩌구저쩌구룰루랄라", link: true},
+            ]
+        },
+        faqData : [
+            {num: "01", open: true, title: "How much time does it take ?"},
+            {num: "02", open: false, title: "What is your class naming convention ?"},
+            {num: "03", open: false, title: "How do we communicate ?"},
+            {num: "04", open: false, title: "I have a bigger project. Can you handle it ?"},
+            {num: "05", open: false, title: "What is your class naming convention ?"}
+        ]
+    },
+    mutations: {
+        slideOpen(state, payload){
+            for(let i=0; i<state.faqData.length; i++){
+                state.faqData[i].open = false
+            }
+            state.faqData[payload].open = true
+        },
+    },
+};
+>>>>>>> won
 
 const store = new Vuex.Store({
     namespaced: true,
     modules: {
         NavigationData: NavigationData,
+<<<<<<< HEAD
         HeaderData: HeaderData,
+=======
+        ArticleData: ArticleData,
+>>>>>>> won
     },
     state: {
         path: {
@@ -63,8 +97,14 @@ const store = new Vuex.Store({
         NavigationData: function NavigationData(state) {
             return state.NavigationData;
         },
+<<<<<<< HEAD
         HeaderData: function HeaderData(state) {
             return state.HeaderData;
         }
+=======
+        ArticleData: function ArticleData(state) {
+            return state.ArticleData;
+        },
+>>>>>>> won
     },
 });
