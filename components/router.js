@@ -6,6 +6,8 @@ const FaqContent = httpVueLoader('../components/common/FaqContent.vue');
 const ArticleType = httpVueLoader('../components/common/ArticleType.vue');
 const ButtonBanner = httpVueLoader('../components/common/ButtonBanner.vue');
 const SocialBanner = httpVueLoader('../components/common/SocialBanner.vue');
+const MainBanner = httpVueLoader('../components/common/MainBanner.vue');
+const BenefitsList = httpVueLoader('../components/common/BenefitsList.vue');
 
 const router = new VueRouter({
 	routes: [

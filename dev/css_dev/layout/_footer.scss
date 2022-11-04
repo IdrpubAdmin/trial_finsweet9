@@ -12,6 +12,7 @@
 // footer contact section
 .ft-contact {
   width: $pc-cont;
+  max-width: 90%;
   margin: 0 auto;
   padding-top: 9.6rem;
   display: flex;
@@ -200,11 +201,6 @@
       flex-basis: 45%;
       margin-right: 5%;
     }
-
-    .contact-box {
-      flex-direction: column;
-      gap: 2rem;
-    }
   }
 
   .ft-gnb {
@@ -225,11 +221,6 @@
     > div {
       flex-basis: 100%;
       margin-right: 0;
-    }
-
-    .contact-box {
-      flex-direction: column;
-      gap: 2rem;
     }
   }
 

@@ -17,10 +17,16 @@
       justify-content: flex-end;
       gap: 4.8rem;
       align-items: center;
+
+      .btn-ty03 {
+        display: block;
+        padding: 1.6rem 4.8rem;
+        font-size: $font-16r;
+        box-sizing: border-box;
+        background-color: $tint-blue;
+      }
     }
-
   }
-
 }
 
 .nav-btn-wrap {
@@ -34,37 +40,10 @@
     display: block;
     padding: 1rem 1.6rem;
     color: #BBBBCB;
+    transition: color 0.3s;
 
     &:hover {
       color: $white;
-    }
-  }
-}
-
-
-//
-.btn-ty03 {
-  display: block;
-  padding: 1.6rem 4.8rem;
-  @include bd(2px, #F4F6FC33);
-  @include bdrs(4.1rem);
-  font-size: $font-16r;
-  color: $white;
-  box-sizing: border-box;
-  background-color: $tint-blue;
-
-  &:hover {
-    border-color: $white;
-  }
-}
-
-
-@include p-m {
-  .header-wrap {
-    #header {
-      width: 100%;
-      max-width: 90%;
-      box-sizing: border-box;
     }
   }
 }
@@ -123,7 +102,11 @@
             flex-wrap: wrap;
 
             .gnb-item {
-              flex-basis: 50%;
+              flex-basis: 15rem;
+
+              a {
+                padding: 1rem 1rem;
+              }
             }
           }
         }

@@ -1,13 +1,13 @@
 var NavigationData = {
     namespaced: true,
     state: {
-        categoryData : [
-            { id: 1, title: "Home", path: "/"},
-            { id: 2, title: "About us", path: "/aboutus" },
-            { id: 3, title: "Features", path: "/features" },
-            { id: 4, title: "Pricing", path: "/pricing" },
-            { id: 5, title: "FAQ", path: "/faq" },
-            { id: 6, title: "Blog", path: "/blog" },
+        categoryData: [
+            {id: 1, title: "Home", path: "/"},
+            {id: 2, title: "About us", path: "/aboutus"},
+            {id: 3, title: "Features", path: "/features"},
+            {id: 4, title: "Pricing", path: "/pricing"},
+            {id: 5, title: "FAQ", path: "/faq"},
+            {id: 6, title: "Blog", path: "/blog"},
         ],
         snsData : [
             {id: 1, title: "facebook"},
@@ -31,8 +31,8 @@ let HeaderData = {
             state.navActive = !state.navActive;
         },
         handleScroll(state) {
-            if(state.timer === null) {
-                state.timer = setTimeout(function() {
+            if (state.timer === null) {
+                state.timer = setTimeout(function () {
                     state.lastScrollY = state.scrollY
                     state.scrollY = window.scrollY
                     clearTimeout(state.timer)
@@ -46,9 +46,9 @@ let HeaderData = {
 var BannerData = {
     state: {
         BannerData: {
-            title: "Let's build something great together", 
-            subTit:"19 Jan 2022", 
-            txt: "Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.", 
+            title: "Let's build something great together",
+            subTit:"19 Jan 2022",
+            txt: "Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.",
             path: '/',
         },
     },
@@ -62,21 +62,21 @@ var ArticleData = {
             link: true,
             data: [
                 {   
-                    id: 1, 
-                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
-                    subTit: "19 Jan 2022", 
-                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
+                    id: 1,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "19 Jan 2022",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
                 },{   
-                    id: 2, 
-                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
-                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
+                    id: 2,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
                 },{   
-                    id: 3, 
-                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
-                    subTit: "19 Jan 2022", 
-                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
+                    id: 3,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "19 Jan 2022",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
                 }
             ]
@@ -113,9 +113,7 @@ const store = new Vuex.Store({
             components: '../components/',
         },
     },
-    mutations: {
-
-    },
+    mutations: {},
     getters: {
         NavigationData: function NavigationData(state) {
             return state.NavigationData;

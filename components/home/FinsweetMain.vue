@@ -1,5 +1,6 @@
  <template>
     <div>
+        <main-banner :banner-cont="bannerCont"></main-banner>
         <faq-content></faq-content>
         <article-type></article-type>
         <button-banner></button-banner>
@@ -9,12 +10,19 @@
 
 <script>
 module.exports = {
-    components: {
-        AboutMain,
-        FaqContent,
-        ArticleType,
-        ButtonBanner,
-        SocialBanner
-    } 
+  components: {
+    MainBanner,
+    AboutMain,
+    FaqContent,
+    ArticleType,
+    BenefitsList,
+    ButtonBanner,
+    SocialBanner,
+  },
+  computed: {
+    bannerCont() {
+      return this.$store.getters["BannerData"].bannerData01;
+    }
+  }
 }
 </script>

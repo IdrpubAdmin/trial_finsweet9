@@ -1,10 +1,13 @@
 <template>
   <div id="footer">
     <div class="contact-bg-wrap">
+      <!--  footer contact section    -->
       <div class="ft-contact">
+        <!--  logo section  -->
         <div class="msg-box">
           <div class="ft-logo">
             <router-link to="/">
+              <!--  logo svg  -->
               <svg viewBox="0 0 122 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1551_633)">
                   <path
@@ -42,13 +45,15 @@
                 </defs>
               </svg>
               <i class="blind">finsweet9 로고</i>
+              <!--  //logo svg  -->
             </router-link>
           </div>
           <div class="txt-wrap">
             <p class="txt-md">We are always open to discuss your project and improve your online presence.</p>
           </div>
         </div>
-
+        <!--  //logo section  -->
+        <!--  sns link section  -->
         <div class="sns-box">
           <div class="txt-wrap">
             <div class="tit-h2">Lets Talk!</div>
@@ -65,7 +70,8 @@
             </ul>
           </div>
         </div>
-
+        <!--  //sns link section  -->
+        <!--  contact yellow box  -->
         <div class="contact-box">
           <div class="box-email">
             <p class="lb-txt-1">
@@ -84,10 +90,10 @@
             <address>0927 6277 28525</address>
           </div>
         </div>
-
+        <!--  //contact yellow box  -->
       </div>
     </div>
-
+    <!--  //footer contact section    -->
     <div class="ft-gnb">
       <div class="ft-copyright">
         <address class="txt-md">
@@ -96,9 +102,11 @@
       </div>
       <nav class="gnb-list-wrap">
         <ul class="gnb-list">
+          <!--  gnb navigation menu list  -->
           <li class="gnb-item" v-for="item in gnbData" :key="item.id">
             <router-link to="/" class="txt-md">{{ item.title }}</router-link>
           </li>
+          <!--  //gnb navigation menu list  -->
         </ul>
       </nav>
     </div>
