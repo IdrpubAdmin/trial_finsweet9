@@ -412,11 +412,11 @@ button { cursor: pointer; }
 
 .icon-link a::after { content: ''; display: inline-block; width: 25px; height: 12px; background-image: url("../images/ico_arrow.png"); background-size: cover; background-position: center; margin-left: 1.3rem; }
 
-.icon-link.w { background-image: url("../images/ico_arrow_w.png"); }
+.icon-link.w a::after { background-image: url("../images/ico_arrow_w.png"); }
 
-.icon-link.y { background-image: url("../images/ico_arrow_w.png"); }
+.icon-link.y a::after { background-image: url("../images/ico_arrow_y.png"); }
 
-.icon-link.b { background-image: url("../images/ico_arrow_w.png"); }
+.icon-link.b a::after { background-image: url("../images/ico_arrow_b.png"); }
 
 .style-guide .style-header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
 
