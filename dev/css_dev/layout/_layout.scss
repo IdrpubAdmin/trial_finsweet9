@@ -14,13 +14,13 @@
   justify-content: space-between;
   color: $txt-fc;
   .content-header {
-    width: 26%;
+    flex-basis: 26%;
     .lb-txt-1 {
       color: $royal-blue;
     }
   }
   section {
-    width: 65%;
+    flex-basis: 65%;
     .faq-list {
       .faq-item {
         border-bottom: 1px solid rgba(194, 187, 255, 0.7);
@@ -76,6 +76,81 @@
             }
             .st-ln-2 {
               transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include t-l {
+  .faq-content {
+    display: block;
+    .content-header {
+      text-align: center;
+      .lb-txt-1 {
+        color: $royal-blue;
+      }
+    }
+    section {
+      margin-top: 48px;
+      .faq-list {
+        .faq-item {
+          border-bottom: 1px solid rgba(194, 187, 255, 0.7);
+          cursor: pointer;
+          padding: 30px 0;
+          &:first-child {
+            padding-top: 0;
+          }
+          .item-tit {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+            span {
+              display: block;
+              width: 30px;
+              color: $royal-blue;
+            }
+            p {
+              width: calc(100% - 156px);
+            }
+            .faq-btn {
+              width: 26px;
+              height: 26px;
+              position: relative;
+              span {
+                width: 16px;
+                height: 2px;
+                background: $txt-fc;
+                opacity: 0.7;
+                transition: transform 0.3s;
+                position: absolute;
+                top: 0; bottom: 0; right: 0; left: 0;
+                margin: auto;
+              }
+              .st-ln-2 {
+                transform:  rotate(90deg);
+              }
+            }
+          }
+          .hide-txt {
+            padding: 0 8rem;
+            margin-top: 16px;
+            display: none;
+          }
+          &.slide-on {
+            .hide-txt {
+              display: block;
+            }
+            .faq-btn {
+              .st-ln-1 {
+                transform: rotate(-45deg);
+              }
+              .st-ln-2 {
+                transform: rotate(45deg);
+              }
             }
           }
         }
