@@ -3,6 +3,7 @@
   max-width: $pc-cont;
   width: 90%;
   margin: 0 auto;
+
   .content {
     padding: 128px 0;
   }
@@ -13,40 +14,50 @@
   display: flex;
   justify-content: space-between;
   color: $dark-blue;
+
   .content-header {
     flex-basis: 26%;
+
     .lb-txt-1 {
       color: $royal-blue;
       margin-top: 8px;
     }
   }
+
   section {
-    flex-basis: 65%;
+    flex-basis: calc((100% - 1.5rem) / 3 * 2);
+
     .faq-list {
       .faq-item {
         border-bottom: 1px solid rgba(194, 187, 255, 0.7);
         cursor: pointer;
-        padding: 3rem 0;
+        padding: 3rem 0 3rem 2.5rem;
+
         &:first-child {
           padding-top: 0;
         }
+
         .item-tit {
           display: flex;
           justify-content: space-between;
           align-items: center;
           gap: 5rem;
+
           span {
             display: block;
             width: 30px;
             color: $royal-blue;
           }
+
           p {
             width: calc(100% - 156px);
           }
+
           .faq-btn {
             width: 26px;
             height: 26px;
             position: relative;
+
             span {
               width: 16px;
               height: 2px;
@@ -54,27 +65,35 @@
               opacity: 0.7;
               transition: transform 0.3s;
               position: absolute;
-              top: 0; bottom: 0; right: 0; left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
               margin: auto;
             }
+
             .st-ln-2 {
-              transform:  rotate(90deg);
+              transform: rotate(90deg);
             }
           }
         }
+
         .hide-txt {
           padding: 0 8rem;
           margin-top: 16px;
           display: none;
         }
+
         &.slide-on {
           .hide-txt {
             display: block;
           }
+
           .faq-btn {
             .st-ln-1 {
               transform: rotate(-45deg);
             }
+
             .st-ln-2 {
               transform: rotate(45deg);
             }
@@ -88,23 +107,30 @@
 @include t-l {
   .faq-content {
     display: block;
+
     .content-header {
       text-align: center;
+
       .lb-txt-1 {
         color: $royal-blue;
       }
     }
+
     section {
       margin-top: 48px;
+
       .faq-list {
         .faq-item {
           padding: 1.5rem 0;
+
           .item-tit {
             gap: 3rem;
+
             p {
               width: calc(100% - 116px);
             }
           }
+
           .hide-txt {
             padding: 0 6rem;
             margin-top: 12px;
@@ -122,10 +148,12 @@
         .faq-item {
           .item-tit {
             gap: 2rem;
+
             p {
               width: calc(100% - 96px);
             }
           }
+
           .hide-txt {
             padding: 0;
           }
@@ -136,27 +164,33 @@
 }
 
 // 아티클 type1
-.layout-ty01{
+.layout-ty01 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 3rem;
-  article{
-    width: calc((100% - 6rem) / 3 );
-    img{
+
+  article {
+    width: calc((100% - 6rem) / 3);
+
+    img {
       width: 100%;
     }
-    .art-tet{
+
+    .art-tet {
       margin-top: 4rem;
-      .tit-h6{
+
+      .tit-h6 {
         margin-top: 18px;
         line-height: $ln-h-r;
       }
-      p{
+
+      p {
         margin-top: 16px;
         opacity: 0.7;
       }
-      .icon-link{
+
+      .icon-link {
         margin-top: 32px;
       }
     }
@@ -164,20 +198,24 @@
 }
 
 // 아티클 type2 (교차되는 article)
-.layout-ty02{
-  article{
+.layout-ty02 {
+  article {
     display: flex;
     align-items: center;
     gap: 14rem;
-    &:nth-child(odd){
+
+    &:nth-child(odd) {
       flex-direction: row-reverse;
     }
-    img{
+
+    img {
       width: calc(50% - 140px);
     }
-    .art-tet{
+
+    .art-tet {
       width: 50%;
-      .tit-h6{
+
+      .tit-h6 {
         line-height: $ln-h-r;
       }
     }
@@ -185,10 +223,11 @@
 }
 
 @include t-l {
-  .layout-ty02{
-    article{
+  .layout-ty02 {
+    article {
       gap: 8rem;
-      img{
+
+      img {
         width: calc(50% - 80px);
       }
     }
@@ -196,15 +235,18 @@
 }
 
 @include m-l {
-  .layout-ty02{
-    article{
+  .layout-ty02 {
+    article {
       display: block;
-      img{
+
+      img {
         width: 100%;
       }
-      .art-tet{
+
+      .art-tet {
         width: 100%;
-        .tit-h6{
+
+        .tit-h6 {
           line-height: $ln-h-r;
         }
       }
@@ -213,10 +255,11 @@
 }
 
 // 화살표 아이콘이 있는 a태그
-.icon-link{
-  a{
+.icon-link {
+  a {
     display: flex;
     align-items: center;
+
     &::after {
       content: '';
       display: inline-block;
@@ -228,18 +271,21 @@
       margin-left: 1.3rem;
     }
   }
+
   &.w {
-    a::after{
+    a::after {
       background-image: url("../images/ico_arrow_w.png");
     }
   }
+
   &.y {
-    a::after{
+    a::after {
       background-image: url("../images/ico_arrow_y.png");
     }
   }
+
   &.b {
-    a::after{
+    a::after {
       background-image: url("../images/ico_arrow_b.png");
     }
   }

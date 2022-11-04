@@ -3,12 +3,18 @@
         <article v-for="list in articleData.data" :key="list.id">
             <img src="../assets/images/blog01.png" alt="img">
             <div class="art-tet">
-                <p v-if="list.subTit" class="txt-md">{{list.subTit}}</p>
+              <template v-if="list.subTit">
+                <p class="txt-md">{{list.subTit}}</p>
+              </template>
+              <template v-else></template>
                 <h6 class="tit-h6">{{list.title}}</h6>
                 <p class="txt-r">{{list.txt}}</p>
-                <div v-if="list.link === true" class="txt-md icon-link b">
+              <template v-if="articleData.link === true">
+                <div class="txt-md icon-link">
                   <router-link :to="list.path">Read More</router-link>
                 </div>
+              </template>
+              <template v-else></template>
             </div>
         </article>
     </section>

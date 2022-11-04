@@ -4,6 +4,8 @@ const FooterMain = httpVueLoader('../components/common/FooterMain.vue');
 const AboutMain = httpVueLoader('../components/about/AboutMain.vue');
 const FaqContent = httpVueLoader('../components/common/FaqContent.vue');
 const ArticleType = httpVueLoader('../components/common/ArticleType.vue');
+const ButtonBanner = httpVueLoader('../components/common/ButtonBanner.vue');
+const SocialBanner = httpVueLoader('../components/common/SocialBanner.vue');
 
 const router = new VueRouter({
 	routes: [

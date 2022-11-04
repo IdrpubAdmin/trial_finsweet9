@@ -43,32 +43,40 @@ let HeaderData = {
     }
 };
 
+var BannerData = {
+    state: {
+        BannerData: {
+            title: "Let's build something great together", 
+            subTit:"19 Jan 2022", 
+            txt: "Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.", 
+            path: '/',
+        },
+    },
+}
+
 var ArticleData = {
     namespaced: true,
     state: {
         articleData: {
-            type: "ty01",
+            type: "ty02",
+            link: true,
             data: [
                 {   
-                    id:1, 
+                    id: 1, 
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
-                    subTit:"19 Jan 2022", 
+                    subTit: "19 Jan 2022", 
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
-                    link: true,
                     path: '/',
                 },{   
-                    id:2, 
+                    id: 2, 
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
-                    subTit:"19 Jan 2022", 
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
-                    link: true,
                     path: '/',
                 },{   
-                    id:3, 
+                    id: 3, 
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months", 
-                    subTit:"19 Jan 2022", 
+                    subTit: "19 Jan 2022", 
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract", 
-                    link: true,
                     path: '/',
                 }
             ]
@@ -97,6 +105,7 @@ const store = new Vuex.Store({
         NavigationData: NavigationData,
         HeaderData: HeaderData,
         ArticleData: ArticleData,
+        BannerData : BannerData,
     },
     state: {
         path: {
@@ -116,6 +125,9 @@ const store = new Vuex.Store({
         },
         ArticleData: function ArticleData(state) {
             return state.ArticleData;
+        },
+        BannerData: function BannerData(state) {
+            return state.BannerData;
         },
     },
 });

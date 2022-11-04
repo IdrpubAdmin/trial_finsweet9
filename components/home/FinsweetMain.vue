@@ -1,9 +1,9 @@
  <template>
     <div>
-        Home연결확인
-        <about-main></about-main>
         <faq-content></faq-content>
         <article-type></article-type>
+        <button-banner></button-banner>
+        <social-banner></social-banner>
     </div>
 </template>
 
@@ -12,7 +12,9 @@ module.exports = {
     components: {
         AboutMain,
         FaqContent,
-        ArticleType
+        ArticleType,
+        ButtonBanner,
+        SocialBanner
     } 
 }
 </script>

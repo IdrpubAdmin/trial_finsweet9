@@ -1,0 +1,54 @@
+// 배너
+.banner {
+  width: calc((100% - 1.5rem) / 3 * 2);
+  text-align: center;
+  margin: 0 auto;
+  .tit-h2 {
+    line-height: $ln-h-n;
+  }
+  .txt-md {
+    width: 70%;
+    margin: 20px auto 0;
+    opacity: 0.7;
+  }
+  .btn-area {
+    margin-top: 4rem;
+    a {
+      display: inline-block;
+      padding: 1.6rem 6.6rem;
+      font-weight: 600;
+    }
+  }
+  .sns-list-wrap {
+    margin: 3.2rem auto 0;
+    width: 14.2rem;
+  }
+}
+
+.sns-banner {
+  width: 100%;
+  .tit-h2 {
+    margin-top: 0.4rem;
+  }
+  .txt-md {
+    width: 60%;
+  }
+}
+
+@include t-l {
+  .banner {
+    width: 90%;
+    .txt-md {
+      width: 70%;
+    }
+  }
+}
+
+@include m-l {
+  .banner {
+    width: 100%;
+    .txt-md {
+      width: 100%;
+    }
+  }
+}
