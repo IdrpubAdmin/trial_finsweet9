@@ -305,11 +305,59 @@ button { cursor: pointer; }
   .ft-gnb .gnb-list { flex-wrap: wrap; }
   .ft-gnb .gnb-list .gnb-item { flex-basis: 50%; } }
 
-.style-guide .header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
+.container { max-width: 1280px; width: 90%; margin: 0 auto; }
 
-.style-guide .header-wrap header { max-width: 1280px; width: 100%; margin: 0 auto; }
+.container .content { padding: 128px 0; }
 
-.style-guide .header-wrap header .tit-h4 { line-height: 44px; font-weight: 400; }
+.faq-content { display: flex; justify-content: space-between; color: #282938; }
+
+.faq-content .content-header { width: 26%; }
+
+.faq-content .content-header .lb-txt-1 { color: #2405f2; }
+
+.faq-content section { width: 65%; }
+
+.faq-content section .faq-list .faq-item { border-bottom: 1px solid rgba(194, 187, 255, 0.7); cursor: pointer; padding: 30px 0; }
+
+.faq-content section .faq-list .faq-item:first-child { padding-top: 0; }
+
+.faq-content section .faq-list .faq-item .item-tit { display: flex; justify-content: space-between; align-items: center; gap: 5rem; }
+
+.faq-content section .faq-list .faq-item .item-tit span { display: block; width: 30px; color: #2405f2; }
+
+.faq-content section .faq-list .faq-item .item-tit p { width: calc(100% - 156px); }
+
+.faq-content section .faq-list .faq-item .item-tit .faq-btn { width: 26px; height: 26px; position: relative; }
+
+.faq-content section .faq-list .faq-item .item-tit .faq-btn span { width: 16px; height: 2px; background: #282938; opacity: 0.7; transition: transform 0.3s; position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: auto; }
+
+.faq-content section .faq-list .faq-item .item-tit .faq-btn .st-ln-2 { transform: rotate(90deg); }
+
+.faq-content section .faq-list .faq-item .hide-txt { padding: 0 8rem; margin-top: 16px; display: none; }
+
+.faq-content section .faq-list .faq-item.slide-on .hide-txt { display: block; }
+
+.faq-content section .faq-list .faq-item.slide-on .faq-btn .st-ln-1 { transform: rotate(-45deg); }
+
+.faq-content section .faq-list .faq-item.slide-on .faq-btn .st-ln-2 { transform: rotate(45deg); }
+
+.layout-ty01 { display: flex; justify-content: space-between; flex-grow: 1; gap: 30px; }
+
+.layout-ty01 article { width: 100%; }
+
+.layout-ty01 article img { width: 100%; }
+
+.layout-ty02 article { display: flex; gap: 14rem; }
+
+.layout-ty02 article img { width: calc(50% - 140px); flex-basis: fill; }
+
+.layout-ty02 article .text { width: 50%; }
+
+.style-guide .style-header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
+
+.style-guide .style-header-wrap header { max-width: 1280px; width: 100%; margin: 0 auto; }
+
+.style-guide .style-header-wrap header .tit-h4 { line-height: 44px; font-weight: 400; }
 
 .style-guide .style-container { max-width: 1280px; width: 100%; margin: 0 auto; padding: 90px 0; }
 
@@ -323,26 +371,26 @@ button { cursor: pointer; }
 
 .style-guide .style-container .style-content ul li button { width: 222px; height: 64px; }
 
-.font-area { display: flex; gap: 90px; }
+.style-guide .style-container .style-content .font-area { display: flex; gap: 90px; }
 
-.font-area .text-list { width: 50%; }
+.style-guide .style-container .style-content .font-area .text-list { width: 50%; }
 
-.font-area .text-list .text-item { margin-top: 32px; }
+.style-guide .style-container .style-content .font-area .text-list .text-item { margin-top: 32px; }
 
-.font-area .text-list .text-item:first-child { margin-top: 0; }
+.style-guide .style-container .style-content .font-area .text-list .text-item:first-child { margin-top: 0; }
 
-.font-area .text-list .text-item:last-child { display: flex; gap: 38px; }
+.style-guide .style-container .style-content .font-area .text-list .text-item:last-child { display: flex; gap: 38px; }
 
-.font-area .text-list .text-item .tit-h6 { font-weight: 600; }
+.style-guide .style-container .style-content .font-area .text-list .text-item .tit-h6 { font-weight: 600; }
 
-.font-area .text-list .text-item p { margin-top: 8px; }
+.style-guide .style-container .style-content .font-area .text-list .text-item p { margin-top: 8px; }
 
-.color-list { display: flex; flex-grow: 1; }
+.style-guide .style-container .style-content .color-list { display: flex; flex-grow: 1; }
 
-.color-list .color-item { width: calc(100% / 7); height: 100px; }
+.style-guide .style-container .style-content .color-list .color-item { width: calc(100% / 7); height: 100px; }
 
-.color-list .color-item p { text-align: center; line-height: 100px; }
+.style-guide .style-container .style-content .color-list .color-item p { text-align: center; line-height: 100px; }
 
-.button-list { display: flex; gap: 50px; }
+.style-guide .style-container .style-content .button-list { display: flex; gap: 50px; }
 
 /*# sourceMappingURL=../css/styles.css.map */

@@ -4,17 +4,8 @@
   background-color: $tint_blue;
 
   #header {
-<<<<<<< HEAD
-    width: $pc-cont;
-    //@include p-m {
-    //  width: 100%;
-    //  padding: 0 6rem;
-    //  box-sizing: border-box;
-    //}
-=======
     max-width: $pc-cont;
     width: 90%;
->>>>>>> won
     height: 92px;
     margin: 0 auto;
     display: flex;

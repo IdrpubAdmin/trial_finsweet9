@@ -18,7 +18,6 @@ var NavigationData = {
     }
 };
 
-<<<<<<< HEAD
 let HeaderData = {
     namespaced: true,
     state: {
@@ -44,7 +43,6 @@ let HeaderData = {
     }
 };
 
-=======
 var ArticleData = {
     namespaced: true,
     state: {
@@ -72,22 +70,18 @@ var ArticleData = {
         },
     },
 };
->>>>>>> won
 
 const store = new Vuex.Store({
     namespaced: true,
     modules: {
         NavigationData: NavigationData,
-<<<<<<< HEAD
         HeaderData: HeaderData,
-=======
         ArticleData: ArticleData,
->>>>>>> won
     },
     state: {
         path: {
             img: '../assets/images/',
-            components: '../components/'
+            components: '../components/',
         },
     },
     mutations: {
@@ -97,14 +91,11 @@ const store = new Vuex.Store({
         NavigationData: function NavigationData(state) {
             return state.NavigationData;
         },
-<<<<<<< HEAD
         HeaderData: function HeaderData(state) {
             return state.HeaderData;
-        }
-=======
+        },
         ArticleData: function ArticleData(state) {
             return state.ArticleData;
         },
->>>>>>> won
     },
 });
