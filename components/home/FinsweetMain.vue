@@ -1,6 +1,7 @@
  <template>
     <div>
         <main-banner :banner-cont="bannerCont"></main-banner>
+        <benefits-list></benefits-list>
         <faq-content></faq-content>
         <article-type></article-type>
         <button-banner></button-banner>
@@ -21,7 +22,7 @@ module.exports = {
   },
   computed: {
     bannerCont() {
-      return this.$store.getters["BannerData"].bannerData01;
+      return this.$store.getters["BannerData01"].bannerData01;
     }
   }
 }
