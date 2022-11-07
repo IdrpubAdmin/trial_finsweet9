@@ -1,6 +1,6 @@
 <template>
   <div>
-    blog 확인
+    features 확인
   </div>
 </template>
 

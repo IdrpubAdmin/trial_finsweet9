@@ -479,7 +479,7 @@ button { cursor: pointer; }
 
 .bnf-ty .content-header .tit-h2 { width: 60%; line-height: 1.5; }
 
-.bnf-ty .ico-list-ty { display: flex; flex-wrap: wrap; row-gap: 2.4rem; column-gap: 3.2rem; }
+.bnf-ty .ico-list-ty { display: flex; flex-wrap: wrap; row-gap: 2.4rem; column-gap: 3%; }
 
 .bnf-ty .ico-list-ty .ico-item { flex-basis: 31.33%; display: flex; flex-direction: column; gap: 2.5rem; padding: 4.8rem; box-sizing: border-box; background-color: #ffffff; }
 
@@ -498,6 +498,44 @@ button { cursor: pointer; }
 .bnf-ty .ico-list-ty .ico-item .ico-box.ty6 { background-image: url("../images/ico_list_06.png"); }
 
 .bnf-ty .ico-list-ty .ico-item .txt-box { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.bnf-ty.ty2 { background-color: unset; }
+
+.bnf-ty.ty2 .ico-list-ty .ico-item { background-color: #F4F6FC; }
+
+.user-list-wrap { display: flex; align-items: center; justify-content: space-between; gap: 5%; }
+
+.user-list-wrap .txt-box { display: flex; flex-direction: column; }
+
+.user-list-wrap .user-logo-box .user-list { display: flex; flex-wrap: wrap; column-gap: 5rem; row-gap: 2rem; justify-content: space-evenly; }
+
+.user-list-wrap .user-logo-box .user-list img { width: fit-content; height: auto; }
+
+@media (max-width: 1023px) { .bnf-ty .content-header .tit-h2 { width: 70%; }
+  .bnf-ty .ico-list-ty { column-gap: 4%; }
+  .bnf-ty .ico-list-ty .ico-item { flex-basis: 48%; }
+  .user-list-wrap { flex-direction: column; gap: 3.5rem; }
+  .user-list-wrap .txt-box { align-items: center; } }
+
+@media (max-width: 640px) { .bnf-ty .content-header .tit-h2 { width: 100%; }
+  .bnf-ty .ico-list-ty { row-gap: 2rem; }
+  .bnf-ty .ico-list-ty .ico-item { flex-basis: 100%; padding: 4rem; } }
+
+.hww-content { display: flex; justify-content: space-between; }
+
+.hww-content .content-header { flex-basis: 26%; display: flex; flex-direction: column; gap: 1.5rem; }
+
+.hww-content .content-header .icon-link a { color: #2405f2; }
+
+.hww-content section { flex-basis: 60%; }
+
+.hww-content section .hww-list { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 4.8rem 4%; }
+
+.hww-content section .hww-list .hww-item { flex-basis: 48%; display: flex; flex-direction: column; gap: 0.8rem; }
+
+.hww-content section .hww-list .hww-item .ico-box { display: block; color: #ffffff; width: 5rem; height: 5rem; margin-bottom: 0.8rem; text-align: center; line-height: 5rem; background-image: url("../images/ico_bg_hww.png"); }
+
+.hww-content section .hww-list .hww-item .txt-r { width: 80%; }
 
 .style-guide .style-header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
 

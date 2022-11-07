@@ -5,6 +5,10 @@ const app = new Vue({
     components: {
         FinsweetMain,
         HeaderMain,
-        FooterMain
+        FooterMain,
+        AboutMain,
+        FeaturesMain,
+        PricingMain,
+        FaqContent,
     }
 })

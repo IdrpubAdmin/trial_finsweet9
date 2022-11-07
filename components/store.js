@@ -47,7 +47,7 @@ var BannerData = {
     state: {
         BannerData: {
             title: "Let's build something great together",
-            subTit:"19 Jan 2022",
+            subTit: "19 Jan 2022",
             txt: "Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.",
             path: '/',
         },
@@ -90,7 +90,71 @@ var ArticleData = {
             {num: "03", open: false, title: "How do we communicate ?"},
             {num: "04", open: false, title: "I have a bigger project. Can you handle it ?"},
             {num: "05", open: false, title: "What is your class naming convention ?"}
-        ]
+        ],
+        featData: [
+            {
+                id: 1,
+                icoTy: `ty1`,
+                tit: `Uses Client First`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+            {
+                id: 2,
+                icoTy: `ty2`,
+                tit: `Two Free Revision Round`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+            {
+                id: 3,
+                icoTy: `ty3`,
+                tit: `Template Customization`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+            {
+                id: 4,
+                icoTy: `ty4`,
+                tit: `24/7 Support`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+            {
+                id: 5,
+                icoTy: `ty5`,
+                tit: `Quick Delivery`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+            {
+                id: 6,
+                icoTy: `ty6`,
+                tit: `Hands-on approach`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+        ],
+        hwwData: [
+            {
+                id: 1,
+                num: `01`,
+                tit: `Strategy`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.`
+            },
+            {
+                id: 2,
+                num: `02`,
+                tit: `Wireframing`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.`
+            },
+            {
+                id: 3,
+                num: `03`,
+                tit: `Design`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.`
+            },
+            {
+                id: 4,
+                num: `04`,
+                tit: `Development`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.`
+            },
+        ],
     },
     mutations: {
         slideOpen(state, payload) {
@@ -102,10 +166,10 @@ var ArticleData = {
     },
 };
 
-let BannerData01 = {
+let MainBannerData = {
     namespaced: true,
     state: {
-        bannerData01: {
+        MainBannerData: {
             id: 1,
             tit: `Building stellar websites for early startups`,
             txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
@@ -152,7 +216,7 @@ const store = new Vuex.Store({
         HeaderData: HeaderData,
         ArticleData: ArticleData,
         BannerData: BannerData,
-        BannerData01: BannerData01,
+        MainBannerData: MainBannerData,
     },
     state: {
         path: {
@@ -174,8 +238,8 @@ const store = new Vuex.Store({
         BannerData: function BannerData(state) {
             return state.BannerData;
         },
-        BannerData01: function BannerData01(state) {
-            return state.BannerData01;
+        MainBannerData: function MainBannerData(state) {
+            return state.MainBannerData;
         }
     },
 });

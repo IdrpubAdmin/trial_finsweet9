@@ -1,4 +1,3 @@
-
 // content 감싸는 background color 효과 적용용 wrap
 .content-bg-wrap {
   width: 100%;
@@ -17,7 +16,7 @@
 
     .tit-h1,
     .txt-md,
-    .lb-txt-2{
+    .lb-txt-2 {
       color: $white;
     }
 
@@ -34,6 +33,7 @@
       display: flex;
       align-items: center;
       gap: 4rem;
+
       a {
         width: fit-content;
         display: block;
@@ -48,9 +48,11 @@
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+
     &.ty1 {
       background-image: url("../images/img_banner_01.png");
     }
+
     &.ty2 {
       background-image: url("../images/img_banner_02.png");
     }
@@ -126,7 +128,8 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 2.4rem;
-    column-gap: 3.2rem;
+    column-gap: 3%;
+
     .ico-item {
       flex-basis: 31.33%;
       @include flex-col(2.5rem);
@@ -141,29 +144,157 @@
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
+
         &.ty1 {
           background-image: url("../images/ico_list_01.png");
         }
+
         &.ty2 {
           background-image: url("../images/ico_list_02.png");
         }
+
         &.ty3 {
           background-image: url("../images/ico_list_03.png");
         }
+
         &.ty4 {
           background-image: url("../images/ico_list_04.png");
         }
+
         &.ty5 {
           background-image: url("../images/ico_list_05.png");
         }
+
         &.ty6 {
           background-image: url("../images/ico_list_06.png");
         }
       }
+
       .txt-box {
         @include flex-col(1.2rem);
       }
     }
 
+  }
+
+  &.ty2 {
+    background-color: unset;
+
+    .ico-list-ty {
+      .ico-item {
+        background-color: $grey;
+      }
+    }
+  }
+}
+
+.user-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  .txt-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-logo-box {
+    .user-list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 5rem;
+      row-gap: 2rem;
+      justify-content: space-evenly;
+      img {
+        width: fit-content;
+        height: auto;
+      }
+    }
+  }
+}
+
+@include t-l {
+  .bnf-ty {
+    .content-header {
+      .tit-h2 {
+        width: 70%;
+      }
+    }
+
+    .ico-list-ty {
+      column-gap: 4%;
+
+      .ico-item {
+        flex-basis: 48%;
+      }
+    }
+  }
+
+  .user-list-wrap {
+    flex-direction: column;
+    gap: 3.5rem;
+    .txt-box {
+      align-items: center;
+    }
+  }
+}
+
+@include m-l {
+  .bnf-ty {
+    .content-header {
+      .tit-h2 {
+        width: 100%;
+      }
+    }
+
+    .ico-list-ty {
+      row-gap: 2rem;
+      .ico-item {
+        flex-basis: 100%;
+        padding: 4rem;
+      }
+    }
+  }
+}
+
+// how we work
+.hww-content {
+  display: flex;
+  justify-content: space-between;
+  .content-header {
+    flex-basis: 26%;
+    @include flex-col(1.5rem);
+    .icon-link {
+      a {
+        color: $royal-blue;
+      }
+    }
+  }
+  section {
+    flex-basis: 60%;
+    .hww-list {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 4.8rem 4%;
+      .hww-item {
+        flex-basis: 48%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        .ico-box {
+          display: block;
+          color: $white;
+          width: 5rem;
+          height: 5rem;
+          margin-bottom: 0.8rem;
+          text-align: center;
+          line-height: 5rem;
+          background-image: url("../images/ico_bg_hww.png");
+        }
+        .txt-r {
+          width: 80%;
+        }
+      }
+    }
   }
 }

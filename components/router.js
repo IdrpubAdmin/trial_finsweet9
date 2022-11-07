@@ -8,6 +8,10 @@ const ButtonBanner = httpVueLoader('../components/common/ButtonBanner.vue');
 const SocialBanner = httpVueLoader('../components/common/SocialBanner.vue');
 const MainBanner = httpVueLoader('../components/common/MainBanner.vue');
 const BenefitsList = httpVueLoader('../components/common/BenefitsList.vue');
+const FeaturesMain = httpVueLoader('../components/features/FeaturesMain.vue');
+const PricingMain = httpVueLoader('../components/pricing/PricingMain.vue');
+const BlogMain = httpVueLoader('../components/blog/BlogMain.vue');
+const WorkContent = httpVueLoader('../components/common/WorkContent.vue');
 
 const router = new VueRouter({
 	routes: [
@@ -15,6 +19,31 @@ const router = new VueRouter({
 			name: 'home',
 			path: '/',
 			component: FinsweetMain,
+		},
+		{
+			name: 'about',
+			path: '/aboutus',
+			component: AboutMain,
+		},
+		{
+			name: 'features',
+			path: '/features',
+			component: FeaturesMain,
+		},
+		{
+			name: 'pricing',
+			path: '/pricing',
+			component: PricingMain,
+		},
+		{
+			name: 'faq',
+			path: '/faq',
+			component: FaqContent,
+		},
+		{
+			name: 'blog',
+			path: '/blog',
+			component: BlogMain,
 		},
 	]
 })

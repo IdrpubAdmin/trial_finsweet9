@@ -1,6 +1,6 @@
 <template>
   <!-- content | benefit List 컴포넌트 -->
-  <div class="contact-bg-wrap bnf-ty">
+  <div class="content-bg-wrap bnf-ty">
     <div class="content">
       <!-- content header | 제목 -->
       <div class="content-header">
@@ -9,20 +9,50 @@
       </div>
       <!-- //content header | 제목 -->
       <!-- content body | 본문 -->
+      <!--  Features List    -->
       <section class="ico-list-wrap">
         <ul class="ico-list-ty">
           <!--    ico list item      -->
-          <li class="ico-item">
-            <div class="ico-box ty1"></div>
+          <li class="ico-item" v-for="item in featData" :key="item.id">
+            <div class="ico-box" :class="item.icoTy"></div>
             <div class="txt-box">
-              <p class="tit-h6">Uses Client First</p>
-              <p class="txt-r">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-                gravida mi. Pellentesque et velit aliquam sed mi. </p>
+              <p class="tit-h6">{{ item.tit }}</p>
+              <p class="txt-r">{{ item.txt }} </p>
             </div>
           </li>
           <!--    //ico list item      -->
         </ul>
       </section>
+      <!--  //Features List    -->
+      <template v-if="false">
+        <!--   Finsweet Users List   -->
+        <section class="user-list-wrap">
+          <div class="txt-box">
+            <p class="tit-h1">100,000+</p>
+            <p class="txt-r">finsweet Users</p>
+          </div>
+          <div class="user-logo-box">
+            <ul class="user-list">
+              <li class="user-item">
+                <img src="../assets/images/img_logo_user1.png" alt="user1">
+              </li>
+              <li class="user-item">
+                <img src="../assets/images/img_logo_user2.png" alt="user1">
+              </li>
+              <li class="user-item">
+                <img src="../assets/images/img_logo_user3.png" alt="user1">
+              </li>
+              <li class="user-item">
+                <img src="../assets/images/img_logo_user4.png" alt="user1">
+              </li>
+              <li class="user-item">
+                <img src="../assets/images/img_logo_user5.png" alt="user1">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--   //Finsweet Users List   -->
+      </template>
       <!-- //content body | 본문 -->
     </div>
   </div>
@@ -31,6 +61,11 @@
 
 <script>
 module.exports = {
-  name: "BenefitsList"
+  name: "BenefitsList",
+  computed: {
+    featData() {
+      return this.$store.getters["ArticleData"].featData
+    }
+  }
 }
 </script>
