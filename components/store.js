@@ -94,37 +94,37 @@ var ArticleData = {
         featData: [
             {
                 id: 1,
-                icoTy: `ty1`,
+                icoTy: `ty01`,
                 tit: `Uses Client First`,
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
             },
             {
                 id: 2,
-                icoTy: `ty2`,
+                icoTy: `ty02`,
                 tit: `Two Free Revision Round`,
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
             },
             {
                 id: 3,
-                icoTy: `ty3`,
+                icoTy: `ty03`,
                 tit: `Template Customization`,
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
             },
             {
                 id: 4,
-                icoTy: `ty4`,
+                icoTy: `ty04`,
                 tit: `24/7 Support`,
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
             },
             {
                 id: 5,
-                icoTy: `ty5`,
+                icoTy: `ty05`,
                 tit: `Quick Delivery`,
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
             },
             {
                 id: 6,
-                icoTy: `ty6`,
+                icoTy: `ty06`,
                 tit: `Hands-on approach`,
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
             },
@@ -178,7 +178,7 @@ let MainBannerData = {
             btn2: true,
             btn2Txt: "View Pricing",
             btn2Path: '/pricing',
-            img: 'ty1',
+            img: 'ty01',
         },
         bannerData02: {
             id: 2,
@@ -189,7 +189,7 @@ let MainBannerData = {
             btn2: false,
             btn2Txt: "",
             btn2Path: '',
-            img: `ty2`
+            img: `ty02`
         }
     },
     mutations: {

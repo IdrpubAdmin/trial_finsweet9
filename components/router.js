@@ -12,6 +12,7 @@ const FeaturesMain = httpVueLoader('../components/features/FeaturesMain.vue');
 const PricingMain = httpVueLoader('../components/pricing/PricingMain.vue');
 const BlogMain = httpVueLoader('../components/blog/BlogMain.vue');
 const WorkContent = httpVueLoader('../components/common/WorkContent.vue');
+const MainProjContent = httpVueLoader('../components/common/MainProjContent.vue');
 
 const router = new VueRouter({
 	routes: [

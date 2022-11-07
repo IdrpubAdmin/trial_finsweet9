@@ -3,7 +3,7 @@
     <div class="content hww-content">
       <!-- content header | 제목 -->
       <div class="content-header">
-        <h3 class="tit-h3">How we work</h3>
+        <h3 class="tit-h2">How we work</h3>
         <p class="txt-r">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         <div class="icon-link b">
           <router-link to="/" class="lb-txt-2">Get in touch with us</router-link>

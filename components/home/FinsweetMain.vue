@@ -2,6 +2,7 @@
   <div>
     <main-banner :banner-cont="bannerCont"></main-banner>
     <work-content></work-content>
+    <main-proj-content></main-proj-content>
     <benefits-list></benefits-list>
     <faq-content></faq-content>
     <article-type></article-type>
@@ -21,6 +22,7 @@ module.exports = {
     BenefitsList,
     ButtonBanner,
     SocialBanner,
+    MainProjContent,
   },
   computed: {
     bannerCont() {

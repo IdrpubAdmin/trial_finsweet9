@@ -1,6 +1,6 @@
 <template>
   <!-- content | benefit List 컴포넌트 -->
-  <div class="content-bg-wrap bnf-ty">
+  <div class="content-bg-wrap bnf-comp">
     <div class="content">
       <!-- content header | 제목 -->
       <div class="content-header">
