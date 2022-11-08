@@ -643,7 +643,7 @@ button { cursor: pointer; }
 /* Send Inquiry CSS */
 .inq-content-wrap .inq-content { padding: 0; display: flex; }
 
-.inq-content-wrap .inq-content .content-header { display: flex; flex-direction: column; gap: 2.4rem; flex-basis: 50%; background-image: url("../images/img_bg_inq.png"); background-size: 210%; background-position: 40% center; background-repeat: no-repeat; padding: 9.6rem; box-sizing: border-box; }
+.inq-content-wrap .inq-content .content-header { display: flex; flex-direction: column; gap: 2.4rem; flex-basis: 50%; background-image: url("../images/img_bg_inq.png"); background-size: 200% 100%; background-position: 40% center; background-repeat: no-repeat; padding: 9.6rem; box-sizing: border-box; }
 
 .inq-content-wrap .inq-content .content-header .tit-h2, .inq-content-wrap .inq-content .content-header .txt-r { color: #ffffff; }
 
