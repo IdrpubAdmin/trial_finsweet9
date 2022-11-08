@@ -9,60 +9,24 @@
       </div>
     </div>
     <!--  Content header | 제목  -->
-    <!--   content body | 본문   -->
+    <!--  Content body | 본문   -->
     <section>
       <ul class="mpc-list">
-        <li class="list-item">
+        <li class="list-item" v-for="item in mpcData" :key="item.id">
           <div class="mpc-item">
             <div class="txt-box">
               <p class="tit-h6">
-                Workhub office Webflow Webflow Design
+                {{ item.tit }}
               </p>
-              <p class="txt-md">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+              <p class="txt-md mpc-desc">
+                {{ item.txt }}
               </p>
               <div class="icon-link y">
                 <router-link to="/" class="lb-txt-2">View project</router-link>
               </div>
             </div>
             <div class="img-box">
-              <img src="../assets/images/img_proj_001.png" alt="">
-            </div>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="mpc-item">
-            <div class="txt-box">
-              <p class="tit-h6">
-                Workhub office Webflow Webflow Design
-              </p>
-<!--              <p class="txt-md">-->
-<!--                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam-->
-<!--              </p>-->
-              <div class="icon-link y">
-                <router-link to="/" class="lb-txt-2">View project</router-link>
-              </div>
-            </div>
-            <div class="img-box">
-              <img src="../assets/images/img_proj_002.png" alt="">
-            </div>
-          </div>
-        </li>
-        <li class="list-item">
-          <div class="mpc-item">
-            <div class="txt-box">
-              <p class="tit-h6">
-                Unisaas Website Design
-              </p>
-<!--              <p class="txt-md">-->
-<!--                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam-->
-<!--              </p>-->
-              <div class="icon-link y">
-                <router-link to="/" class="lb-txt-2">View project</router-link>
-              </div>
-            </div>
-            <div class="img-box">
-              <img src="../assets/images/img_proj_003.png" alt="">
+              <img :src="path+item.img" :alt="item.tit">
             </div>
           </div>
         </li>
@@ -74,6 +38,14 @@
 
 <script>
 module.exports = {
-  name: "MainProjContent"
+  name: "MainProjContent",
+  computed: {
+    mpcData() {
+      return this.$store.getters["ArticleData"].mpcData.slice(0, 3);
+    },
+    path() {
+      return this.$store.state.path.img
+    }
+  }
 }
 </script>

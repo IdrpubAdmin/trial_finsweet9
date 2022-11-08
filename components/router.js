@@ -13,6 +13,9 @@ const PricingMain = httpVueLoader('../components/pricing/PricingMain.vue');
 const BlogMain = httpVueLoader('../components/blog/BlogMain.vue');
 const WorkContent = httpVueLoader('../components/common/WorkContent.vue');
 const MainProjContent = httpVueLoader('../components/common/MainProjContent.vue');
+const CliContent = httpVueLoader('../components/common/CliContent.vue');
+const InqContent = httpVueLoader('../components/common/InqContent.vue');
+const BlgContent = httpVueLoader('../components/common/BlgContent.vue');
 
 const router = new VueRouter({
 	routes: [

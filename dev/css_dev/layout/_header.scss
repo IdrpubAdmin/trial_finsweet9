@@ -2,6 +2,7 @@
   width: 100%;
   height: fit-content;
   background-color: $tint_blue;
+  z-index: $z-gnb;
 
   #header {
     max-width: $pc-cont;

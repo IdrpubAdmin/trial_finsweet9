@@ -155,6 +155,60 @@ var ArticleData = {
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.`
             },
         ],
+        cliData: [
+            {
+                id: 1,
+                img: `img_cli_001.png`,
+                name: `Jenny wilson`,
+                tit: `Vice President`,
+                txt: `"The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus."`
+            },
+            {
+                id: 2,
+                img: `img_cli_001.png`,
+                name: `Jacob wilson`,
+                tit: `Vice President`,
+                txt: `"The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus."`
+            },
+            {
+                id: 3,
+                img: `img_cli_001.png`,
+                name: `Mike wilson`,
+                tit: `Vice President`,
+                txt: `"The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus."`
+            },
+            {
+                id: 4,
+                img: `img_cli_001.png`,
+                name: `harry wilson`,
+                tit: `Vice President`,
+                txt: `"The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus."`
+            },
+        ],
+        mpcData: [
+            {
+                id: 1,
+                tit: `Workhub office Webflow Webflow Design`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam`,
+                img: `img_proj_001.png`,
+            },
+            {
+                id: 2,
+                tit: `Unisaas Website Design`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam`,
+                img: `img_proj_002.png`,
+            },
+            {
+                id: 3,
+                tit: `Church Website Design`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam`,
+                img: `img_proj_003.png`,
+            }
+        ]
     },
     mutations: {
         slideOpen(state, payload) {

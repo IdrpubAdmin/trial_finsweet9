@@ -4,10 +4,10 @@
     <work-content></work-content>
     <main-proj-content></main-proj-content>
     <benefits-list></benefits-list>
+    <cli-content></cli-content>
     <faq-content></faq-content>
-    <article-type></article-type>
-    <button-banner></button-banner>
-    <social-banner></social-banner>
+    <inq-content></inq-content>
+    <blg-content></blg-content>
   </div>
 </template>
 
@@ -23,11 +23,14 @@ module.exports = {
     ButtonBanner,
     SocialBanner,
     MainProjContent,
+    CliContent,
+    InqContent,
+    BlgContent
   },
   computed: {
     bannerCont() {
       return this.$store.getters["MainBannerData"].MainBannerData;
     }
-  }
+  },
 }
 </script>
