@@ -54,6 +54,39 @@ var BannerData = {
     },
 }
 
+var PostData = {
+    namespaced: true,
+    state: {
+        PostData: [
+            {
+                id: 1,
+                name: '안녕1',
+                src: "work001",
+            }, {
+                id: 2,
+                name: '안녕2',
+                src: "work002",
+            }, {
+                id: 3,
+                name: '안녕3',
+                src: "work003",
+            }, {
+                id: 4,
+                name: '안녕4',
+                src: "work004",
+            },{
+                id: 5,
+                name: '안녕5',
+                src: "work005",
+            },{
+                id: 6,
+                name: '안녕6',
+                src: "work006",
+            },
+        ]
+    }
+}
+
 var ArticleData = {
     namespaced: true,
     state: {
@@ -96,44 +129,50 @@ var ArticleData = {
                     id: 1,
                     title: "Template 1",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: '/',
+                    path: { name:'workPost', params: {id: 1}},
                     src: "work001",
                     linkTxt: "View Portfolio",
+                    key: "ui",
                 }, {
                     id: 2,
                     title: "Template 2",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: '/',
+                    path: { name:'workPost', params: {id: 2}},
                     src: "work002",
                     linkTxt: "View Portfolio",
+                    key: "figma",
                 }, {
                     id: 3,
                     title: "Template 3",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: '/',
+                    path: { name:'workPost', params: {id: 3}},
                     src: "work003",
                     linkTxt: "View Portfolio",
+                    key: "ui",
                 }, {
                     id: 4,
                     title: "Template 4",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: '/',
+                    path: { name:'workPost', params: {id: 4}},
                     src: "work004",
                     linkTxt: "View Portfolio",
+                    key: "ui",
                 }, {
                     id: 5,
                     title: "Template 5",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: '/',
+                    path: { name:'workPost', params: {id: 5}},
                     src: "work005",
                     linkTxt: "View Portfolio",
+                    key: "webflow",
                 }, {
                     id: 6,
                     title: "Template 6",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: '/',
+                    path: { name:'workPost', params: {id: 6}},
                     src: "work006",
                     linkTxt: "View Portfolio",
+                    key: "webflow",
                 },
             ]
         },
@@ -273,6 +312,45 @@ var ArticleData = {
     },
 };
 
+let CategoryData = {
+    namespaced: true,
+    state: {
+        workCategory: [
+            {
+                id: 1,
+                title: "All",
+                key: "all",
+                active: true,
+            },{
+                id: 2,
+                title: "UI Design",
+                key: "ui",
+                active: false,
+            },{
+                id: 3,
+                title: "Webflow Design",
+                key: "webflow",
+                active: false,
+            },{
+                id: 4,
+                title: "Figma Design",
+                key: "figma",
+                active: false,
+            }
+        ]
+    },
+    mutations: {
+        ctgyActive(state, payload) {
+            for(let i=0; i<state.workCategory.length; i++){
+                state.workCategory[i].active = false
+                if(state.workCategory[i].id === payload.id){
+                    state.workCategory[i].active = true
+                } 
+            }
+        }
+    }
+}
+
 let MainBannerData = {
     namespaced: true,
     state: {
@@ -324,6 +402,8 @@ const store = new Vuex.Store({
         ArticleData: ArticleData,
         BannerData: BannerData,
         MainBannerData: MainBannerData,
+        CategoryData: CategoryData,
+        PostData: PostData,
     },
     state: {
         path: {
@@ -347,6 +427,12 @@ const store = new Vuex.Store({
         },
         MainBannerData: function MainBannerData(state) {
             return state.MainBannerData;
-        }
+        },
+        CategoryData: function CategoryData(state) {
+            return state.CategoryData;
+        },
+        PostData: function PostData(state) {
+            return state.PostData;
+        },
     },
 });

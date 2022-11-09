@@ -1,6 +1,6 @@
 <template>
   <div class="content-bg-wrap grey">
-      <div class="content">
+      <div class="content social-banner-content">
           <section class="banner sns-banner">
               <p class="txt-md">What we created</p>
               <h3 class="tit-h2">Our Work Portfolio</h3>

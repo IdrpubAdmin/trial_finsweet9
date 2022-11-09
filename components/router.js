@@ -17,6 +17,7 @@ const MainProjContent = httpVueLoader('../components/common/MainProjContent.vue'
 const CliContent = httpVueLoader('../components/common/CliContent.vue');
 const InqContent = httpVueLoader('../components/common/InqContent.vue');
 const BlgContent = httpVueLoader('../components/common/BlgContent.vue');
+const WorkPost = httpVueLoader('../components/work/WorkPost.vue');
 
 const router = new VueRouter({
 	routes: [
@@ -54,6 +55,12 @@ const router = new VueRouter({
 			name: 'work',
 			path: '/work',
 			component: WorkMain,
+		},
+		{
+			name: 'workPost',
+			path: '/work/:id',
+			component: WorkPost,
+			props: route => ({id:Number(route.params.id)}),
 		},
 	]
 })
