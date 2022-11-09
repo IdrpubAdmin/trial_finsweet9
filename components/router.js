@@ -8,7 +8,7 @@ const ArticleType = httpVueLoader('../components/common/ArticleType.vue');
 const ButtonBanner = httpVueLoader('../components/common/ButtonBanner.vue');
 const SocialBanner = httpVueLoader('../components/common/SocialBanner.vue');
 const MainBanner = httpVueLoader('../components/common/MainBanner.vue');
-const BenefitsList = httpVueLoader('../components/common/BenefitsList.vue');
+const BenefitsContent = httpVueLoader('../components/common/BenefitsContent.vue');
 const FeaturesMain = httpVueLoader('../components/features/FeaturesMain.vue');
 const PricingMain = httpVueLoader('../components/pricing/PricingMain.vue');
 const BlogMain = httpVueLoader('../components/blog/BlogMain.vue');
@@ -17,6 +17,13 @@ const MainProjContent = httpVueLoader('../components/common/MainProjContent.vue'
 const CliContent = httpVueLoader('../components/common/CliContent.vue');
 const InqContent = httpVueLoader('../components/common/InqContent.vue');
 const BlgContent = httpVueLoader('../components/common/BlgContent.vue');
+const ArticleType02 = httpVueLoader('../components/common/ArticleType02.vue');
+const AboutUsContent = httpVueLoader('../components/common/AboutUsContent.vue');
+const WhoWeContent = httpVueLoader('../components/common/WhoWeContent.vue');
+const FollowContent = httpVueLoader('../components/common/FollowContent.vue');
+const MissionContent = httpVueLoader('../components/common/MissionContent.vue');
+const FeaturesList = httpVueLoader('../components/common/FeaturesList.vue');
+const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.vue');
 
 const router = new VueRouter({
 	routes: [

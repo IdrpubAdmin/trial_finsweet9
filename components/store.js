@@ -137,6 +137,41 @@ var ArticleData = {
                 },
             ]
         },
+        aboutUsArticle: {
+            type: "ty02",
+            link: false,
+            data: [
+                {
+                    id: 1,
+                    title: "Our designs solve problems",
+                    txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+                    subTit: "About us",
+                    path: '/',
+                    src: "img_about_001",
+                    linkTxt: "View Portfolio",
+                },
+            ]
+        },
+        missionArticle: {
+            type: "ty02",
+            link: false,
+            data: [
+                {
+                    id: 1,
+                    title: "Inspire, Innovate, Share",
+                    txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    subTit: "Our Mission",
+                    src: "img_about_002",
+                },
+                {
+                    id: 2,
+                    title: "Laser focus",
+                    txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    subTit: "Our Mission",
+                    src: "img_about_003",
+                },
+            ]
+        },
         faqData: [
             {num: "01", open: true, title: "How much time does it take ?"},
             {num: "02", open: false, title: "What is your class naming convention ?"},
@@ -181,6 +216,26 @@ var ArticleData = {
                 tit: `Hands-on approach`,
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
             },
+        ],
+        bnfData: [
+            {
+                id: 1,
+                icoTy: `ty01`,
+                tit: `Uses Client First`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+            {
+                id: 2,
+                icoTy: `ty02`,
+                tit: `Two Free Revision Round`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            },
+            {
+                id: 3,
+                icoTy: `ty03`,
+                tit: `Template Customization`,
+                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+            }
         ],
         hwwData: [
             {
