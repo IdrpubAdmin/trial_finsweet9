@@ -21,12 +21,12 @@
     }
   }
   section {
-    flex-basis: 65%;
+    flex-basis: 66%;
     .faq-list {
       .faq-item {
         border-bottom: 1px solid rgba(194, 187, 255, 0.7);
         cursor: pointer;
-        padding: 3rem 0;
+        padding: 3rem 0 3rem 2.5rem;
         &:first-child {
           padding-top: 0;
         }

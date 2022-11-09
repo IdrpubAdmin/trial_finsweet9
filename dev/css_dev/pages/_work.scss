@@ -1,0 +1,18 @@
+.work-contents{
+    .layout-ty01{
+        margin-top: 4.8rem;
+        row-gap: 6rem;
+        article{
+            width: calc((100% - 3rem) / 2);
+        }
+    }
+    .category-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+        .ctgy{
+            
+        }
+    }
+}

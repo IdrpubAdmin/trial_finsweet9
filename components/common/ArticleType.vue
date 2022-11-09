@@ -1,7 +1,7 @@
 <template>
     <section :class="'layout-'+articleData.type">
         <article v-for="list in articleData.data" :key="list.id">
-            <img src="../assets/images/blog01.png" alt="img">
+            <img :src="'../assets/images/' + list.src + '.png'" alt="article img">
             <div class="art-tet">
               <template v-if="list.subTit">
                 <p class="txt-md">{{list.subTit}}</p>
@@ -11,7 +11,7 @@
                 <p class="txt-r">{{list.txt}}</p>
               <template v-if="articleData.link === true">
                 <div class="txt-md icon-link">
-                  <router-link :to="list.path">Read More</router-link>
+                  <router-link :to="list.path">{{list.linkTxt}}</router-link>
                 </div>
               </template>
               <template v-else></template>
@@ -22,10 +22,8 @@
 
 <script>
 module.exports = {
-  computed: {
-    articleData() {
-      return this.$store.getters["ArticleData"].articleData;
-    },
-  },
+  props : {
+    articleData : Object
+  }
 }
 </script>

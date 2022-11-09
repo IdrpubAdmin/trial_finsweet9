@@ -1,4 +1,5 @@
 const FinsweetMain = httpVueLoader('../components/home/FinsweetMain.vue');
+const WorkMain = httpVueLoader('../components/work/WorkMain.vue');
 const HeaderMain = httpVueLoader('../components/common/HeaderMain.vue');
 const FooterMain = httpVueLoader('../components/common/FooterMain.vue');
 const AboutMain = httpVueLoader('../components/about/AboutMain.vue');
@@ -48,6 +49,11 @@ const router = new VueRouter({
 			name: 'blog',
 			path: '/blog',
 			component: BlogMain,
+		},
+		{
+			name: 'work',
+			path: '/work',
+			component: WorkMain,
 		},
 	]
 })

@@ -57,31 +57,84 @@ var BannerData = {
 var ArticleData = {
     namespaced: true,
     state: {
-        articleData: {
+        homeArticle: {
             type: "ty01",
+            link: true,
             data: [
                 {
                     id: 1,
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    link: true,
                     path: '/',
+                    src: "blog001",
+                    linkTxt: "Read More",
                 }, {
                     id: 2,
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    link: true,
                     path: '/',
+                    src: "blog002",
+                    linkTxt: "Read More",
                 }, {
                     id: 3,
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    link: true,
                     path: '/',
+                    src: "blog003",
+                    linkTxt: "Read More",
                 }
+            ]
+        },
+        workArticle: {
+            type: "ty01",
+            link: true,
+            data: [
+                {
+                    id: 1,
+                    title: "Template 1",
+                    txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+                    path: '/',
+                    src: "work001",
+                    linkTxt: "View Portfolio",
+                }, {
+                    id: 2,
+                    title: "Template 2",
+                    txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+                    path: '/',
+                    src: "work002",
+                    linkTxt: "View Portfolio",
+                }, {
+                    id: 3,
+                    title: "Template 3",
+                    txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+                    path: '/',
+                    src: "work003",
+                    linkTxt: "View Portfolio",
+                }, {
+                    id: 4,
+                    title: "Template 4",
+                    txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+                    path: '/',
+                    src: "work004",
+                    linkTxt: "View Portfolio",
+                }, {
+                    id: 5,
+                    title: "Template 5",
+                    txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+                    path: '/',
+                    src: "work005",
+                    linkTxt: "View Portfolio",
+                }, {
+                    id: 6,
+                    title: "Template 6",
+                    txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+                    path: '/',
+                    src: "work006",
+                    linkTxt: "View Portfolio",
+                },
             ]
         },
         faqData: [
