@@ -30,7 +30,7 @@ module.exports = {
   computed: {
     bannerCont() {
       return this.$store.getters["MainBannerData"].MainBannerData;
-    }
+    },
   },
 }
 </script>

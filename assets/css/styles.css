@@ -228,9 +228,9 @@ button { cursor: pointer; }
 
 .faq-content .content-header .lb-txt-1 { color: #2405f2; margin-top: 8px; }
 
-.faq-content section { flex-basis: 65%; }
+.faq-content section { flex-basis: 66%; }
 
-.faq-content section .faq-list .faq-item { border-bottom: 1px solid rgba(194, 187, 255, 0.7); cursor: pointer; padding: 3rem 0; }
+.faq-content section .faq-list .faq-item { border-bottom: 1px solid rgba(194, 187, 255, 0.7); cursor: pointer; padding: 3rem 0 3rem 2.5rem; }
 
 .faq-content section .faq-list .faq-item:first-child { padding-top: 0; }
 
@@ -674,6 +674,12 @@ button { cursor: pointer; }
 .blog-content { display: flex; flex-direction: column; gap: 6.4rem; }
 
 /* //main blog CSS */
+.work-contents .layout-ty01 { margin-top: 4.8rem; row-gap: 6rem; }
+
+.work-contents .layout-ty01 article { width: calc((100% - 3rem) / 2); }
+
+.work-contents .category-nav { display: flex; justify-content: space-between; width: 50%; margin: 0 auto; }
+
 .style-guide .style-header-wrap { border-bottom: 1px solid rgba(35, 37, 54, 0.12); padding: 40px 0; }
 
 .style-guide .style-header-wrap header { max-width: 1280px; width: 100%; margin: 0 auto; }

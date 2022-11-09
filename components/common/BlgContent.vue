@@ -6,7 +6,7 @@
     </div>
     <!--  Content header | 제목  -->
     <!--  Content body | 본문   -->
-    <article-type></article-type>
+    <article-type :article-data="articleData"></article-type>
     <!--   //content body | 본문   -->
   </div>
 </template>
@@ -16,6 +16,11 @@ module.exports = {
   name: "blogContent",
   components: {
     ArticleType
+  },
+  computed : {
+    articleData() {
+      return this.$store.getters["ArticleData"].homeArticle;
+    },
   }
 }
 </script>
