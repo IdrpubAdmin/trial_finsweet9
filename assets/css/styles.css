@@ -480,9 +480,9 @@ button { cursor: pointer; }
 
 .bnf-comp .content-header .tit-h2 { width: 60%; line-height: 1.5; }
 
-.bnf-comp .ico-list-ty { display: flex; flex-wrap: wrap; row-gap: 2.4rem; column-gap: 3%; }
+.bnf-comp .ico-list-ty { display: flex; flex-wrap: wrap; row-gap: 2.4rem; column-gap: 3rem; }
 
-.bnf-comp .ico-list-ty .ico-item { flex-basis: 31.33%; display: flex; flex-direction: column; gap: 2.5rem; padding: 4.8rem; box-sizing: border-box; background-color: #ffffff; }
+.bnf-comp .ico-list-ty .ico-item { flex-basis: calc( (100% - 6rem) / 3); display: flex; flex-direction: column; gap: 2.5rem; padding: 4.8rem; box-sizing: border-box; background-color: #ffffff; }
 
 .bnf-comp .ico-list-ty .ico-item .ico-box { width: 3.5rem; height: 3.5rem; background-size: contain; background-position: center center; background-repeat: no-repeat; }
 
@@ -513,13 +513,12 @@ button { cursor: pointer; }
 .user-list-wrap .user-logo-box .user-list img { width: fit-content; height: auto; }
 
 @media (max-width: 1023px) { .bnf-comp .content-header .tit-h2 { width: 70%; }
-  .bnf-comp .ico-list-ty { column-gap: 4%; }
-  .bnf-comp .ico-list-ty .ico-item { flex-basis: 48%; }
+  .bnf-comp .ico-list-ty { gap: 3rem; }
+  .bnf-comp .ico-list-ty .ico-item { flex-basis: calc( (100% - 3rem) / 2); }
   .user-list-wrap { flex-direction: column; gap: 3.5rem; }
   .user-list-wrap .txt-box { align-items: center; } }
 
 @media (max-width: 640px) { .bnf-comp .content-header .tit-h2 { width: 100%; }
-  .bnf-comp .ico-list-ty { row-gap: 2rem; }
   .bnf-comp .ico-list-ty .ico-item { flex-basis: 100%; padding: 4rem; } }
 
 /* //benefit List CSS */
@@ -585,7 +584,7 @@ button { cursor: pointer; }
 .mpc-content section .mpc-item:hover .txt-box { left: 0; }
 
 @media (max-width: 1023px) { .mpc-content .content-header { text-align: center; flex-direction: column; gap: 1.5rem; }
-  .mpc-content section .mpc-list { grid-template-columns: 1fr 1fr; gap: 3.5rem; }
+  .mpc-content section .mpc-list { grid-template-columns: 1fr 1fr; }
   .mpc-content section .mpc-list .list-item:first-child { grid-column: 1 / span 2; grid-row: unset; }
   .mpc-content section .mpc-list .list-item:first-child .mpc-item .txt-box { width: 100%; }
   .mpc-content section .mpc-item .txt-box { left: 0; padding: 3rem; }
@@ -668,6 +667,19 @@ button { cursor: pointer; }
 .inq-content-wrap .inq-content .inq-section .input-box .icon-link { align-self: center; }
 
 .inq-content-wrap .inq-content .inq-section .input-box .icon-link .lb-txt-2 { color: #ffffff; }
+
+@media (max-width: 1023px) { .inq-content-wrap .inq-content { flex-direction: column; width: 100%; }
+  .inq-content-wrap .inq-content .content-header { background-size: cover; background-position: center top; align-items: center; text-align: center; }
+  .inq-content-wrap .inq-content .content-header .tit-h2, .inq-content-wrap .inq-content .content-header .txt-r { color: #ffffff; }
+  .inq-content-wrap .inq-content .content-header .tit-h2 { width: 90%; }
+  .inq-content-wrap .inq-content .inq-section { padding: 9.6rem 0; }
+  .inq-content-wrap .inq-content .inq-section .txt-box { width: 90%; margin: 0 auto; align-items: center; text-align: center; }
+  .inq-content-wrap .inq-content .inq-section .input-box { width: 90%; margin: 0 auto; }
+  .inq-content-wrap .inq-content .inq-section .input-box form .btn-wrap { margin: 0 auto; }
+  .inq-content-wrap .inq-content .inq-section .input-box form .btn-wrap .btn-ty01 { width: fit-content; padding: 1.8rem 4.8rem; } }
+
+@media (max-width: 640px) { .inq-content-wrap .inq-content .content-header { background-position: 40% top; padding: 9.6rem 0; width: 100%; }
+  .inq-content-wrap .inq-content .content-header .tit-h2, .inq-content-wrap .inq-content .content-header .txt-r { width: 90%; } }
 
 /* //Send Inquiry CSS */
 /* main blog CSS */

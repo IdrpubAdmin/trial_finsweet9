@@ -127,10 +127,10 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 2.4rem;
-    column-gap: 3%;
+    column-gap: 3rem;
 
     .ico-item {
-      flex-basis: 31.33%;
+      flex-basis:  calc( (100% - 6rem) / 3 );
       @include flex-col(2.5rem);
       padding: 4.8rem;
       box-sizing: border-box;
@@ -223,10 +223,9 @@
     }
 
     .ico-list-ty {
-      column-gap: 4%;
-
+      gap: 3rem;
       .ico-item {
-        flex-basis: 48%;
+        flex-basis:  calc( (100% - 3rem) / 2 );
       }
     }
   }
@@ -250,8 +249,6 @@
     }
 
     .ico-list-ty {
-      row-gap: 2rem;
-
       .ico-item {
         flex-basis: 100%;
         padding: 4rem;
@@ -476,7 +473,6 @@
       .mpc-list {
         //display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 3.5rem;
 
         .list-item {
           &:first-child {
@@ -756,6 +752,73 @@
     }
   }
 }
+
+@include t-l {
+
+  .inq-content-wrap {
+    .inq-content {
+      flex-direction: column;
+      width: 100%;
+      .content-header {
+        background-size: cover;
+        background-position: center top;
+        align-items: center;
+        text-align: center;
+        .tit-h2,
+        .txt-r {
+          color: $white;
+        }
+        .tit-h2 {
+          width: 90%;
+        }
+      }
+
+      .inq-section {
+        padding: 9.6rem 0;
+        .txt-box {
+          width: 90%;
+          margin: 0 auto;
+          align-items: center;
+          text-align: center;
+        }
+
+        .input-box {
+          width: 90%;
+          margin: 0 auto;
+          form {
+            .btn-wrap {
+              margin: 0 auto;
+              .btn-ty01 {
+                width: fit-content;
+                padding: 1.8rem 4.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@include m-l {
+
+  .inq-content-wrap {
+    .inq-content {
+      .content-header {
+        background-position: 40% top;
+        padding: 9.6rem 0;
+        width: 100%;
+        .tit-h2,
+        .txt-r {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+}
+
 
 
 /* //Send Inquiry CSS */
