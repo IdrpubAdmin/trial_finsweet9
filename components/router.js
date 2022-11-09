@@ -17,6 +17,13 @@ const MainProjContent = httpVueLoader('../components/common/MainProjContent.vue'
 const CliContent = httpVueLoader('../components/common/CliContent.vue');
 const InqContent = httpVueLoader('../components/common/InqContent.vue');
 const BlgContent = httpVueLoader('../components/common/BlgContent.vue');
+const ArticleType02 = httpVueLoader('../components/common/ArticleType02.vue');
+const AboutUsContent = httpVueLoader('../components/common/AboutUsContent.vue');
+const WhoWeContent = httpVueLoader('../components/common/WhoWeContent.vue');
+const FollowContent = httpVueLoader('../components/common/FollowContent.vue');
+const MissionContent = httpVueLoader('../components/common/MissionContent.vue');
+const FeaturesList = httpVueLoader('../components/common/FeaturesList.vue');
+const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.vue');
 const WorkPost = httpVueLoader('../components/work/WorkPost.vue');
 
 const router = new VueRouter({

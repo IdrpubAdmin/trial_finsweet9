@@ -439,6 +439,108 @@ button { cursor: pointer; }
 @media (max-width: 640px) { .banner { width: 100%; }
   .banner .txt-md { width: 100%; } }
 
+/* about us content CSS */
+.about-us-content .layout-ty02 article { gap: 3rem; justify-content: space-between; }
+
+.about-us-content .layout-ty02 article img { width: 40%; }
+
+.about-us-content .layout-ty02 article .art-tet { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.about-us-content .layout-ty02 article .art-tet h6 { line-height: 1.3; }
+
+.about-us-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 5.4rem; font-weight: 600; }
+
+.about-us-content .layout-ty02 article .art-tet .txt-r { width: 80%; }
+
+@media (max-width: 1023px) { .about-us-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 4.8rem; } }
+
+@media (max-width: 767px) { .about-us-content .layout-ty02 article { flex-direction: column-reverse; }
+  .about-us-content .layout-ty02 article img { width: 100%; }
+  .about-us-content .layout-ty02 article .art-tet { width: 100%; align-items: center; text-align: center; } }
+
+@media (max-width: 640px) { .about-us-content .layout-ty02 article { display: flex; }
+  .about-us-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.8rem; }
+  .about-us-content .layout-ty02 article .art-tet .txt-r { width: 100%; } }
+
+/* //about us content CSS */
+/* who we are Content CSS */
+.container .who-we-content { padding: 0; }
+
+.who-we-content section { display: flex; flex-direction: column; gap: 0; }
+
+.who-we-content section .txt-box { display: flex; flex-direction: column; gap: 0; background-color: #F4F6FC; padding: 8rem; }
+
+.who-we-content section .txt-box .txt-inner-box { display: flex; gap: 3rem; justify-content: space-between; }
+
+.who-we-content section .txt-box .txt-inner-box > div { flex-basis: 45%; display: flex; flex-direction: column; gap: 1.6rem; justify-content: space-between; }
+
+.who-we-content section .img-box { position: relative; width: 100%; height: 340px; box-sizing: border-box; overflow: hidden; }
+
+.who-we-content section .img-box img { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: auto; }
+
+@media (max-width: 1023px) { .who-we-content section .txt-box { padding: 4rem; }
+  .who-we-content section .img-box { height: fit-content; padding-top: 33%; } }
+
+@media (max-width: 767px) { .who-we-content section .txt-box { padding: 4rem 3rem; }
+  .who-we-content section .txt-box .txt-inner-box { flex-direction: column; }
+  .who-we-content section .img-box { padding-top: 44%; } }
+
+/* //who we are Content CSS */
+/* follow Content CSS */
+.follow-content { display: flex; flex-direction: column; gap: 4.8rem; align-items: center; }
+
+.follow-content .content-header { text-align: center; }
+
+.follow-content section .follow-list { display: flex; gap: 3rem; }
+
+.follow-content section .follow-item { display: flex; flex-direction: column; gap: 3rem; }
+
+.follow-content section .follow-item .dia-box { display: flex; gap: 2.4rem; align-items: center; }
+
+.follow-content section .follow-item .dia-box .dia-dot { width: 2.4rem; height: 2.4rem; border-radius: 2.4rem; background-color: #2405f2; }
+
+.follow-content section .follow-item .dia-box .dia-line { width: calc(100% - 7.8rem); height: 2px; border-bottom: 2px dotted #2405f2; box-sizing: border-box; opacity: 0.4; }
+
+.follow-content section .follow-item .txt-box { display: flex; flex-direction: column; gap: 1rem; }
+
+@media (max-width: 1023px) { .follow-content section .follow-item .dia-box .dia-line { width: calc(100% - 4.8rem); } }
+
+@media (max-width: 767px) { .follow-content section .follow-list { flex-wrap: wrap; }
+  .follow-content section .follow-list .list-item { flex-basis: calc(50% - (3rem / 2)); } }
+
+@media (max-width: 640px) { .follow-content section .follow-list { flex-wrap: wrap; }
+  .follow-content section .follow-list .list-item { flex-basis: 100%; }
+  .follow-content section .follow-item { flex-direction: row; justify-content: center; }
+  .follow-content section .follow-item .dia-box { flex-direction: column; gap: 1rem; }
+  .follow-content section .follow-item .dia-box .dia-line { width: 2px; height: calc(100% - 3.4rem); border-bottom: unset; border-left: 2px dotted #2405f2; } }
+
+/* //follow Content CSS */
+/* Our mission Our Vision CSS */
+.mission-content .layout-ty02 { display: flex; flex-direction: column; gap: 9.6rem; }
+
+.mission-content .layout-ty02 article { gap: 3rem; justify-content: space-between; }
+
+.mission-content .layout-ty02 article img { width: 40%; }
+
+.mission-content .layout-ty02 article .art-tet { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.mission-content .layout-ty02 article .art-tet h6 { line-height: 1.3; }
+
+.mission-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.8rem; font-weight: 600; }
+
+.mission-content .layout-ty02 article .art-tet .txt-r { width: 80%; }
+
+@media (max-width: 1023px) { .mission-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.6rem; font-weight: 500; } }
+
+@media (max-width: 767px) { .mission-content .layout-ty02 article { flex-direction: column-reverse; }
+  .mission-content .layout-ty02 article img { width: 100%; }
+  .mission-content .layout-ty02 article .art-tet { width: 100%; align-items: center; text-align: center; } }
+
+@media (max-width: 640px) { .mission-content .layout-ty02 article { display: flex; }
+  .mission-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.2rem; }
+  .mission-content .layout-ty02 article .art-tet .txt-r { width: 100%; } }
+
+/* //Our mission Our Vision CSS */
 .content-bg-wrap { width: 100%; height: fit-content; }
 
 .main-banner { display: flex; gap: 5%; }
@@ -500,9 +602,9 @@ button { cursor: pointer; }
 
 .bnf-comp .ico-list-ty .ico-item .txt-box { display: flex; flex-direction: column; gap: 1.2rem; }
 
-.bnf-comp.ty2 { background-color: unset; }
+.bnf-comp.ty02 { background-color: unset; }
 
-.bnf-comp.ty2 .ico-list-ty .ico-item { background-color: #F4F6FC; }
+.bnf-comp.ty02 .ico-list-ty .ico-item { background-color: #F4F6FC; }
 
 .user-list-wrap { display: flex; align-items: center; justify-content: space-between; gap: 5%; }
 

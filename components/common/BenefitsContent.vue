@@ -10,20 +10,9 @@
       <!-- //content header | 제목 -->
       <!-- content body | 본문 -->
       <!--  Features List    -->
-      <section class="ico-list-wrap">
-        <ul class="ico-list-ty">
-          <!--    ico list item      -->
-          <li class="ico-item" v-for="item in featData" :key="item.id">
-            <div class="ico-box" :class="item.icoTy"></div>
-            <div class="txt-box">
-              <p class="tit-h6">{{ item.tit }}</p>
-              <p class="txt-r">{{ item.txt }} </p>
-            </div>
-          </li>
-          <!--    //ico list item      -->
-        </ul>
-      </section>
+      <features-list :article-data="featData"></features-list>
       <!--  //Features List    -->
+
       <template v-if="false">
         <!--   Finsweet Users List   -->
         <section class="user-list-wrap">
@@ -61,11 +50,14 @@
 
 <script>
 module.exports = {
-  name: "BenefitsList",
+  name: "BenefitsContent",
   computed: {
     featData() {
       return this.$store.getters["ArticleData"].featData
     }
+  },
+  components: {
+    FeaturesList
   }
 }
 </script>

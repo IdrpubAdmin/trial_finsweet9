@@ -1,0 +1,26 @@
+<template>
+  <!--  Features List    -->
+  <section class="ico-list-wrap">
+    <ul class="ico-list-ty">
+      <!--    ico list item      -->
+      <li class="ico-item" v-for="item in articleData" :key="item.id">
+        <div class="ico-box" :class="item.icoTy"></div>
+        <div class="txt-box">
+          <p class="tit-h6">{{ item.tit }}</p>
+          <p class="txt-r">{{ item.txt }} </p>
+        </div>
+      </li>
+      <!--    //ico list item      -->
+    </ul>
+  </section>
+  <!--  //Features List    -->
+</template>
+
+<script>
+module.exports = {
+  name: "FeaturesList",
+  props: {
+    articleData: Array,
+  }
+}
+</script>
