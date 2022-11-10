@@ -5,6 +5,7 @@
     <follow-content></follow-content>
     <mission-content></mission-content>
     <benefits-content-02></benefits-content-02>
+    <team-content></team-content>
   </div>
 </template> 
 
@@ -16,6 +17,7 @@ module.exports = {
     FollowContent,
     MissionContent,
     BenefitsContent02,
+    TeamContent,
   },
   computed: {
 

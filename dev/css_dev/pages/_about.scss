@@ -277,7 +277,7 @@
           }
         }
         .txt-r {
-          width: 80%;
+          width: 90%;
         }
       }
     }
@@ -341,3 +341,248 @@
   }
 }
 /* //Our mission Our Vision CSS */
+
+
+/* meat our team content CSS */
+.team-content {
+  @include flex-col(4.8rem);
+  align-items: center;
+  .content-header {
+    text-align: center;
+  }
+  section {
+    width: 100%;
+    .team-list {
+      display: flex;
+      gap: 3rem;
+      justify-content: space-between;
+      .list-item {
+        flex-basis: 25%;
+      }
+    }
+    .team-item {
+      @include flex-col(3rem);
+      align-items: center;
+      text-align: center;
+      background-color: $white;
+      padding: 4.8rem 3rem;
+      .img-box {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 168px;
+        height: 100%;
+        max-height: 168px;
+        border-radius: 168px;
+
+        .img-layer {
+          position: absolute;
+          height: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: height 0.3s;
+          background: linear-gradient(360deg, $royal-blue 18%, rgba(255,255,255,0) 79%);
+          .sns-list-wrap {
+            position: absolute;
+            bottom: -3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: bottom 0.3s;
+            .sns-list {
+              gap: 1rem;
+              .sns-item{
+                a,
+                button {
+                  &::after {
+                    background-size: 13px 13px;
+                    background-repeat: no-repeat;
+                  }
+                }
+              }
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &:hover {
+        .img-box {
+          .img-layer {
+            height: 100%;
+            .sns-list-wrap {
+              bottom: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include t-l {
+  .team-content {
+    //@include flex-col(4.8rem);
+    //align-items: center;
+    .content-header {
+      //text-align: center;
+    }
+    section {
+      //width: 100%;
+      .team-list {
+        //display: flex;
+        //gap: 3rem;
+        //justify-content: space-between;
+        flex-wrap: wrap;
+        .list-item {
+          flex-basis: calc((100% - 3rem) / 2);
+        }
+      }
+      .team-item {
+        //@include flex-col(3rem);
+        //align-items: center;
+        //text-align: center;
+        //background-color: $white;
+        //padding: 4.8rem 3rem;
+        .img-box {
+          //position: relative;
+          //overflow: hidden;
+          //width: 100%;
+          //max-width: 168px;
+          //height: 100%;
+          //max-height: 168px;
+          //border-radius: 168px;
+
+          .img-layer {
+            //position: absolute;
+            //height: 0;
+            //bottom: 0;
+            //left: 0;
+            //right: 0;
+            //transition: height 0.3s;
+            //background: linear-gradient(360deg, $royal-blue 18%, rgba(255,255,255,0) 79%);
+            .sns-list-wrap {
+              //position: absolute;
+              //bottom: -3rem;
+              //left: 50%;
+              //transform: translateX(-50%);
+              //transition: bottom 0.3s;
+              .sns-list {
+                //gap: 1rem;
+                .sns-item{
+                  a,
+                  button {
+                    &::after {
+                      //background-size: 13px 13px;
+                      //background-repeat: no-repeat;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          img {
+            //width: 100%;
+            //height: auto;
+          }
+        }
+        &:hover {
+          .img-box {
+            .img-layer {
+              //height: 100%;
+              .sns-list-wrap {
+                //bottom: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include m-l {
+  .team-content {
+    //@include flex-col(4.8rem);
+    //align-items: center;
+    .content-header {
+      //text-align: center;
+    }
+    section {
+      //width: 100%;
+      .team-list {
+        //display: flex;
+        //gap: 3rem;
+        //justify-content: space-between;
+        //flex-wrap: wrap;
+        .list-item {
+          flex-basis: 100%;
+        }
+      }
+      .team-item {
+        //@include flex-col(3rem);
+        //align-items: center;
+        //text-align: center;
+        //background-color: $white;
+        padding: 3rem;
+        .img-box {
+          //position: relative;
+          //overflow: hidden;
+          //width: 100%;
+          //max-width: 168px;
+          //height: 100%;
+          //max-height: 168px;
+          //border-radius: 168px;
+
+          .img-layer {
+            //position: absolute;
+            //height: 0;
+            //bottom: 0;
+            //left: 0;
+            //right: 0;
+            //transition: height 0.3s;
+            //background: linear-gradient(360deg, $royal-blue 18%, rgba(255,255,255,0) 79%);
+            .sns-list-wrap {
+              //position: absolute;
+              //bottom: -3rem;
+              //left: 50%;
+              //transform: translateX(-50%);
+              //transition: bottom 0.3s;
+              .sns-list {
+                //gap: 1rem;
+                .sns-item{
+                  a,
+                  button {
+                    &::after {
+                      //background-size: 13px 13px;
+                      //background-repeat: no-repeat;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          img {
+            //width: 100%;
+            //height: auto;
+          }
+        }
+        &:hover {
+          .img-box {
+            .img-layer {
+              //height: 100%;
+              .sns-list-wrap {
+                //bottom: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* //meat our team content CSS */

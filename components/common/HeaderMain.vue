@@ -56,12 +56,12 @@
       </div>
       <!--      mobile navigation button      -->
       <!--  gnb    -->
-      <div class="hd-gnb" :class="{'active': navActive}">
+      <div class="hd-gnb" :class="{active: navActive}">
         <nav class="gnb-list-wrap">
           <ul class="gnb-list">
             <!--  gnb navigation list  -->
             <li class="gnb-item" v-for="item in gnbData" :key="item.id">
-              <h2>
+              <h2 v-on:click="navChange">
                 <router-link :to="item.path" class="txt-md">{{ item.title }}</router-link>
               </h2>
             </li>

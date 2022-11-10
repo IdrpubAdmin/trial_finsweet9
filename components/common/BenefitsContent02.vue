@@ -4,8 +4,7 @@
     <div class="content">
       <!-- content header | 제목 -->
       <div class="content-header">
-        <h2 class="lb-txt-2">Features</h2>
-        <h3 class="tit-h2">Design that solves problems, one product at a time</h3>
+        <h3 class="tit-h2">The benefits of working with us</h3>
       </div>
       <!-- //content header | 제목 -->
       <!-- content body | 본문 -->
