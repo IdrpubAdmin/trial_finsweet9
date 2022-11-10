@@ -5,31 +5,40 @@
 
 <!--start Contents-->
 
-<!-- wrapper -->
-<div id="wrapper">
+<div id="app">
 
-    <!-- header -->
-    <header-main></header-main>
-    <!-- //header -->
+    <!-- wrapper -->
+    <div id="wrapper">
 
-    <!-- container -->
-    <div class="container">
+        <!-- header -->
+        <header-main></header-main>
+        <!-- //header -->
 
-        <!-- contents | 컨텐츠영역 -->
-        <router-view></router-view>
-        <!-- //contents | 컨텐츠영역 -->
+        <!-- container -->
+        <div class="container">
+
+            <!-- contents | 컨텐츠영역 -->
+            <router-view></router-view>
+            <!-- //contents | 컨텐츠영역 -->
+
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer-main></footer-main>
+        <!-- //footer -->
 
     </div>
-    <!-- //container -->
-
-    <!-- footer -->
-    <footer-main></footer-main>
-    <!-- //footer -->
+    <!-- //wrapper -->
 
 </div>
-<!-- //wrapper -->
 
 <!--end Contents-->
 
+<script>
+    var appData = {
+        
+    }
+</script> 
 
 <!-- @@close -->

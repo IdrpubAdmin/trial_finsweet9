@@ -25,6 +25,7 @@ const MissionContent = httpVueLoader('../components/common/MissionContent.vue');
 const FeaturesList = httpVueLoader('../components/common/FeaturesList.vue');
 const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.vue');
 const WorkPost = httpVueLoader('../components/work/WorkPost.vue');
+const WorkArticle = httpVueLoader('../components/work/WorkArticle.vue');
 
 const router = new VueRouter({
 	routes: [

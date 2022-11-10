@@ -2,9 +2,9 @@
   .style-header-wrap{
     border-bottom: 1px solid rgba(35, 37, 54, 0.12);
     padding: 40px 0;
-    header{
+    .style-header{
       max-width: 1280px;
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
       .tit-h4{
         line-height: 44px;
@@ -14,7 +14,7 @@
   }
   .style-container{
     max-width: 1280px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding: 90px 0;
     .style-content{
@@ -22,12 +22,15 @@
       &:first-child{
         margin-top: 0;
       }
+      .content{
+        margin-top: 3rem;
+      }
       .style-title{
         .tit-h5{
           font-weight: $r;
         }
       }
-      ul{
+      .style-section{
         margin-top: 30px;
         li{
           button{
@@ -68,12 +71,53 @@
           p{
             text-align: center;
             line-height: 100px;
+            &.point{
+              color: #fff;
+            }
           }
         }
       }
       .button-list{
         display: flex;
         gap: 50px;
+      }
+    }
+  }
+}
+
+@include t-l{
+  .style-guide{
+    .style-container{
+      .style-content{
+        .font-area{
+          display: block;
+          .text-list{
+            width: 100%;
+            margin-top: 3.2rem;
+          }
+        }
+        .color-list{
+          flex-wrap: wrap;
+          .color-item{
+            width: 50%;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include m-l{
+  .style-guide{
+    .style-container{
+      .style-content{
+        .button-list{
+          display: block;
+          .button-item{
+            margin-top: 2rem;
+          }
+        }
       }
     }
   }

@@ -6,7 +6,7 @@
     <mission-content></mission-content>
     <benefits-content-02></benefits-content-02>
   </div>
-</template>
+</template> 
 
 <script>
 module.exports = {

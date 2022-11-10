@@ -1,16 +1,11 @@
-
 const app = new Vue({
     el: '#app',
+    mixins: [ appData ],
     store,
     router,
     // VueAwesomeSwiper,
     components: {
-        FinsweetMain,
         HeaderMain,
         FooterMain,
-        AboutMain,
-        FeaturesMain,
-        PricingMain,
-        FaqContent,
     }
 })

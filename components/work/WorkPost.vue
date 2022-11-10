@@ -96,7 +96,7 @@ module.exports = {
   },
   computed: {
     postData() {
-      let dataBase = this.$store.getters["PostData"].PostData;
+      let dataBase = this.$store.getters["PostData"].workPost;
       for (let i = 0; i < dataBase.length; i++) {
         if (dataBase[i].id == this.$route.params.id) {
           return dataBase[i];
