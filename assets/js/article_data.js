@@ -111,14 +111,14 @@ let ArticleData = {
                     title: "Inspire, Innovate, Share",
                     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     subTit: "Our Mission",
-                    src: "img_about_002",
+                    src: "https://www.youtube.com/embed/uWQ_8CtvzoY?controls=0",
                 },
                 {
                     id: 2,
                     title: "Laser focus",
                     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    subTit: "Our Mission",
-                    src: "img_about_003",
+                    subTit: "Our Vision",
+                    src: "https://www.youtube.com/embed/UalTfOIDQ7M?controls=0",
                 },
             ]
         },

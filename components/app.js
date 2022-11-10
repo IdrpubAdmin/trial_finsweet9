@@ -3,7 +3,6 @@ const app = new Vue({
     mixins: [ appData ],
     store,
     router,
-    // VueAwesomeSwiper,
     components: {
         HeaderMain,
         FooterMain,
