@@ -14,7 +14,20 @@ let NavigationData = {
             {id: 2, title: "twitter"},
             {id: 3, title: "instagram"},
             {id: 4, title: "linkedin"},
+        ],
+        linkData: [
+            {id: 1, title: "facebook"},
+            {id: 2, title: "twitter"},
+            {id: 3, title: "linkedin"},
         ]
+    },
+    getters: {
+        snsData: function snsData(state) {
+            return state.snsData;
+        },
+        linkData: function linkData(state) {
+            return state.linkData;
+        }
     }
 };
 

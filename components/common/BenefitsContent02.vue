@@ -4,7 +4,7 @@
     <div class="content">
       <!-- content header | 제목 -->
       <div class="content-header">
-        <h3 class="tit-h2">The benefits of working with us</h3>
+        <h3 class="tit-h2">{{ tit }}</h3>
       </div>
       <!-- //content header | 제목 -->
       <!-- content body | 본문 -->
@@ -50,6 +50,9 @@
 <script>
 module.exports = {
   name: "BenefitsContent",
+  props: {
+    tit: String,
+  },
   computed: {
     bnfData() {
       return this.$store.getters["ArticleData"].bnfData

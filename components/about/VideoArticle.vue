@@ -1,7 +1,6 @@
 <template>
   <section :class="'layout-'+articleData.type">
     <article v-for="list in articleData.data" :key="list.id">
-      <!--            <img :src="'../assets/images/' + list.src + '.png'" alt="article img">-->
       <div class="art-media">
         <div class="media-box">
           <iframe :src="list.src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

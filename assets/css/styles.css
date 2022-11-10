@@ -581,6 +581,43 @@ button { cursor: pointer; }
   .team-content section .team-item { padding: 3rem; } }
 
 /* //meat our team content CSS */
+.features-main .bnf-comp .content { padding: 96px 0 0; }
+
+.features-main .bnf-comp .content .content-header { order: 1; }
+
+.features-main .bnf-comp .content .ico-list-wrap { order: 2; }
+
+.features-main .bnf-comp .content .user-list-wrap { order: 0; margin-bottom: 5.6rem; }
+
+.features-main .features-content { max-width: 100%; width: 100%; margin: 0; padding: 0; }
+
+.features-main .features-content section article { max-width: 1280px; width: 90%; margin: 0 auto; padding: 128px 0; box-sizing: border-box; position: relative; gap: 3rem; justify-content: space-between; }
+
+.features-main .features-content section article::after { content: ''; position: absolute; display: block; top: 0; left: 50%; right: 0; width: 100vw; height: 100%; transform: translateX(-50%); z-index: -1; }
+
+.features-main .features-content section article:nth-of-type(2)::after { background-color: #F4F6FC; }
+
+.features-main .features-content section article:nth-of-type(4)::after { background-color: #FCD9801A; }
+
+.features-main .features-content section article img, .features-main .features-content section article .art-media { width: 40%; }
+
+.features-main .features-content section article .art-tet { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.features-main .features-content section article .art-tet h6 { line-height: 1.3; }
+
+.features-main .features-content section article .art-tet h6.tit-h6 { font-size: 3.8rem; font-weight: 600; }
+
+.features-main .features-content section article .art-tet .txt-r { width: 90%; }
+
+@media (max-width: 1023px) { .features-main .features-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.6rem; font-weight: 500; } }
+
+@media (max-width: 767px) { .features-main .features-content .layout-ty02 article { display: flex; flex-direction: column-reverse; }
+  .features-main .features-content .layout-ty02 article img, .features-main .features-content .layout-ty02 article .art-media { width: 100%; }
+  .features-main .features-content .layout-ty02 article .art-tet { width: 100%; align-items: center; text-align: center; } }
+
+@media (max-width: 640px) { .features-main .features-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.2rem; }
+  .features-main .features-content .layout-ty02 article .art-tet .txt-r { width: 100%; } }
+
 .content-bg-wrap { width: 100%; height: fit-content; }
 
 .main-banner { display: flex; gap: 5%; }
