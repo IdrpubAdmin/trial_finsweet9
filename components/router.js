@@ -26,6 +26,9 @@ const FeaturesList = httpVueLoader('../components/common/FeaturesList.vue');
 const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.vue');
 const WorkPost = httpVueLoader('../components/work/WorkPost.vue');
 const WorkArticle = httpVueLoader('../components/work/WorkArticle.vue');
+const PricingArticle = httpVueLoader('../components/pricing/PricingArticle.vue');
+const ContactMain = httpVueLoader('../components/contact/ContactMain.vue');
+const PrivacyPolicy = httpVueLoader('../components/contact/PrivacyPolicy.vue');
 
 const router = new VueRouter({
 	routes: [
@@ -63,6 +66,11 @@ const router = new VueRouter({
 			name: 'work',
 			path: '/work',
 			component: WorkMain,
+		},
+		{
+			name: 'contact',
+			path: '/contact',
+			component: ContactMain,
 		},
 		{
 			name: 'workPost',
