@@ -754,7 +754,6 @@
 }
 
 @include t-l {
-
   .inq-content-wrap {
     .inq-content {
       flex-direction: column;
@@ -772,7 +771,6 @@
           width: 90%;
         }
       }
-
       .inq-section {
         padding: 9.6rem 0;
         .txt-box {
@@ -781,7 +779,6 @@
           align-items: center;
           text-align: center;
         }
-
         .input-box {
           width: 90%;
           margin: 0 auto;
@@ -802,7 +799,6 @@
 }
 
 @include m-l {
-
   .inq-content-wrap {
     .inq-content {
       .content-header {
@@ -816,10 +812,7 @@
       }
     }
   }
-
 }
-
-
 
 /* //Send Inquiry CSS */
 
@@ -827,5 +820,27 @@
 .blog-content {
   @include flex-col(6.4rem);
 }
+
+@include t-l {
+  .blog-content {
+    .layout-ty01 {
+      gap: 3rem;
+      article {
+        width: calc((100% - 3rem) / 2);
+      }
+    }
+  }
+}
+
+@include m-l {
+  .blog-content {
+    .layout-ty01 {
+      article {
+        width: 100%;
+      }
+    }
+  }
+}
+
 
 /* //main blog CSS */

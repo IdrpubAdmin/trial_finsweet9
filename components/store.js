@@ -99,7 +99,7 @@ var ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    path: '/',
+                    path: '/blog/1',
                     src: "blog001",
                     linkTxt: "Read More",
                 }, {
@@ -107,7 +107,7 @@ var ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    path: '/',
+                    path: '/blog/2',
                     src: "blog002",
                     linkTxt: "Read More",
                 }, {
@@ -115,7 +115,7 @@ var ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    path: '/',
+                    path: '/blog/3',
                     src: "blog003",
                     linkTxt: "Read More",
                 }
@@ -260,20 +260,20 @@ var ArticleData = {
             {
                 id: 1,
                 icoTy: `ty01`,
-                tit: `Uses Client First`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                tit: `Customize with ease`,
+                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             },
             {
                 id: 2,
                 icoTy: `ty02`,
-                tit: `Two Free Revision Round`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                tit: `Perfectly Responsive`,
+                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             },
             {
                 id: 3,
                 icoTy: `ty03`,
-                tit: `Template Customization`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                tit: `Friendly Support`,
+                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             }
         ],
         hwwData: [
@@ -355,7 +355,34 @@ var ArticleData = {
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam`,
                 img: `img_proj_003.png`,
             }
-        ]
+        ],
+        teamData: [
+            {
+                id: 1,
+                img: `img_team_001.png`,
+                name: `John Smith`,
+                tit: `CEO`,
+            },
+            {
+                id: 2,
+                img: `img_team_002.png`,
+                name: `Simon Adams`,
+                tit: `CTO`,
+            },
+            {
+                id: 3,
+                img: `img_team_003.png`,
+                name: `Paul Jones`,
+                tit: `Design Lead`,
+            },
+            {
+                id: 4,
+                img: `img_team_004.png`,
+                name: `Sara Hardin`,
+                tit: `Project Manager`,
+            }
+
+        ],
     },
     mutations: {
         slideOpen(state, payload) {
