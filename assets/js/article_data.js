@@ -40,7 +40,7 @@ let ArticleData = {
                     id: 1,
                     title: "Template 1",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: { name:'workPost', params: {id: 1}},
+                    path: {name: 'workPost', params: {id: 1}},
                     src: "work001",
                     linkTxt: "View Portfolio",
                     key: "ui",
@@ -48,7 +48,7 @@ let ArticleData = {
                     id: 2,
                     title: "Template 2",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: { name:'workPost', params: {id: 2}},
+                    path: {name: 'workPost', params: {id: 2}},
                     src: "work002",
                     linkTxt: "View Portfolio",
                     key: "figma",
@@ -56,7 +56,7 @@ let ArticleData = {
                     id: 3,
                     title: "Template 3",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: { name:'workPost', params: {id: 3}},
+                    path: {name: 'workPost', params: {id: 3}},
                     src: "work003",
                     linkTxt: "View Portfolio",
                     key: "ui",
@@ -64,7 +64,7 @@ let ArticleData = {
                     id: 4,
                     title: "Template 4",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: { name:'workPost', params: {id: 4}},
+                    path: {name: 'workPost', params: {id: 4}},
                     src: "work004",
                     linkTxt: "View Portfolio",
                     key: "ui",
@@ -72,7 +72,7 @@ let ArticleData = {
                     id: 5,
                     title: "Template 5",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: { name:'workPost', params: {id: 5}},
+                    path: {name: 'workPost', params: {id: 5}},
                     src: "work005",
                     linkTxt: "View Portfolio",
                     key: "webflow",
@@ -80,7 +80,7 @@ let ArticleData = {
                     id: 6,
                     title: "Template 6",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-                    path: { name:'workPost', params: {id: 6}},
+                    path: {name: 'workPost', params: {id: 6}},
                     src: "work006",
                     linkTxt: "View Portfolio",
                     key: "webflow",
@@ -171,20 +171,20 @@ let ArticleData = {
             {
                 id: 1,
                 icoTy: `ty01`,
-                tit: `Uses Client First`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                tit: `Customize with ease`,
+                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             },
             {
                 id: 2,
                 icoTy: `ty02`,
-                tit: `Two Free Revision Round`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                tit: `Perfectly Responsive`,
+                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             },
             {
                 id: 3,
                 icoTy: `ty03`,
-                tit: `Template Customization`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                tit: `Friendly Support`,
+                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             }
         ],
         hwwData: [
@@ -266,7 +266,34 @@ let ArticleData = {
                 txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam`,
                 img: `img_proj_003.png`,
             }
-        ]
+        ],
+        teamData: [
+            {
+                id: 1,
+                img: `img_team_001.png`,
+                name: `John Smith`,
+                tit: `CEO`,
+            },
+            {
+                id: 2,
+                img: `img_team_002.png`,
+                name: `Simon Adams`,
+                tit: `CTO`,
+            },
+            {
+                id: 3,
+                img: `img_team_003.png`,
+                name: `Paul Jones`,
+                tit: `Design Lead`,
+            },
+            {
+                id: 4,
+                img: `img_team_004.png`,
+                name: `Sara Hardin`,
+                tit: `Project Manager`,
+            }
+
+        ],
     },
     mutations: {
         slideOpen(state, payload) {
