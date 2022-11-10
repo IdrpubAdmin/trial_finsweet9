@@ -271,7 +271,7 @@ button { cursor: pointer; }
 
 .layout-ty01 article { width: calc((100% - 6rem) / 3); }
 
-.layout-ty01 article img { width: 100%; }
+.layout-ty01 article img, .layout-ty01 article .art-media { width: 100%; }
 
 .layout-ty01 article .art-tet { margin-top: 4rem; }
 
@@ -285,17 +285,17 @@ button { cursor: pointer; }
 
 .layout-ty02 article:nth-child(odd) { flex-direction: row-reverse; }
 
-.layout-ty02 article img { width: calc(50% - 140px); }
+.layout-ty02 article img, .layout-ty02 article .art-media { width: calc(50% - 140px); }
 
 .layout-ty02 article .art-tet { width: 50%; }
 
 .layout-ty02 article .art-tet .tit-h6 { line-height: 1.5; }
 
 @media (max-width: 1023px) { .layout-ty02 article { gap: 8rem; }
-  .layout-ty02 article img { width: calc(50% - 80px); } }
+  .layout-ty02 article img, .layout-ty02 article .art-media { width: calc(50% - 80px); } }
 
 @media (max-width: 640px) { .layout-ty02 article { display: block; }
-  .layout-ty02 article img { width: 100%; }
+  .layout-ty02 article img, .layout-ty02 article .art-media { width: 100%; }
   .layout-ty02 article .art-tet { width: 100%; }
   .layout-ty02 article .art-tet .tit-h6 { line-height: 1.5; } }
 
@@ -520,7 +520,11 @@ button { cursor: pointer; }
 
 .mission-content .layout-ty02 article { gap: 3rem; justify-content: space-between; }
 
-.mission-content .layout-ty02 article img { width: 40%; }
+.mission-content .layout-ty02 article img, .mission-content .layout-ty02 article .art-media { width: 40%; }
+
+.mission-content .layout-ty02 article .media-box { position: relative; width: 100%; height: 0; padding-bottom: 56.5%; }
+
+.mission-content .layout-ty02 article .media-box iframe { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
 .mission-content .layout-ty02 article .art-tet { display: flex; flex-direction: column; gap: 1.5rem; }
 
@@ -533,7 +537,7 @@ button { cursor: pointer; }
 @media (max-width: 1023px) { .mission-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.6rem; font-weight: 500; } }
 
 @media (max-width: 767px) { .mission-content .layout-ty02 article { flex-direction: column-reverse; }
-  .mission-content .layout-ty02 article img { width: 100%; }
+  .mission-content .layout-ty02 article img, .mission-content .layout-ty02 article .art-media { width: 100%; }
   .mission-content .layout-ty02 article .art-tet { width: 100%; align-items: center; text-align: center; } }
 
 @media (max-width: 640px) { .mission-content .layout-ty02 article { display: flex; }

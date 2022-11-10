@@ -4,7 +4,7 @@
       <div class="content-header">
         <h3 class="blind">Our Mission, Our Vision</h3>
       </div>
-      <article-type :article-data="missionArticle"></article-type>
+      <video-article :article-data="missionArticle"></video-article>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ module.exports = {
     },
   },
   components: {
-    ArticleType,
+    VideoArticle,
   }
 }
 </script>

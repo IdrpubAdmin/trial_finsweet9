@@ -3,14 +3,16 @@
     <article v-for="list in articleData.data" :key="list.id">
       <!--            <img :src="'../assets/images/' + list.src + '.png'" alt="article img">-->
       <div class="art-media">
-        <iframe :src="item.img" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="media-box">
+          <iframe :src="list.src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
       <div class="art-tet">
         <template v-if="list.subTit">
           <p class="lb-txt-1">{{ list.subTit }}</p>
         </template>
         <template v-else></template>
-        <h6 :class="list.titSize">{{ list.title }}</h6>
+        <h6 class="tit-h6">{{ list.title }}</h6>
         <p class="txt-r">{{ list.txt }}</p>
         <template v-if="articleData.link === true">
           <div class="txt-md icon-link">
