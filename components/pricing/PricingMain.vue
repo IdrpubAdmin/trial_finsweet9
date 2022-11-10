@@ -1,12 +1,15 @@
 <template>
-  <div>
-    Pricing 확인
+  <div class="pricing-contents">
+    <pricing-article></pricing-article>
+    <faq-content></faq-content>
   </div>
 </template>
 
 <script>
 module.exports = {
-  computed: {},
-  methods: {},
+  components: {
+    PricingArticle,
+    FaqContent,
+  },
 }
 </script>

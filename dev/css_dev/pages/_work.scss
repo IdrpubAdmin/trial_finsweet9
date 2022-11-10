@@ -26,13 +26,9 @@
             justify-content: center;
             gap: 3rem;
             .ctgy-item{
-                .lb-txt-1{
-                    opacity: 0.7;
-                }
                 &.active{
                     .lb-txt-1{
                         color: $royal-blue;
-                        opacity: 1;
                     }
                 }
             }
@@ -87,9 +83,6 @@
             width: 83%;
             margin: 0 auto;
             .post-texts{
-                .tit-h6{
-                    opacity: 0.8;
-                }
                 .tit-h2{
                     width: 50%;
                     margin-top: 1.2rem;
@@ -97,7 +90,6 @@
                 .txt-md{
                     width: 77%;
                     margin-top: 1.6rem;
-                    opacity: 0.7;
                 }
             }
             img{
@@ -110,9 +102,6 @@
                 display: flex;
                 justify-content: space-between;
                 border-bottom: 1px solid rgba(40, 41, 56, 0.3);
-                .txt-md{
-                    opacity: 0.8;
-                }
             }
         }
     }
@@ -124,7 +113,6 @@
             .info-texts{
                 p{
                     margin-top: 1.2rem;
-                    opacity: 0.7;
                 }
             }
             img{
@@ -135,23 +123,9 @@
                 margin-top: 24px;
                 li{
                     margin-top: 1.6rem;
-                    display: flex;
-                    align-items: center;
                     &:first-child{
                         margin-top: 0;
                     }
-                }
-                li::before{
-                    content: '';
-                    display: inline-block;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $dark-blue;
-                    border-radius: 50%;
-                    margin-right: 1.6rem;
-                }
-                .txt-r{
-                    opacity: 0.7;
                 }
             }
         }
@@ -179,6 +153,22 @@
                 }
             }
         }
+    }
+}
+
+.info-list{
+    li{
+        display: flex;
+        align-items: center;
+    }
+    li::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: $dark-blue;
+    border-radius: 50%;
+    margin-right: 1.6rem;
     }
 }
 

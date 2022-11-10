@@ -1,0 +1,42 @@
+.privacy-contents{
+    .privacy-content{
+        .content-header{
+            text-align: center;
+            p{
+                width: 45%;
+                margin: 0 auto;
+            }
+        }
+        .privacy-info{
+            width: 66%;
+            margin: 6.4rem auto 0;
+            .privacy-texts{
+                margin-top: 4rem;
+                &:first-child{
+                    margin-top: 0;
+                }
+                .txt1{
+                    margin-top: 3.2rem;
+                }
+                .txt2{
+                    margin-top: 2.4rem;
+                }
+                .txt3{
+                    margin-top: 1.6rem;
+                }
+                span{
+                    color: $royal-blue;
+                }
+                .info-list{
+                    margin-top: 2.4rem;
+                    li{
+                        margin-top: 1.2rem;
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

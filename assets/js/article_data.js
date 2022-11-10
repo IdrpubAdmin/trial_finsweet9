@@ -332,8 +332,94 @@ let ArticleData = {
                 },
             ]
         },
-
-
+        planData: [
+            {
+                id: 1,
+                type: "ty02",
+                price: "299",
+                sticker: "Per Design",
+                title: "Landing Page",
+                txt: "When you’re ready to go beyond prototyping in Figma,",
+                btnTxt: "Get started",
+                planList : [
+                    {
+                        id: 1,
+                        item: "All limited links"
+                    },{
+                        id: 2,
+                        item: "Own analytics platform"
+                    },{
+                        id: 3,
+                        item: "Chat support"
+                    },{
+                        id: 4,
+                        item: "Optimize hashtags",
+                        type: true
+                    },{
+                        id: 5,
+                        item: "Unlimited users",
+                        type: true
+                    },
+                ]
+            },
+            {
+                id: 2,
+                type: "ty01",
+                price: "399",
+                sticker: "Multi Design",
+                title: "Website Page ",
+                txt: "When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.",
+                btnTxt: "Get started",
+                planList : [
+                    {
+                        id: 1,
+                        item: "All limited links"
+                    },{
+                        id: 2,
+                        item: "Own analytics platform"
+                    },{
+                        id: 3,
+                        item: "Chat support"
+                    },{
+                        id: 4,
+                        item: "Optimize hashtags",
+                    },{
+                        id: 5,
+                        item: "Unlimited users"
+                    },
+                ]
+            },
+            {
+                id: 3,
+                type: "ty02",
+                price: "499 +",
+                sticker: "Per Design",
+                title: "Complex Project",
+                txt: "When you’re ready to go beyond prototyping in Figma, ",
+                btnTxt: "Contact us",
+                planList : [
+                    {
+                        id: 1,
+                        item: "All limited links"
+                    },{
+                        id: 2,
+                        item: "Own analytics platform"
+                    },{
+                        id: 3,
+                        item: "Chat support"
+                    },{
+                        id: 4,
+                        item: "Optimize hashtags"
+                    },{
+                        id: 5,
+                        item: "Unlimited users"
+                    },{
+                        id: 6,
+                        item: "Assist and Help"
+                    },
+                ]
+            },
+        ]
     },
     mutations: {
         slideOpen(state, payload) {

@@ -51,7 +51,6 @@
               width: 16px;
               height: 2px;
               background: $dark-blue;
-              opacity: 0.7;
               transition: transform 0.3s;
               position: absolute;
               top: 0; bottom: 0; right: 0; left: 0;
@@ -155,7 +154,6 @@
       }
       p{
         margin-top: 16px;
-        opacity: 0.7;
       }
       .icon-link{
         margin-top: 32px;
