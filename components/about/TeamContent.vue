@@ -12,7 +12,7 @@
                 <div class="img-layer">
                   <div class="sns-list-wrap">
                     <ul class="sns-list">
-                      <li v-for="item in snsData" class="sns-item">
+                      <li v-for="item in linkData" class="sns-item">
                         <router-link to="/" :title="`${ item.title } 이동`" :class="`${ item.title }`">
                         </router-link>
                       </li>
@@ -43,10 +43,9 @@ module.exports = {
     path() {
       return this.$store.state.path.img
     },
-    snsData() {
-      this.$store.getters["NavigationData"].snsData.splice(2, 1);
-      return this.$store.getters["NavigationData"].snsData;
-    },
+    linkData() {
+      return this.$store.getters["NavigationData/linkData"]
+    }
   }
 }
 </script>

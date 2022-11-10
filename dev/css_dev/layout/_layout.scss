@@ -143,7 +143,8 @@
   column-gap: 3rem;
   article{
     width: calc((100% - 6rem) / 3 );
-    img{
+    img,
+    .art-media {
       width: 100%;
     }
     .art-tet{
@@ -172,7 +173,8 @@
     &:nth-child(odd){
       flex-direction: row-reverse;
     }
-    img{
+    img,
+    .art-media {
       width: calc(50% - 140px);
     }
     .art-tet{
@@ -188,7 +190,8 @@
   .layout-ty02{
     article{
       gap: 8rem;
-      img{
+      img,
+      .art-media {
         width: calc(50% - 80px);
       }
     }
@@ -199,7 +202,8 @@
   .layout-ty02{
     article{
       display: block;
-      img{
+      img,
+      .art-media {
         width: 100%;
       }
       .art-tet{

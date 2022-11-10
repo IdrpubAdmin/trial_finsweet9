@@ -4,7 +4,7 @@
     <who-we-content></who-we-content>
     <follow-content></follow-content>
     <mission-content></mission-content>
-    <benefits-content-02></benefits-content-02>
+    <benefits-content-02 :tit="aboutTit"></benefits-content-02>
     <team-content></team-content>
   </div>
 </template> 
@@ -20,7 +20,9 @@ module.exports = {
     TeamContent,
   },
   computed: {
-
+    aboutTit() {
+      return this.$store.getters["ArticleData"].bnfTitData.aboutTit;
+    }
   },
 }
 </script>

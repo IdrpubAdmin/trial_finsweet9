@@ -4,10 +4,10 @@
             <img :src="'../assets/images/' + list.src + '.png'" alt="article img">
             <div class="art-tet">
               <template v-if="list.subTit">
-                <p class="lb-txt-1">{{list.subTit}}</p>
+                <p class="txt-md">{{list.subTit}}</p>
               </template>
               <template v-else></template>
-                <h6 :class="list.titSize">{{list.title}}</h6>
+                <h6 class="tit-h6">{{list.title}}</h6>
                 <p class="txt-r">{{list.txt}}</p>
               <template v-if="articleData.link === true">
                 <div class="txt-md icon-link">
@@ -17,6 +17,7 @@
               <template v-else></template>
             </div>
         </article>
+      </div>
     </section>
 </template>
 

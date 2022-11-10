@@ -111,14 +111,14 @@ let ArticleData = {
                     title: "Inspire, Innovate, Share",
                     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     subTit: "Our Mission",
-                    src: "img_about_002",
+                    src: "https://www.youtube.com/embed/uWQ_8CtvzoY?controls=1&loop=1&mute=1&playlist=uWQ_8CtvzoY",
                 },
                 {
                     id: 2,
                     title: "Laser focus",
                     txt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    subTit: "Our Mission",
-                    src: "img_about_003",
+                    subTit: "Our Vision",
+                    src: "https://www.youtube.com/embed/UalTfOIDQ7M?controls=1&loop=1&mute=1&playlist=UalTfOIDQ7M",
                 },
             ]
         },
@@ -170,23 +170,27 @@ let ArticleData = {
         bnfData: [
             {
                 id: 1,
-                icoTy: `ty01`,
+                icoTy: `ty06`,
                 tit: `Customize with ease`,
                 txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             },
             {
                 id: 2,
-                icoTy: `ty02`,
+                icoTy: `ty03`,
                 tit: `Perfectly Responsive`,
                 txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             },
             {
                 id: 3,
-                icoTy: `ty03`,
+                icoTy: `ty01`,
                 tit: `Friendly Support`,
                 txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
             }
         ],
+        bnfTitData: {
+            aboutTit: `The benefits of working with us`,
+            featuresTit: `The benefits of working with our team`,
+        },
         hwwData: [
             {
                 id: 1,
@@ -294,6 +298,42 @@ let ArticleData = {
             }
 
         ],
+        featuresData: {
+            type: "ty02",
+            link: false,
+            data: [
+                {
+                    id: 1,
+                    subTit: `Use Client-first`,
+                    title: `Top agencies and freelancers around the world use Client-first`,
+                    txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.`,
+                    src: `img_feat_001`,
+                },
+                {
+                    id: 2,
+                    subTit: `Free Revision Rounds`,
+                    title: `Get free Revisions and one week of free maintenance`,
+                    txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.`,
+                    src: `img_feat_002`,
+                },
+                {
+                    id: 3,
+                    subTit: `24/7 Support`,
+                    title: `Working with us, you will be getting 24/7 priority support`,
+                    txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.`,
+                    src: `img_feat_003`,
+                },
+                {
+                    id: 4,
+                    subTit: `Quick Delivery`,
+                    title: `Guranteed 1 week delivery for standard five pager website`,
+                    txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.`,
+                    src: `img_feat_004`,
+                },
+            ]
+        },
+
+
     },
     mutations: {
         slideOpen(state, payload) {
