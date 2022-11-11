@@ -313,6 +313,40 @@ button { cursor: pointer; }
 
 .icon-link.b a::after { background-image: url("../images/ico_arrow_b.png"); }
 
+.ico-list-wrap { background-color: #F4F6FC; }
+
+.ico-list-wrap .ico-list-ty { display: flex; flex-wrap: wrap; row-gap: 2.4rem; column-gap: 3rem; }
+
+.ico-list-wrap .ico-list-ty .list-item { flex-basis: calc((100% - 6rem) / 3); }
+
+.ico-list-wrap .ico-item { display: flex; flex-direction: column; gap: 2.5rem; padding: 4.8rem; box-sizing: border-box; background-color: #ffffff; }
+
+.ico-list-wrap .ico-item .ico-box { width: 3.5rem; height: 3.5rem; background-size: contain; background-position: center center; background-repeat: no-repeat; }
+
+.ico-list-wrap .ico-item .ico-box.ty01 { background-image: url("../images/ico_list_001.png"); }
+
+.ico-list-wrap .ico-item .ico-box.ty02 { background-image: url("../images/ico_list_002.png"); }
+
+.ico-list-wrap .ico-item .ico-box.ty03 { background-image: url("../images/ico_list_003.png"); }
+
+.ico-list-wrap .ico-item .ico-box.ty04 { background-image: url("../images/ico_list_004.png"); }
+
+.ico-list-wrap .ico-item .ico-box.ty05 { background-image: url("../images/ico_list_005.png"); }
+
+.ico-list-wrap .ico-item .ico-box.ty06 { background-image: url("../images/ico_list_006.png"); }
+
+.ico-list-wrap .ico-item .txt-box { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.ico-list-wrap.ty02 { background-color: unset; }
+
+.ico-list-wrap.ty02 .ico-list-ty .ico-item { background-color: #F4F6FC; }
+
+@media (max-width: 1023px) { .ico-list-wrap .ico-list-ty { gap: 3rem; }
+  .ico-list-wrap .ico-list-ty .list-item { flex-basis: calc((100% - 3rem) / 2); } }
+
+@media (max-width: 640px) { .ico-list-wrap .ico-list-ty .list-item { flex-basis: 100%; }
+  .ico-list-wrap .ico-list-ty .list-item .ico-item { padding: 4rem; } }
+
 .header-wrap { width: 100%; height: fit-content; background-color: #1C1E53; z-index: 100; }
 
 .header-wrap #header { max-width: 1280px; width: 90%; height: 92px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
@@ -683,29 +717,7 @@ button { cursor: pointer; }
 
 .bnf-comp .content-header .tit-h2 { width: 60%; }
 
-.bnf-comp .ico-list-ty { display: flex; flex-wrap: wrap; row-gap: 2.4rem; column-gap: 3rem; }
-
-.bnf-comp .ico-list-ty .ico-item { flex-basis: calc( (100% - 6rem) / 3); display: flex; flex-direction: column; gap: 2.5rem; padding: 4.8rem; box-sizing: border-box; background-color: #ffffff; }
-
-.bnf-comp .ico-list-ty .ico-item .ico-box { width: 3.5rem; height: 3.5rem; background-size: contain; background-position: center center; background-repeat: no-repeat; }
-
-.bnf-comp .ico-list-ty .ico-item .ico-box.ty01 { background-image: url("../images/ico_list_001.png"); }
-
-.bnf-comp .ico-list-ty .ico-item .ico-box.ty02 { background-image: url("../images/ico_list_002.png"); }
-
-.bnf-comp .ico-list-ty .ico-item .ico-box.ty03 { background-image: url("../images/ico_list_003.png"); }
-
-.bnf-comp .ico-list-ty .ico-item .ico-box.ty04 { background-image: url("../images/ico_list_004.png"); }
-
-.bnf-comp .ico-list-ty .ico-item .ico-box.ty05 { background-image: url("../images/ico_list_005.png"); }
-
-.bnf-comp .ico-list-ty .ico-item .ico-box.ty06 { background-image: url("../images/ico_list_006.png"); }
-
-.bnf-comp .ico-list-ty .ico-item .txt-box { display: flex; flex-direction: column; gap: 1.2rem; }
-
 .bnf-comp.ty02 { background-color: unset; }
-
-.bnf-comp.ty02 .ico-list-ty .ico-item { background-color: #F4F6FC; }
 
 .user-list-wrap { display: flex; align-items: center; justify-content: space-between; gap: 5%; }
 
@@ -716,13 +728,10 @@ button { cursor: pointer; }
 .user-list-wrap .user-logo-box .user-list img { width: fit-content; height: auto; }
 
 @media (max-width: 1023px) { .bnf-comp .content-header .tit-h2 { width: 70%; }
-  .bnf-comp .ico-list-ty { gap: 3rem; }
-  .bnf-comp .ico-list-ty .ico-item { flex-basis: calc( (100% - 3rem) / 2); }
   .user-list-wrap { flex-direction: column; gap: 3.5rem; }
   .user-list-wrap .txt-box { align-items: center; } }
 
-@media (max-width: 640px) { .bnf-comp .content-header .tit-h2 { width: 100%; }
-  .bnf-comp .ico-list-ty .ico-item { flex-basis: 100%; padding: 4rem; } }
+@media (max-width: 640px) { .bnf-comp .content-header .tit-h2 { width: 100%; } }
 
 /* //benefit List CSS */
 /* how we work CSS */

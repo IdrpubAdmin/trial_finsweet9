@@ -11,12 +11,12 @@
           {{ bannerCont.txt }}
         </p>
         <div class="btn-wrap">
-          <a href="#" class="btn-ty01">
+          <a href="#none" class="btn-ty01">
             {{ bannerCont.btn1Txt }}
           </a>
           <template v-if="bannerCont.btn2">
             <div class="icon-link w">
-              <a href="#" class="lb-txt-2">
+              <a href="#none" class="lb-txt-2">
                 {{ bannerCont.btn2Txt }}
               </a>
             </div>

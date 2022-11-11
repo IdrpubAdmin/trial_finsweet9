@@ -118,67 +118,8 @@
     }
   }
 
-  .ico-list-ty {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 2.4rem;
-    column-gap: 3rem;
-
-    .ico-item {
-      flex-basis:  calc( (100% - 6rem) / 3 );
-      @include flex-col(2.5rem);
-      padding: 4.8rem;
-      box-sizing: border-box;
-      background-color: $white;
-
-      // ico list의 ico ty 별 클래스 정의
-      .ico-box {
-        width: 3.5rem;
-        height: 3.5rem;
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-
-        &.ty01 {
-          background-image: url("../images/ico_list_001.png");
-        }
-
-        &.ty02 {
-          background-image: url("../images/ico_list_002.png");
-        }
-
-        &.ty03 {
-          background-image: url("../images/ico_list_003.png");
-        }
-
-        &.ty04 {
-          background-image: url("../images/ico_list_004.png");
-        }
-
-        &.ty05 {
-          background-image: url("../images/ico_list_005.png");
-        }
-
-        &.ty06 {
-          background-image: url("../images/ico_list_006.png");
-        }
-      }
-
-      .txt-box {
-        @include flex-col(1.2rem);
-      }
-    }
-
-  }
-
   &.ty02 {
     background-color: unset;
-
-    .ico-list-ty {
-      .ico-item {
-        background-color: $grey;
-      }
-    }
   }
 }
 
@@ -216,13 +157,6 @@
         width: 70%;
       }
     }
-
-    .ico-list-ty {
-      gap: 3rem;
-      .ico-item {
-        flex-basis:  calc( (100% - 3rem) / 2 );
-      }
-    }
   }
 
   .user-list-wrap {
@@ -240,13 +174,6 @@
     .content-header {
       .tit-h2 {
         width: 100%;
-      }
-    }
-
-    .ico-list-ty {
-      .ico-item {
-        flex-basis: 100%;
-        padding: 4rem;
       }
     }
   }

@@ -13,67 +13,85 @@
   display: flex;
   justify-content: space-between;
   color: $dark-blue;
+
   .content-header {
     flex-basis: 26%;
+
     .lb-txt-1 {
       color: $royal-blue;
       margin-top: 8px;
     }
   }
+
   section {
     flex-basis: 66%;
+
     .faq-list {
       .faq-item {
         border-bottom: 1px solid rgba(194, 187, 255, 0.7);
         cursor: pointer;
         padding: 3rem 0 3rem 2.5rem;
+
         &:first-child {
           padding-top: 0;
         }
+
         .item-tit {
           display: flex;
           justify-content: space-between;
           align-items: center;
           gap: 5rem;
+
           span {
             display: block;
             width: 30px;
             color: $royal-blue;
           }
+
           p {
             width: calc(100% - 156px);
           }
+
           .faq-btn {
             width: 26px;
             height: 26px;
             position: relative;
+
             span {
               width: 16px;
               height: 2px;
               background: $dark-blue;
               transition: transform 0.3s;
               position: absolute;
-              top: 0; bottom: 0; right: 0; left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
               margin: auto;
             }
+
             .st-ln-2 {
-              transform:  rotate(90deg);
+              transform: rotate(90deg);
             }
           }
         }
+
         .hide-txt {
           padding: 0 8rem;
           margin-top: 16px;
           display: none;
         }
+
         &.slide-on {
           .hide-txt {
             display: block;
           }
+
           .faq-btn {
             .st-ln-1 {
               transform: rotate(-45deg);
             }
+
             .st-ln-2 {
               transform: rotate(45deg);
             }
@@ -87,23 +105,30 @@
 @include t-l {
   .faq-content {
     display: block;
+
     .content-header {
       text-align: center;
+
       .lb-txt-1 {
         color: $royal-blue;
       }
     }
+
     section {
       margin-top: 48px;
+
       .faq-list {
         .faq-item {
           padding: 1.5rem 0;
+
           .item-tit {
             gap: 3rem;
+
             p {
               width: calc(100% - 116px);
             }
           }
+
           .hide-txt {
             padding: 0 6rem;
             margin-top: 12px;
@@ -121,10 +146,12 @@
         .faq-item {
           .item-tit {
             gap: 2rem;
+
             p {
               width: calc(100% - 96px);
             }
           }
+
           .hide-txt {
             padding: 0;
           }
@@ -135,32 +162,39 @@
 }
 
 // 아티클 type1
-.layout-ty01{
+.layout-ty01 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 3rem;
-  article{
-    width: calc((100% - 6rem) / 3 );
-    .img-wrap{
+
+  article {
+    width: calc((100% - 6rem) / 3);
+
+    .img-wrap {
       width: 100%;
       height: 0;
       overflow: hidden;
       padding-bottom: 70%;
     }
+
     img,
     .art-media {
       width: 100%;
     }
-    .art-tet{
+
+    .art-tet {
       margin-top: 4rem;
-      .tit-h6{
+
+      .tit-h6 {
         margin-top: 18px;
       }
-      p{
+
+      p {
         margin-top: 16px;
       }
-      .icon-link{
+
+      .icon-link {
         margin-top: 32px;
       }
     }
@@ -168,22 +202,26 @@
 }
 
 // 아티클 type2 (교차되는 article)
-.layout-ty02{
-  article{
+.layout-ty02 {
+  article {
     display: flex;
     align-items: center;
     gap: 14rem;
-    &:nth-child(odd){
+
+    &:nth-child(odd) {
       flex-direction: row-reverse;
     }
-    .img-wrap{
+
+    .img-wrap {
       width: calc(50% - 140px);
+
       img,
       .art-media {
         width: 100%;
       }
     }
-    .art-tet{
+
+    .art-tet {
       width: 50%;
     }
   }
@@ -192,14 +230,16 @@
 @include t-l {
   .layout-ty01 {
     gap: 3rem;
+
     article {
       width: calc((100% - 3rem) / 2);
     }
   }
 
-  .layout-ty02{
-    article{
+  .layout-ty02 {
+    article {
       gap: 8rem;
+
       .img-wrap {
         width: calc(50% - 80px);
       }
@@ -213,13 +253,15 @@
       width: 100%;
     }
   }
-  .layout-ty02{
-    article{
+  .layout-ty02 {
+    article {
       display: block;
+
       .img-wrap {
         width: 100%;
       }
-      .art-tet{
+
+      .art-tet {
         width: 100%;
       }
     }
@@ -227,10 +269,11 @@
 }
 
 // 화살표 아이콘이 있는 a태그
-.icon-link{
-  a{
+.icon-link {
+  a {
     display: flex;
     align-items: center;
+
     &::after {
       content: '';
       display: inline-block;
@@ -242,19 +285,120 @@
       margin-left: 1.3rem;
     }
   }
+
   &.w {
-    a::after{
+    a::after {
       background-image: url("../images/ico_arrow_w.png");
     }
   }
+
   &.y {
-    a::after{
+    a::after {
       background-image: url("../images/ico_arrow_y.png");
     }
   }
+
   &.b {
-    a::after{
+    a::after {
       background-image: url("../images/ico_arrow_b.png");
     }
   }
+}
+
+// icon이 있는 list
+
+.ico-list-wrap {
+  background-color: $grey;
+
+  .ico-list-ty {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2.4rem;
+    column-gap: 3rem;
+
+    .list-item {
+      flex-basis: calc((100% - 6rem) / 3);
+    }
+  }
+
+  .ico-item {
+    @include flex-col(2.5rem);
+    padding: 4.8rem;
+    box-sizing: border-box;
+    background-color: $white;
+
+    // ico list의 ico ty 별 클래스 정의
+    .ico-box {
+      width: 3.5rem;
+      height: 3.5rem;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      &.ty01 {
+        background-image: url("../images/ico_list_001.png");
+      }
+
+      &.ty02 {
+        background-image: url("../images/ico_list_002.png");
+      }
+
+      &.ty03 {
+        background-image: url("../images/ico_list_003.png");
+      }
+
+      &.ty04 {
+        background-image: url("../images/ico_list_004.png");
+      }
+
+      &.ty05 {
+        background-image: url("../images/ico_list_005.png");
+      }
+
+      &.ty06 {
+        background-image: url("../images/ico_list_006.png");
+      }
+    }
+
+    .txt-box {
+      @include flex-col(1.2rem);
+    }
+  }
+
+  &.ty02 {
+    background-color: unset;
+    .ico-list-ty {
+      .ico-item {
+        background-color: $grey;
+      }
+    }
+  }
+}
+
+@include t-l {
+
+  .ico-list-wrap {
+    .ico-list-ty {
+      gap: 3rem;
+      .list-item {
+        flex-basis: calc((100% - 3rem) / 2);
+      }
+    }
+  }
+
+}
+
+@include m-l {
+
+  .ico-list-wrap {
+    .ico-list-ty {
+      .list-item {
+        flex-basis: 100%;
+        .ico-item {
+          padding: 4rem;
+        }
+      }
+    }
+  }
+
 }
