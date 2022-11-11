@@ -47,10 +47,10 @@
                     </p>
                 </div>
                 <ul class="info-list">
-                    <li><p class="txt-r">Lorem ipsum dolor sit amet, consectetur adipiscing</p></li>
-                    <li><p class="txt-r">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p></li>
-                    <li><p class="txt-r">Duis aute irure dolor in reprehenderit in voluptate velit esse</p></li>
-                    <li><p class="txt-r">Excepteur sint occaecat cupidatat non proident, sunt in culpa</p></li>
+                    <li class="info-item"><p class="txt-r">Lorem ipsum dolor sit amet, consectetur adipiscing</p></li>
+                    <li class="info-item"><p class="txt-r">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p></li>
+                    <li class="info-item"><p class="txt-r">Duis aute irure dolor in reprehenderit in voluptate velit esse</p></li>
+                    <li class="info-item"><p class="txt-r">Excepteur sint occaecat cupidatat non proident, sunt in culpa</p></li>
                 </ul>
                 <div class="img-wrap">
                     <img src="../assets/images/img_work_post_001.png" alt="article img">
@@ -70,10 +70,10 @@
                     </p>
                 </div>
                 <ul class="info-list">
-                    <li><p class="txt-r">Lorem ipsum dolor sit amet, consectetur adipiscing</p></li>
-                    <li><p class="txt-r">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p></li>
-                    <li><p class="txt-r">Duis aute irure dolor in reprehenderit in voluptate velit esse</p></li>
-                    <li><p class="txt-r">Excepteur sint occaecat cupidatat non proident, sunt in culpa</p></li>
+                    <li class="info-item"><p class="txt-r">Lorem ipsum dolor sit amet, consectetur adipiscing</p></li>
+                    <li class="info-item"><p class="txt-r">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p></li>
+                    <li class="info-item"><p class="txt-r">Duis aute irure dolor in reprehenderit in voluptate velit esse</p></li>
+                    <li class="info-item"><p class="txt-r">Excepteur sint occaecat cupidatat non proident, sunt in culpa</p></li>
                 </ul>
                 <ul class="category-list">
                     <li class="ctgy-item"><p class="lb-txt-1 active">Keywords</p></li>
