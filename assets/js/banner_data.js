@@ -4,7 +4,7 @@ let BannerData = {
             title: "Let's build something great together",
             subTit: "19 Jan 2022",
             txt: "Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.",
-            path: '/',
+            path: '/contact',
         },
     },
 }

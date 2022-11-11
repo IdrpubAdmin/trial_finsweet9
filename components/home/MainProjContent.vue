@@ -5,7 +5,7 @@
     <div class="content-header">
       <h3 class="tit-h2">View our projects</h3>
       <div class="icon-link">
-        <router-link to="/" class="lb-txt-2">View More</router-link>
+        <router-link to="/work" class="lb-txt-2">View More</router-link>
       </div>
     </div>
     <!--  Content header | 제목  -->
@@ -22,7 +22,7 @@
                 {{ item.txt }}
               </p>
               <div class="icon-link y">
-                <router-link to="/" class="lb-txt-2">View project</router-link>
+                <router-link to="/work" class="lb-txt-2">View project</router-link>
               </div>
             </div>
             <div class="img-box">

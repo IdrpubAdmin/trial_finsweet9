@@ -27,15 +27,15 @@
               <input type="text" placeholder="Paste your Figma design URL">
             </fieldset>
             <div class="btn-wrap">
-              <a href="#" class="btn-ty01">
+              <router-link to="/privacy" class="btn-ty01">
                 Send an Inquiry
-              </a>
+              </router-link>
             </div>
           </form>
           <div class="icon-link w">
-            <a href="#" class="lb-txt-2">
+            <router-link to="/contact" class="lb-txt-2">
               Get in touch with us
-            </a>
+            </router-link>
           </div>
         </div>
       </section>

@@ -104,7 +104,7 @@
         <ul class="gnb-list">
           <!--  gnb navigation menu list  -->
           <li class="gnb-item" v-for="item in gnbData" :key="item.id">
-            <router-link to="/" class="txt-md">{{ item.title }}</router-link>
+            <router-link :to="item.path" class="txt-md">{{ item.title }}</router-link>
           </li>
           <!--  //gnb navigation menu list  -->
         </ul>

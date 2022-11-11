@@ -6,7 +6,7 @@ let NavigationData = {
             {id: 2, title: "About us", path: "/aboutus"},
             {id: 3, title: "Features", path: "/features"},
             {id: 4, title: "Pricing", path: "/pricing"},
-            {id: 5, title: "FAQ", path: "/faq"},
+            {id: 5, title: "Work", path: "/work"},
             {id: 6, title: "Blog", path: "/blog"},
         ],
         snsData: [

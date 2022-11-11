@@ -10,7 +10,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    path: '/',
+                    path: '/blog',
                     src: "img_blog_001",
                     linkTxt: "Read More",
                 }, {
@@ -18,7 +18,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    path: '/',
+                    path: '/blog',
                     src: "img_blog_002",
                     linkTxt: "Read More",
                 }, {
@@ -26,7 +26,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
-                    path: '/',
+                    path: '/blog',
                     src: "img_blog_003",
                     linkTxt: "Read More",
                 }

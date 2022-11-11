@@ -11,14 +11,14 @@
           {{ bannerCont.txt }}
         </p>
         <div class="btn-wrap">
-          <a href="#" class="btn-ty01">
+          <router-link :to="bannerCont.btn1Path" class="btn-ty01">
             {{ bannerCont.btn1Txt }}
-          </a>
+          </router-link>
           <template v-if="bannerCont.btn2">
             <div class="icon-link w">
-              <a href="#" class="lb-txt-2">
+              <router-link :to="bannerCont.btn2Path" class="lb-txt-2">
                 {{ bannerCont.btn2Txt }}
-              </a>
+              </router-link>
             </div>
           </template>
 

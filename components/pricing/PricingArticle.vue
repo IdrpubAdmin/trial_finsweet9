@@ -18,7 +18,7 @@
                     </li>
                 </ul>
                 <div class="btn-area">
-                    <router-link to="/" :class="'btn-' + item.type">{{item.btnTxt}}</router-link>
+                    <router-link to="/contact" :class="'btn-' + item.type">{{item.btnTxt}}</router-link>
                 </div>
                 </div>
             </article>
