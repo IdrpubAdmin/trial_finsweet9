@@ -62,16 +62,20 @@
           }
         }
 
-        img,
+        .img-wrap,
         .art-media {
           width: 40%;
+        }
+        .img-wrap {
+          height: 0;
+          overflow: hidden;
+          padding-bottom: calc((100% * 0.4) * 0.7);
         }
 
         .art-tet {
           @include flex-col(1.5rem);
 
           h6 {
-
             &.tit-h6 {
               font-size: 3.8rem;
               font-weight: $b;
@@ -116,11 +120,13 @@
           display: flex;
           flex-direction: column-reverse;
 
-          img,
+          .img-wrap,
           .art-media {
             width: 100%;
           }
-
+          .img-wrap {
+            padding-bottom: 70%;
+          }
           .art-tet {
             width: 100%;
             align-items: center;

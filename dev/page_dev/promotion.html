@@ -17,6 +17,8 @@
     <!--  style guide    -->
     <div class="style-guide">
 
+
+
         <!--  style guide header   -->
         <div class="style-header-wrap">
             <div class="style-header">
@@ -57,11 +59,15 @@
                     <ul class="text-list">
                         <li class="text-item">
                             <h6 class="tit-h6">Body 01</h6>
-                            <p class="txt-r">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectato</p>
+                            <p class="txt-r">Apparently we had reached a great height in the atmosphere, for the sky was
+                                a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the
+                                horizon of the sea to the level of the spectato</p>
                         </li>
                         <li class="text-item">
                             <h6 class="tit-h6">Body 02</h6>
-                            <p class="txt-md">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectato</p>
+                            <p class="txt-md">Apparently we had reached a great height in the atmosphere, for the sky
+                                was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts
+                                the horizon of the sea to the level of the spectato</p>
                         </li>
                         <li class="text-item">
                             <div class="label-area">
@@ -81,7 +87,7 @@
             <!--  list style   -->
             <div class="style-content">
                 <div class="style-title">
-                    <h3 class="tit-h5">Info List</h3>         
+                    <h3 class="tit-h5">Info List</h3>
                 </div>
                 <ul class="info-list style-section">
                     <li><p class="txt-r">Lorem ipsum dolor sit amet, consectetur adipiscing</p></li>
@@ -95,7 +101,7 @@
             <!--  color style   -->
             <div class="style-content">
                 <div class="style-title">
-                    <h3 class="tit-h5">Color pallette</h3>         
+                    <h3 class="tit-h5">Color pallette</h3>
                 </div>
                 <ul class="color-list style-section">
                     <li class="color-item royal-blue">
@@ -126,9 +132,9 @@
             <!--  button style   -->
             <div class="style-content">
                 <div class="style-title">
-                    <h3 class="tit-h5">Button Hover states</h3>         
+                    <h3 class="tit-h5">Button Hover states</h3>
                 </div>
-                <ul class="button-list style-section"> 
+                <ul class="button-list style-section">
                     <li class="button-item">
                         <button class="btn-ty01">View our work</button>
                     </li>
@@ -139,31 +145,31 @@
             </div>
             <!--  //button style   -->
 
-            <!--  article-type(.type-01)   --> 
+            <!--  article-type(.type-01)   -->
             <div class="style-content">
                 <div class="style-title">
                     <h3 class="tit-h5">Article Type 01</h3>
-                    <p class="txt-md">- 옆으로 나열된 포스트 형식</p>        
+                    <p class="txt-md">- 옆으로 나열된 포스트 형식</p>
                 </div>
                 <div class="style-section">
                     <article-type :article-data="articleType01"></article-type>
                 </div>
             </div>
-            <!--  //article-type(.type-01)   --> 
+            <!--  //article-type(.type-01)   -->
 
-            <!--  article-type(.type-02)   --> 
+            <!--  article-type(.type-02)   -->
             <div class="style-content">
                 <div class="style-title">
                     <h3 class="tit-h5">Article Type 02</h3>
-                    <p class="txt-md">- 아래로 나열된 형식</p>        
+                    <p class="txt-md">- 아래로 나열된 형식</p>
                 </div>
                 <div class="style-section">
                     <article-type :article-data="articleType02"></article-type>
                 </div>
             </div>
-            <!--  //article-type(.type-02)   --> 
+            <!--  //article-type(.type-02)   -->
 
-            <!--  faq-content   --> 
+            <!--  faq-content   -->
             <div class="style-content">
                 <div class="style-title">
                     <h3 class="tit-h5">FAQ Content</h3>
@@ -172,18 +178,62 @@
                     <faq-content></faq-content>
                 </div>
             </div>
-            <!--  //faq-content   --> 
+            <!--  //faq-content   -->
 
-            <!--  button-banner  --> 
+            <!--  button-banner  -->
             <div class="style-content">
                 <div class="style-title">
-                    <h3 class="tit-h5">Button Banner</h3>         
+                    <h3 class="tit-h5">Button Banner</h3>
                 </div>
                 <div class="style-section">
                     <button-banner></button-banner>
                 </div>
             </div>
-            <!--  //button-banner  --> 
+            <!--  //button-banner  -->
+
+            <!--  main-banner -->
+            <div class="style-content">
+                <div class="style-title">
+                    <h3 class="tit-h5">Main Banner</h3>
+                </div>
+                <main-banner :banner-cont="bannerCont"></main-banner>
+            </div>
+            <!--  main-banner -->
+
+            <!--  features-list -->
+            <div class="style-content">
+                <div class="style-title">
+                    <h3 class="tit-h5">Features List Type 01 </h3>
+                    <p class="txt-md">- 그레이 바탕 하얀 리스트</p>
+                </div>
+                <div class="style-section">
+                    <features-list :article-data="featData"></features-list>
+                </div>
+            </div>
+            <!--  //features-list -->
+
+            <!--  features-list(.ty02) -->
+            <div class="style-content">
+                <div class="style-title">
+                    <h3 class="tit-h5">Features List Type 02 </h3>
+                    <p class="txt-md">- 하얀 바탕 그레이 리스트</p>
+                </div>
+                <div class="style-section">
+                    <features-list :article-data="bnfData"></features-list>
+                </div>
+            </div>
+            <!--  //features-list(.ty02) -->
+
+            <!--  user-list -->
+            <div class="style-content">
+                <div class="style-title">
+                    <h3 class="tit-h5">User List</h3>
+                </div>
+                <div class="style-section">
+                    <user-list></user-list>
+                </div>
+            </div>
+            <!--  //user-list -->
         </div>
         <!--  //style guide container   -->
     </div>
@@ -204,14 +254,26 @@
             ButtonBanner,
             ArticleType,
             FaqContent,
+            MainBanner,
+            FeaturesList,
+            UserList
         },
-        computed : {
+        computed: {
             articleType01() {
                 return this.$store.getters["ArticleData"].homeArticle;
             },
             articleType02() {
                 return this.$store.getters["ArticleData"].featuresData;
             },
+            bannerCont() {
+                return this.$store.getters["MainBannerData"].MainBannerData;
+            },
+            featData() {
+                return this.$store.getters["ArticleData"].featData;
+            },
+            bnfData() {
+                return this.$store.getters["ArticleData"].bnfData;
+            }
         },
     }
 </script>

@@ -129,64 +129,70 @@ let ArticleData = {
             {num: "04", open: false, title: "I have a bigger project. Can you handle it ?"},
             {num: "05", open: false, title: "What is your class naming convention ?"}
         ],
-        featData: [
-            {
-                id: 1,
-                icoTy: `ty01`,
-                tit: `Uses Client First`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
-            },
-            {
-                id: 2,
-                icoTy: `ty02`,
-                tit: `Two Free Revision Round`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
-            },
-            {
-                id: 3,
-                icoTy: `ty03`,
-                tit: `Template Customization`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
-            },
-            {
-                id: 4,
-                icoTy: `ty04`,
-                tit: `24/7 Support`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
-            },
-            {
-                id: 5,
-                icoTy: `ty05`,
-                tit: `Quick Delivery`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
-            },
-            {
-                id: 6,
-                icoTy: `ty06`,
-                tit: `Hands-on approach`,
-                txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
-            },
-        ],
-        bnfData: [
-            {
-                id: 1,
-                icoTy: `ty06`,
-                tit: `Customize with ease`,
-                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
-            },
-            {
-                id: 2,
-                icoTy: `ty03`,
-                tit: `Perfectly Responsive`,
-                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
-            },
-            {
-                id: 3,
-                icoTy: `ty01`,
-                tit: `Friendly Support`,
-                txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
-            }
-        ],
+        featData: {
+            type: `type01`,
+            tit: ``,
+            data: [
+                {
+                    id: 1,
+                    icoTy: `ty01`,
+                    tit: `Uses Client First`,
+                    txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                },
+                {
+                    id: 2,
+                    icoTy: `ty02`,
+                    tit: `Two Free Revision Round`,
+                    txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                },
+                {
+                    id: 3,
+                    icoTy: `ty03`,
+                    tit: `Template Customization`,
+                    txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                },
+                {
+                    id: 4,
+                    icoTy: `ty04`,
+                    tit: `24/7 Support`,
+                    txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                },
+                {
+                    id: 5,
+                    icoTy: `ty05`,
+                    tit: `Quick Delivery`,
+                    txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                },
+                {
+                    id: 6,
+                    icoTy: `ty06`,
+                    tit: `Hands-on approach`,
+                    txt: `Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.`,
+                }
+            ],
+        },
+        bnfData: {
+            type: `ty02`,
+            data: [
+                {
+                    id: 1,
+                    icoTy: `ty06`,
+                    tit: `Customize with ease`,
+                    txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
+                },
+                {
+                    id: 2,
+                    icoTy: `ty03`,
+                    tit: `Perfectly Responsive`,
+                    txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
+                },
+                {
+                    id: 3,
+                    icoTy: `ty01`,
+                    tit: `Friendly Support`,
+                    txt: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.`,
+                }]
+        },
         bnfTitData: {
             aboutTit: `The benefits of working with us`,
             featuresTit: `The benefits of working with our team`,
@@ -341,21 +347,21 @@ let ArticleData = {
                 title: "Landing Page",
                 txt: "When you’re ready to go beyond prototyping in Figma,",
                 btnTxt: "Get started",
-                planList : [
+                planList: [
                     {
                         id: 1,
                         item: "All limited links"
-                    },{
+                    }, {
                         id: 2,
                         item: "Own analytics platform"
-                    },{
+                    }, {
                         id: 3,
                         item: "Chat support"
-                    },{
+                    }, {
                         id: 4,
                         item: "Optimize hashtags",
                         type: true
-                    },{
+                    }, {
                         id: 5,
                         item: "Unlimited users",
                         type: true
@@ -370,20 +376,20 @@ let ArticleData = {
                 title: "Website Page ",
                 txt: "When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.",
                 btnTxt: "Get started",
-                planList : [
+                planList: [
                     {
                         id: 1,
                         item: "All limited links"
-                    },{
+                    }, {
                         id: 2,
                         item: "Own analytics platform"
-                    },{
+                    }, {
                         id: 3,
                         item: "Chat support"
-                    },{
+                    }, {
                         id: 4,
                         item: "Optimize hashtags",
-                    },{
+                    }, {
                         id: 5,
                         item: "Unlimited users"
                     },
@@ -397,23 +403,23 @@ let ArticleData = {
                 title: "Complex Project",
                 txt: "When you’re ready to go beyond prototyping in Figma, ",
                 btnTxt: "Contact us",
-                planList : [
+                planList: [
                     {
                         id: 1,
                         item: "All limited links"
-                    },{
+                    }, {
                         id: 2,
                         item: "Own analytics platform"
-                    },{
+                    }, {
                         id: 3,
                         item: "Chat support"
-                    },{
+                    }, {
                         id: 4,
                         item: "Optimize hashtags"
-                    },{
+                    }, {
                         id: 5,
                         item: "Unlimited users"
-                    },{
+                    }, {
                         id: 6,
                         item: "Assist and Help"
                     },

@@ -33,7 +33,7 @@ module.exports = {
   },
   components: {
     FeaturesList,
-    UserList
+    UserList,
   }
 }
 </script>
