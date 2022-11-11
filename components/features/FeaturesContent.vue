@@ -3,7 +3,7 @@
     <div class="content-header blind">
       Features
     </div>
-    <article-bg-type :article-data="featuresData"></article-bg-type>
+    <article-type :article-data="featuresData"></article-type>
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 module.exports = {
   name: "FeaturesContent",
   components: {
-    ArticleBgType
+    ArticleType
   },
   computed: {
     featuresData() {

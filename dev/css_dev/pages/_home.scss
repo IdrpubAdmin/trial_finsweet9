@@ -46,11 +46,11 @@
     background-repeat: no-repeat;
 
     &.ty01 {
-      background-image: url("../images/img_banner_01.png");
+      background-image: url("../images/img_banner_001.png");
     }
 
     &.ty02 {
-      background-image: url("../images/img_banner_02.png");
+      background-image: url("../images/img_banner_002.png");
     }
   }
 }
@@ -140,27 +140,27 @@
         background-repeat: no-repeat;
 
         &.ty01 {
-          background-image: url("../images/ico_list_01.png");
+          background-image: url("../images/ico_list_001.png");
         }
 
         &.ty02 {
-          background-image: url("../images/ico_list_02.png");
+          background-image: url("../images/ico_list_002.png");
         }
 
         &.ty03 {
-          background-image: url("../images/ico_list_03.png");
+          background-image: url("../images/ico_list_003.png");
         }
 
         &.ty04 {
-          background-image: url("../images/ico_list_04.png");
+          background-image: url("../images/ico_list_004.png");
         }
 
         &.ty05 {
-          background-image: url("../images/ico_list_05.png");
+          background-image: url("../images/ico_list_005.png");
         }
 
         &.ty06 {
-          background-image: url("../images/ico_list_06.png");
+          background-image: url("../images/ico_list_006.png");
         }
       }
 
@@ -294,6 +294,7 @@
           text-align: center;
           line-height: 5rem;
           background-image: url("../images/ico_bg_hww.png");
+          background-size: 5rem 5rem;
         }
 
         .txt-r {
@@ -682,7 +683,7 @@
     .content-header {
       @include flex-col(2.4rem);
       flex-basis: 50%;
-      background-image: url("../images/img_bg_inq.png");
+      background-image: url("../images/img_bg_inq_001.png");
       background-size: 200% 100%;
       background-position: 40% center ;
       background-repeat: no-repeat;

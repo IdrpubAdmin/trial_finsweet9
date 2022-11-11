@@ -1,5 +1,5 @@
 
-.features-main {
+.features-contents {
   .bnf-comp {
     .content {
       padding: 96px 0 0;
@@ -88,7 +88,7 @@
 }
 
 @include t-l {
-  .features-main {
+  .features-contents {
     .features-content {
       .layout-ty02 {
         article {
@@ -109,7 +109,7 @@
 
 
 @include t-s {
-  .features-main {
+  .features-contents {
     .features-content {
       .layout-ty02 {
         article {
@@ -133,7 +133,7 @@
 }
 
 @include m-l {
-  .features-main {
+  .features-contents {
     .features-content {
       .layout-ty02 {
         article {

@@ -419,6 +419,33 @@ let ArticleData = {
                     },
                 ]
             },
+        ],
+        userListData: [
+            {
+                id: 1,
+                name: `user1`,
+                url: `img_logo_user_001`,
+            },
+            {
+                id: 2,
+                name: `user2`,
+                url: `img_logo_user_002`,
+            },
+            {
+                id: 3,
+                name: `user3`,
+                url: `img_logo_user_003`,
+            },
+            {
+                id: 4,
+                name: `user4`,
+                url: `img_logo_user_004`,
+            },
+            {
+                id: 5,
+                name: `user5`,
+                url: `img_logo_user_005`,
+            },
         ]
     },
     mutations: {

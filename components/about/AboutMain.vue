@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="about-contents">
     <about-us-content></about-us-content>
     <who-we-content></who-we-content>
     <follow-content></follow-content>
     <mission-content></mission-content>
-    <benefits-content-02 :tit="aboutTit"></benefits-content-02>
+    <benefits-content02 :tit="aboutTit"></benefits-content02>
     <team-content></team-content>
   </div>
 </template> 
