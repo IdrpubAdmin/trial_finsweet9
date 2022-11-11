@@ -119,9 +119,14 @@
         section{
             width: 66%; 
             margin: 0 auto;
-            .info-texts{
-                p{
+            .text-article{
+                .txt1{
                     margin-top: 1.2rem;
+                }
+                .info-list{
+                    li{
+                        margin-top: 1.6rem;
+                    }
                 }
             }
             .img-wrap{
@@ -129,15 +134,6 @@
                 margin-top: 6.4rem;
                 img{
                     width: 100%;
-                }
-            }
-            .info-list{
-                margin-top: 24px;
-                li{
-                    margin-top: 1.6rem;
-                    &:first-child{
-                        margin-top: 0;
-                    }
                 }
             }
         }

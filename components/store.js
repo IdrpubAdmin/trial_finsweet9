@@ -8,6 +8,7 @@ const store = new Vuex.Store({
         MainBannerData: MainBannerData,
         CategoryData: CategoryData,
         PostData: PostData,
+        TextData: TextData,
     },
     state: {
         path: {
@@ -37,6 +38,9 @@ const store = new Vuex.Store({
         },
         PostData: function PostData(state) {
             return state.PostData;
+        },
+        TextData: function TextData(state) {
+            return state.TextData;
         },
     },
 });

@@ -190,6 +190,13 @@
 }
 
 @include t-l {
+  .layout-ty01 {
+    gap: 3rem;
+    article {
+      width: calc((100% - 3rem) / 2);
+    }
+  }
+
   .layout-ty02{
     article{
       gap: 8rem;
@@ -201,6 +208,11 @@
 }
 
 @include m-l {
+  .layout-ty01 {
+    article {
+      width: 100%;
+    }
+  }
   .layout-ty02{
     article{
       display: block;

@@ -1,3 +1,120 @@
+.contact-contents{
+    .contact-content{
+        .content-header{
+            text-align: center;
+            p{
+                width: 40%;
+                margin: 0 auto;
+            }
+        }
+        .contact-section{
+            width: 83%;
+            margin: 6.4rem auto 0;
+            border-radius: 12px;
+            background-color: #f4f6fc;
+            form{
+                padding: 5.5rem 7rem 7rem;
+                fieldset{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 3rem;
+                }
+                .input-wrap{
+                    width: calc((100% - 3rem) / 2);
+                    input{
+                        width: 100%;
+                        margin-top: 0.6rem;
+                        padding: 18px 32px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(0, 0, 0, 0.12);
+                        box-sizing: border-box;
+                        background-color: transparent;
+                    }
+                    input::placeholder{
+                        color: #000;
+                    }
+                }
+                .text-input-wrap{
+                    width: 100%;
+                    textarea{
+                        width: 100%;
+                        height: 14rem;
+                        margin-top: 0.6rem;
+                        padding: 18px 32px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(0, 0, 0, 0.12);
+                        box-sizing: border-box;
+                        background-color: transparent;
+                    }
+                    textarea::placeholder{
+                        color: #000;
+                    }
+                }
+                .btn-area{
+                    margin-top: 3.2rem;
+                    a{
+                        display: inline-block;
+                        padding: 1.6rem 6.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include t-l{
+    .contact-contents{
+        .contact-content{
+            .content-header{
+                p{
+                    width: 55%;
+                }
+            }
+            .contact-section{
+                width: 100%;
+                form{
+                    padding: 3.5rem 4rem 4rem;
+                    .input-wrap{
+                        input{
+                            padding: 18px 16px;
+                        }
+                    }
+                    .text-input-wrap{
+                        textarea{
+                            padding: 18px 16px;
+                        }
+                    }
+                    .btn-area{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@include m-l{
+    .contact-contents{
+        .contact-content{
+            .content-header{
+                p{
+                    width: 100%;
+                }
+            }
+            .contact-section{
+                form{
+                    padding: 3.5rem 2rem 4rem;
+                    .input-wrap{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
 .privacy-contents{
     .privacy-content{
         .content-header{
@@ -10,7 +127,7 @@
         .privacy-info{
             width: 66%;
             margin: 6.4rem auto 0;
-            .privacy-texts{
+            .text-article{
                 margin-top: 4rem;
                 &:first-child{
                     margin-top: 0;
@@ -24,19 +141,52 @@
                 .txt3{
                     margin-top: 1.6rem;
                 }
-                span{
-                    color: $royal-blue;
-                }
-                .info-list{
-                    margin-top: 2.4rem;
-                    li{
-                        margin-top: 1.2rem;
-                        &:first-child{
-                            margin-top: 0;
-                        }
-                    }
-                }
             }
         }
+    }
+}
+
+@include t-l{
+    .privacy-contents{
+        .privacy-content{
+            .content-header{
+                p{
+                    width: 55%;
+                }
+            }
+            .privacy-info{
+                width: 80%;
+            }
+        }
+    }
+}
+
+@include m-l{
+    .privacy-contents{
+        .privacy-content{
+            .content-header{
+                p{
+                    width: 100%;
+                }
+            }
+            .privacy-info{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.text-article{
+    .info-list{
+        margin-top: 2.4rem;
+        li{
+            margin-top: 1.2rem;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+    b{
+        color: $royal-blue;
     }
 }

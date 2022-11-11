@@ -566,6 +566,8 @@
     .prf-img {
       width: 5rem;
       height: 5rem;
+      border-radius: 5rem;
+      overflow: hidden;
       img {
         width: 100%;
         height: 100%;
@@ -831,27 +833,5 @@
 .blog-content {
   @include flex-col(6.4rem);
 }
-
-@include t-l {
-  .blog-content {
-    .layout-ty01 {
-      gap: 3rem;
-      article {
-        width: calc((100% - 3rem) / 2);
-      }
-    }
-  }
-}
-
-@include m-l {
-  .blog-content {
-    .layout-ty01 {
-      article {
-        width: 100%;
-      }
-    }
-  }
-}
-
 
 /* //main blog CSS */
