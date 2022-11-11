@@ -150,7 +150,6 @@
       margin-top: 4rem;
       .tit-h6{
         margin-top: 18px;
-        line-height: $ln-h-r;
       }
       p{
         margin-top: 16px;
@@ -177,9 +176,6 @@
     }
     .art-tet{
       width: 50%;
-      .tit-h6{
-        line-height: $ln-h-r;
-      }
     }
   }
 }
@@ -206,9 +202,6 @@
       }
       .art-tet{
         width: 100%;
-        .tit-h6{
-          line-height: $ln-h-r;
-        }
       }
     }
   }

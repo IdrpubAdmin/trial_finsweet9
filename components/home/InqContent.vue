@@ -27,7 +27,7 @@
               <input type="text" placeholder="Paste your Figma design URL">
             </fieldset>
             <div class="btn-wrap">
-              <a href="#" class="btn-ty01 lb-txt-1">
+              <a href="#" class="btn-ty01">
                 Send an Inquiry
               </a>
             </div>

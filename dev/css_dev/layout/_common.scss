@@ -197,6 +197,9 @@ button {
   transition: background-color 0.3s;
   color: #1b1c2b;
   border-radius: 40px;
+  font-size: $font-18r;
+  font-weight: $md;
+  line-height: $ln-h-r;
 }
 
 .btn-ty01:hover {
@@ -208,6 +211,9 @@ button {
   transition: background-color 0.3s;
   color: $white;
   border-radius: 40px;
+  font-size: $font-18r;
+  font-weight: $md;
+  line-height: $ln-h-r;
 }
 
 .btn-ty02:hover {

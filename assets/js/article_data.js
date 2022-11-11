@@ -11,7 +11,7 @@ let ArticleData = {
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
-                    src: "blog001",
+                    src: "img_blog_001",
                     linkTxt: "Read More",
                 }, {
                     id: 2,
@@ -19,7 +19,7 @@ let ArticleData = {
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
-                    src: "blog002",
+                    src: "img_blog_002",
                     linkTxt: "Read More",
                 }, {
                     id: 3,
@@ -27,7 +27,7 @@ let ArticleData = {
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
-                    src: "blog003",
+                    src: "img_blog_003",
                     linkTxt: "Read More",
                 }
             ]
@@ -41,7 +41,7 @@ let ArticleData = {
                     title: "Template 1",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
                     path: {name: 'workPost', params: {id: 1}},
-                    src: "work001",
+                    src: "img_work_001",
                     linkTxt: "View Portfolio",
                     key: "ui",
                 }, {
@@ -49,7 +49,7 @@ let ArticleData = {
                     title: "Template 2",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
                     path: {name: 'workPost', params: {id: 2}},
-                    src: "work002",
+                    src: "img_work_002",
                     linkTxt: "View Portfolio",
                     key: "figma",
                 }, {
@@ -57,7 +57,7 @@ let ArticleData = {
                     title: "Template 3",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
                     path: {name: 'workPost', params: {id: 3}},
-                    src: "work003",
+                    src: "img_work_003",
                     linkTxt: "View Portfolio",
                     key: "ui",
                 }, {
@@ -65,7 +65,7 @@ let ArticleData = {
                     title: "Template 4",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
                     path: {name: 'workPost', params: {id: 4}},
-                    src: "work004",
+                    src: "img_work_004",
                     linkTxt: "View Portfolio",
                     key: "ui",
                 }, {
@@ -73,7 +73,7 @@ let ArticleData = {
                     title: "Template 5",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
                     path: {name: 'workPost', params: {id: 5}},
-                    src: "work005",
+                    src: "img_work_005",
                     linkTxt: "View Portfolio",
                     key: "webflow",
                 }, {
@@ -81,7 +81,7 @@ let ArticleData = {
                     title: "Template 6",
                     txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
                     path: {name: 'workPost', params: {id: 6}},
-                    src: "work006",
+                    src: "img_work_006",
                     linkTxt: "View Portfolio",
                     key: "webflow",
                 },

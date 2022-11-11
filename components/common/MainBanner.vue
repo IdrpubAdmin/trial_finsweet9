@@ -11,7 +11,7 @@
           {{ bannerCont.txt }}
         </p>
         <div class="btn-wrap">
-          <a href="#" class="btn-ty01 lb-txt-1">
+          <a href="#" class="btn-ty01">
             {{ bannerCont.btn1Txt }}
           </a>
           <template v-if="bannerCont.btn2">

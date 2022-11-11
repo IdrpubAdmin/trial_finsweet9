@@ -50,7 +50,7 @@
                     <li><p class="txt-r">Duis aute irure dolor in reprehenderit in voluptate velit esse</p></li>
                     <li><p class="txt-r">Excepteur sint occaecat cupidatat non proident, sunt in culpa</p></li>
                 </ul>
-                <img src="../assets/images/work_post001.png" alt="article img">
+                <img src="../assets/images/img_work_post_001.png" alt="article img">
             </section>
             <section class="post-detail-2">
                 <div class="info-texts">

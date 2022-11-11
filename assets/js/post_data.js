@@ -4,22 +4,22 @@ let PostData = {
         workPost: [
             {
                 id: 1,
-                src: "work001",
+                src: "img_work_001",
             }, {
                 id: 2,
-                src: "work002",
+                src: "img_work_002",
             }, {
                 id: 3,
-                src: "work003",
+                src: "img_work_003",
             }, {
                 id: 4,
-                src: "work004",
+                src: "img_work_004",
             },{
                 id: 5,
-                src: "work005",
+                src: "img_work_005",
             },{
                 id: 6,
-                src: "work006",
+                src: "img_work_006",
             },
         ]
     }
