@@ -13,7 +13,9 @@
                         in reprehenderit in voluptate velit esse.
                     </p>
                 </div>
-                <img :src="'../assets/images/' + postData.src + '.png'" alt="article img">
+                <div class="img-wrap">
+                    <img :src="'../assets/images/' + postData.src + '.png'" alt="article img">
+                </div>
                 <ul class="post-summary">
                     <li>
                         <p class="txt-md">Client</p>
@@ -50,7 +52,9 @@
                     <li><p class="txt-r">Duis aute irure dolor in reprehenderit in voluptate velit esse</p></li>
                     <li><p class="txt-r">Excepteur sint occaecat cupidatat non proident, sunt in culpa</p></li>
                 </ul>
-                <img src="../assets/images/img_work_post_001.png" alt="article img">
+                <div class="img-wrap">
+                    <img src="../assets/images/img_work_post_001.png" alt="article img">
+                </div>
             </section>
             <section class="post-detail-2">
                 <div class="info-texts">

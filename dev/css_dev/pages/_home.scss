@@ -819,6 +819,12 @@
 /* main blog CSS */
 .blog-content {
   @include flex-col(6.4rem);
+  .img-wrap{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 70%;
+  }
 }
 
 @include t-l {

@@ -170,9 +170,12 @@
     &:nth-child(odd){
       flex-direction: row-reverse;
     }
-    img,
-    .art-media {
+    .img-wrap{
       width: calc(50% - 140px);
+      img,
+      .art-media {
+        width: 100%;
+      }
     }
     .art-tet{
       width: 50%;

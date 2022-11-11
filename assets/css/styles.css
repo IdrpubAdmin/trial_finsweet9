@@ -285,7 +285,9 @@ button { cursor: pointer; }
 
 .layout-ty02 article:nth-child(odd) { flex-direction: row-reverse; }
 
-.layout-ty02 article img, .layout-ty02 article .art-media { width: calc(50% - 140px); }
+.layout-ty02 article .img-wrap { width: calc(50% - 140px); }
+
+.layout-ty02 article .img-wrap img, .layout-ty02 article .img-wrap .art-media { width: 100%; }
 
 .layout-ty02 article .art-tet { width: 50%; }
 
@@ -875,6 +877,8 @@ button { cursor: pointer; }
 /* main blog CSS */
 .blog-content { display: flex; flex-direction: column; gap: 6.4rem; }
 
+.blog-content .img-wrap { width: 100%; height: 0; overflow: hidden; padding-bottom: 70%; }
+
 @media (max-width: 1023px) { .blog-content .layout-ty01 { gap: 3rem; }
   .blog-content .layout-ty01 article { width: calc((100% - 3rem) / 2); } }
 
@@ -939,6 +943,8 @@ button { cursor: pointer; }
 
 .work-contents .work-content .layout-ty01 article { width: calc((100% - 3rem) / 2); }
 
+.work-contents .work-content .layout-ty01 article .img-wrap { width: 100%; height: 0; overflow: hidden; padding-bottom: 61%; }
+
 .work-contents .work-content .layout-ty01 article .art-tet { margin-top: 2.4rem; }
 
 .work-contents .work-content .layout-ty01 article h6 { font-size: 3.8rem; font-weight: 600; }
@@ -965,7 +971,9 @@ button { cursor: pointer; }
 
 .work-post-contents .post-main section .post-texts .txt-md { width: 77%; margin-top: 1.6rem; }
 
-.work-post-contents .post-main section img { margin-top: 4.8rem; width: 100%; }
+.work-post-contents .post-main section .img-wrap { margin-top: 4.8rem; width: 100%; }
+
+.work-post-contents .post-main section .img-wrap img { width: 100%; }
 
 .work-post-contents .post-main section .post-summary { margin-top: 4.8rem; padding-bottom: 3rem; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(40, 41, 56, 0.3); }
 
@@ -975,7 +983,9 @@ button { cursor: pointer; }
 
 .work-post-contents .post-info section .info-texts p { margin-top: 1.2rem; }
 
-.work-post-contents .post-info section img { width: 100%; margin-top: 6.4rem; }
+.work-post-contents .post-info section .img-wrap { width: 100%; margin-top: 6.4rem; }
+
+.work-post-contents .post-info section .img-wrap img { width: 100%; }
 
 .work-post-contents .post-info section .info-list { margin-top: 24px; }
 
