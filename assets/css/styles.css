@@ -444,7 +444,7 @@ button { cursor: pointer; }
 /* about us content CSS */
 .about-us-content .layout-ty02 article { gap: 3rem; justify-content: space-between; }
 
-.about-us-content .layout-ty02 article img { width: 40%; }
+.about-us-content .layout-ty02 article .img-wrap { width: 40%; height: 0; overflow: hidden; padding-bottom: calc((100% * 0.4) * 0.61); }
 
 .about-us-content .layout-ty02 article .art-tet { display: flex; flex-direction: column; gap: 1.5rem; }
 
@@ -455,7 +455,7 @@ button { cursor: pointer; }
 @media (max-width: 1023px) { .about-us-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 4.8rem; } }
 
 @media (max-width: 767px) { .about-us-content .layout-ty02 article { flex-direction: column-reverse; }
-  .about-us-content .layout-ty02 article img { width: 100%; }
+  .about-us-content .layout-ty02 article .img-wrap { width: 100%; padding-bottom: 61%; }
   .about-us-content .layout-ty02 article .art-tet { width: 100%; align-items: center; text-align: center; } }
 
 @media (max-width: 640px) { .about-us-content .layout-ty02 article { display: flex; }
@@ -520,9 +520,11 @@ button { cursor: pointer; }
 
 .mission-content .layout-ty02 article { gap: 3rem; justify-content: space-between; }
 
-.mission-content .layout-ty02 article img, .mission-content .layout-ty02 article .art-media { width: 40%; }
+.mission-content .layout-ty02 article .img-wrap, .mission-content .layout-ty02 article .art-media { width: 40%; }
 
-.mission-content .layout-ty02 article .media-box { position: relative; width: 100%; height: 0; padding-bottom: 56.3%; }
+.mission-content .layout-ty02 article .img-wrap { height: 0; overflow: hidden; padding-bottom: calc((100% * 0.4) * 0.61); }
+
+.mission-content .layout-ty02 article .media-box { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; }
 
 .mission-content .layout-ty02 article .media-box iframe { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
 
@@ -535,7 +537,8 @@ button { cursor: pointer; }
 @media (max-width: 1023px) { .mission-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.6rem; font-weight: 500; } }
 
 @media (max-width: 767px) { .mission-content .layout-ty02 article { flex-direction: column-reverse; }
-  .mission-content .layout-ty02 article img, .mission-content .layout-ty02 article .art-media { width: 100%; }
+  .mission-content .layout-ty02 article .img-wrap, .mission-content .layout-ty02 article .art-media { width: 100%; }
+  .mission-content .layout-ty02 article .img-wrap { padding-bottom: 61%; }
   .mission-content .layout-ty02 article .art-tet { width: 100%; align-items: center; text-align: center; } }
 
 @media (max-width: 640px) { .mission-content .layout-ty02 article { display: flex; }
@@ -621,7 +624,9 @@ button { cursor: pointer; }
 
 .features-contents .features-content section article:nth-of-type(4)::after { background-color: #FCD9801A; }
 
-.features-contents .features-content section article img, .features-contents .features-content section article .art-media { width: 40%; }
+.features-contents .features-content section article .img-wrap, .features-contents .features-content section article .art-media { width: 40%; }
+
+.features-contents .features-content section article .img-wrap { height: 0; overflow: hidden; padding-bottom: calc((100% * 0.4) * 0.7); }
 
 .features-contents .features-content section article .art-tet { display: flex; flex-direction: column; gap: 1.5rem; }
 
@@ -632,7 +637,8 @@ button { cursor: pointer; }
 @media (max-width: 1023px) { .features-contents .features-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.6rem; font-weight: 500; } }
 
 @media (max-width: 767px) { .features-contents .features-content .layout-ty02 article { display: flex; flex-direction: column-reverse; }
-  .features-contents .features-content .layout-ty02 article img, .features-contents .features-content .layout-ty02 article .art-media { width: 100%; }
+  .features-contents .features-content .layout-ty02 article .img-wrap, .features-contents .features-content .layout-ty02 article .art-media { width: 100%; }
+  .features-contents .features-content .layout-ty02 article .img-wrap { padding-bottom: 70%; }
   .features-contents .features-content .layout-ty02 article .art-tet { width: 100%; align-items: center; text-align: center; } }
 
 @media (max-width: 640px) { .features-contents .features-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.2rem; }
