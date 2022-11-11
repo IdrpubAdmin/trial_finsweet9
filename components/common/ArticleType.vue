@@ -1,7 +1,9 @@
 <template>
     <section :class="'layout-'+articleData.type">
         <article v-for="list in articleData.data" :key="list.id">
-            <img :src="'../assets/images/' + list.src + '.png'" alt="article img">
+            <div class="img-wrap">
+              <img :src="'../assets/images/' + list.src + '.png'" alt="article img">
+            </div>
             <div class="art-tet">
               <template v-if="list.subTit">
                 <p class="txt-md">{{list.subTit}}</p>
