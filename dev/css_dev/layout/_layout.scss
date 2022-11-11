@@ -142,6 +142,12 @@
   column-gap: 3rem;
   article{
     width: calc((100% - 6rem) / 3 );
+    .img-wrap{
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 70%;
+    }
     img,
     .art-media {
       width: 100%;
@@ -187,8 +193,7 @@
   .layout-ty02{
     article{
       gap: 8rem;
-      img,
-      .art-media {
+      .img-wrap {
         width: calc(50% - 80px);
       }
     }
@@ -199,8 +204,7 @@
   .layout-ty02{
     article{
       display: block;
-      img,
-      .art-media {
+      .img-wrap {
         width: 100%;
       }
       .art-tet{
