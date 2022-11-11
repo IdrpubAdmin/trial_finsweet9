@@ -150,47 +150,47 @@ address { font-style: normal; font-size: 1.6rem; }
 
 html { font-family: "Poppins", sans-serif; }
 
-.tit-h1 { font-size: 5.4rem; font-weight: 600; line-height: 1.7; color: #282938; }
+.tit-h1 { font-size: 5.4rem; font-weight: 600; line-height: 1.5; color: #282938; }
 
-.tit-h2 { font-size: 4.8rem; font-weight: 600; line-height: 1.7; color: #282938; }
+.tit-h2 { font-size: 4.8rem; font-weight: 600; line-height: 1.5; color: #282938; }
 
-.tit-h3 { font-size: 3.8rem; font-weight: 600; line-height: 1.7; color: #282938; }
+.tit-h3 { font-size: 3.8rem; font-weight: 600; line-height: 1.5; color: #282938; }
 
-.tit-h4 { font-size: 3.6rem; font-weight: 500; line-height: 1.7; color: #282938; }
+.tit-h4 { font-size: 3.6rem; font-weight: 500; line-height: 1.5; color: #282938; }
 
-.tit-h5 { font-size: 3.2rem; font-weight: 500; line-height: 1.7; color: #282938; }
+.tit-h5 { font-size: 3.2rem; font-weight: 500; line-height: 1.5; color: #282938; }
 
-.tit-h6 { font-size: 2.4rem; font-weight: 500; line-height: 1.7; color: #282938; }
+.tit-h6 { font-size: 2.4rem; font-weight: 500; line-height: 1.5; color: #282938; }
 
 .txt-r { font-size: 1.6rem; font-weight: 400; line-height: 1.5; color: #282938; }
 
 .txt-md { font-size: 1.6rem; font-weight: 500; line-height: 1.5; color: #282938; }
 
-.lb-txt-1 { font-size: 1.8rem; font-weight: 500; line-height: 1.7; color: #282938; }
+.lb-txt-1 { font-size: 1.8rem; font-weight: 500; line-height: 1.5; color: #282938; }
 
-.lb-txt-2 { font-size: 1.6rem; font-weight: 500; line-height: 1.7; color: #282938; }
+.lb-txt-2 { font-size: 1.6rem; font-weight: 500; line-height: 1.5; color: #282938; }
 
-@media (max-width: 1023px) { .tit-h1 { font-size: 4.8rem; line-height: 1.5; }
-  .tit-h2 { font-size: 3.8rem; line-height: 1.5; }
-  .tit-h3 { font-size: 3.6rem; line-height: 1.5; }
-  .tit-h4 { font-size: 3.2rem; line-height: 1.5; }
-  .tit-h5 { font-size: 2.4rem; line-height: 1.5; }
-  .tit-h6 { font-size: 2rem; line-height: 1.5; }
+@media (max-width: 1023px) { .tit-h1 { font-size: 4.8rem; }
+  .tit-h2 { font-size: 3.8rem; }
+  .tit-h3 { font-size: 3.6rem; }
+  .tit-h4 { font-size: 3.2rem; }
+  .tit-h5 { font-size: 2.4rem; }
+  .tit-h6 { font-size: 2rem; }
   .txt-r { font-size: 1.4rem; line-height: 1.3; }
   .txt-md { font-size: 1.4rem; line-height: 1.3; }
-  .lb-txt-1 { font-size: 1.6rem; line-height: 1.5; }
-  .lb-txt-2 { font-size: 1.4rem; line-height: 1.5; } }
+  .lb-txt-1 { font-size: 1.6rem; }
+  .lb-txt-2 { font-size: 1.4rem; } }
 
-@media (max-width: 640px) { .tit-h1 { font-size: 3.8rem; line-height: 1.5; }
-  .tit-h2 { font-size: 3.6rem; line-height: 1.5; }
-  .tit-h3 { font-size: 3.2rem; line-height: 1.5; }
-  .tit-h4 { font-size: 2.4rem; line-height: 1.5; }
-  .tit-h5 { font-size: 2rem; line-height: 1.5; }
-  .tit-h6 { font-size: 1.8rem; line-height: 1.5; }
-  .txt-r { font-size: 1.2rem; line-height: 1.3; }
-  .txt-md { font-size: 1.2rem; line-height: 1.3; }
-  .lb-txt-1 { font-size: 1.4rem; line-height: 1.5; }
-  .lb-txt-2 { font-size: 1.2rem; line-height: 1.5; } }
+@media (max-width: 640px) { .tit-h1 { font-size: 3.8rem; }
+  .tit-h2 { font-size: 3.6rem; }
+  .tit-h3 { font-size: 3.2rem; }
+  .tit-h4 { font-size: 2.4rem; }
+  .tit-h5 { font-size: 2rem; }
+  .tit-h6 { font-size: 1.8rem; }
+  .txt-r { font-size: 1.2rem; }
+  .txt-md { font-size: 1.2rem; }
+  .lb-txt-1 { font-size: 1.4rem; }
+  .lb-txt-2 { font-size: 1.2rem; } }
 
 .btn-ty03 { border: 2px solid #F4F6FC33; -webkit-border-radius: 4rem; -moz-border-radius: 4rem; border-radius: 4rem; color: #ffffff; transition: border 0.3s; }
 
