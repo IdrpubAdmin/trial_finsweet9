@@ -63,7 +63,7 @@
           </div>
           <div class="sns-list-wrap">
             <ul class="sns-list">
-              <li v-for="item in snsData" class="sns-item">
+              <li v-for="item in snsData" class="sns-item" :key="item.id">
                 <router-link to="/" :title="`${ item.title } 이동`" :class="`${ item.title }`">
                 </router-link>
               </li>
