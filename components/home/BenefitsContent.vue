@@ -9,39 +9,12 @@
       </div>
       <!-- //content header | 제목 -->
       <!-- content body | 본문 -->
-      <!--  Features List    -->
+      <!--  Features List Component   -->
       <features-list :article-data="featData"></features-list>
-      <!--  //Features List    -->
-
-      <template v-if="false">
-        <!--   Finsweet Users List   -->
-        <section class="user-list-wrap">
-          <div class="txt-box">
-            <p class="tit-h1">100,000+</p>
-            <p class="txt-r">finsweet Users</p>
-          </div>
-          <div class="user-logo-box">
-            <ul class="user-list">
-              <li class="user-item">
-                <img src="../assets/images/img_logo_user1.png" alt="user1">
-              </li>
-              <li class="user-item">
-                <img src="../assets/images/img_logo_user2.png" alt="user1">
-              </li>
-              <li class="user-item">
-                <img src="../assets/images/img_logo_user3.png" alt="user1">
-              </li>
-              <li class="user-item">
-                <img src="../assets/images/img_logo_user4.png" alt="user1">
-              </li>
-              <li class="user-item">
-                <img src="../assets/images/img_logo_user5.png" alt="user1">
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!--   //Finsweet Users List   -->
-      </template>
+      <!--  //Features List Component    -->
+      <!--   user-list Component   -->
+      <user-list v-if="false"></user-list>
+      <!--   //user-list Component   -->
       <!-- //content body | 본문 -->
     </div>
   </div>
@@ -57,7 +30,8 @@ module.exports = {
     }
   },
   components: {
-    FeaturesList
+    FeaturesList,
+    UserList
   }
 }
 </script>

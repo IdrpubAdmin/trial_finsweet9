@@ -1,5 +1,5 @@
 <template>
-  <div class="features-main">
+  <div class="features-contents">
     <main-banner :banner-cont="bannerCont"></main-banner>
     <benefits-content02 :tit="featuresTit"></benefits-content02>
     <features-content></features-content>

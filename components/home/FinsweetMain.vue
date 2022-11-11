@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-contents">
     <main-banner :banner-cont="bannerCont"></main-banner>
     <work-content></work-content>
     <main-proj-content></main-proj-content>

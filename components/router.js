@@ -10,7 +10,7 @@ const SocialBanner = httpVueLoader('../components/common/SocialBanner.vue');
 const MainBanner = httpVueLoader('../components/common/MainBanner.vue');
 const FeaturesList = httpVueLoader('../components/common/FeaturesList.vue');
 const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.vue');
-
+const UserList = httpVueLoader('../components/common/UserList.vue');
 const PricingMain = httpVueLoader('../components/pricing/PricingMain.vue');
 const BlogMain = httpVueLoader('../components/blog/BlogMain.vue');
 
@@ -38,8 +38,7 @@ const TeamContent = httpVueLoader('../components/about/TeamContent.vue');
 /* features components */
 const FeaturesMain = httpVueLoader('../components/features/FeaturesMain.vue');
 const FeaturesContent = httpVueLoader('../components/features/FeaturesContent.vue');
-const ArticleBgType = httpVueLoader('../components/features/ArticleBgType.vue');
-/* //featers components */
+/* //features components */
 
 const WorkPost = httpVueLoader('../components/work/WorkPost.vue');
 const WorkArticle = httpVueLoader('../components/work/WorkArticle.vue');

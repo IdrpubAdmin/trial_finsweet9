@@ -11,7 +11,7 @@ let ArticleData = {
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
-                    src: "blog001",
+                    src: "img_blog_001",
                     linkTxt: "Read More",
                 }, {
                     id: 2,
@@ -19,7 +19,7 @@ let ArticleData = {
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
-                    src: "blog002",
+                    src: "img_blog_002",
                     linkTxt: "Read More",
                 }, {
                     id: 3,
@@ -27,7 +27,7 @@ let ArticleData = {
                     subTit: "19 Jan 2022",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/',
-                    src: "blog003",
+                    src: "img_blog_003",
                     linkTxt: "Read More",
                 }
             ]
@@ -418,6 +418,33 @@ let ArticleData = {
                         item: "Assist and Help"
                     },
                 ]
+            },
+        ],
+        userListData: [
+            {
+                id: 1,
+                name: `user1`,
+                url: `img_logo_user_001`,
+            },
+            {
+                id: 2,
+                name: `user2`,
+                url: `img_logo_user_002`,
+            },
+            {
+                id: 3,
+                name: `user3`,
+                url: `img_logo_user_003`,
+            },
+            {
+                id: 4,
+                name: `user4`,
+                url: `img_logo_user_004`,
+            },
+            {
+                id: 5,
+                name: `user5`,
+                url: `img_logo_user_005`,
             },
         ]
     },
