@@ -291,10 +291,13 @@ button { cursor: pointer; }
 
 .layout-ty02 article .art-tet { width: 50%; }
 
-@media (max-width: 1023px) { .layout-ty02 article { gap: 8rem; }
+@media (max-width: 1023px) { .layout-ty01 { gap: 3rem; }
+  .layout-ty01 article { width: calc((100% - 3rem) / 2); }
+  .layout-ty02 article { gap: 8rem; }
   .layout-ty02 article img, .layout-ty02 article .art-media { width: calc(50% - 80px); } }
 
-@media (max-width: 640px) { .layout-ty02 article { display: block; }
+@media (max-width: 640px) { .layout-ty01 article { width: 100%; }
+  .layout-ty02 article { display: block; }
   .layout-ty02 article img, .layout-ty02 article .art-media { width: 100%; }
   .layout-ty02 article .art-tet { width: 100%; } }
 
@@ -802,7 +805,7 @@ button { cursor: pointer; }
 
 .cli-opi-item .prf-box { display: flex; align-items: center; gap: 1.4rem; }
 
-.cli-opi-item .prf-box .prf-img { width: 5rem; height: 5rem; }
+.cli-opi-item .prf-box .prf-img { width: 5rem; height: 5rem; border-radius: 5rem; overflow: hidden; }
 
 .cli-opi-item .prf-box .prf-img img { width: 100%; height: 100%; }
 
@@ -884,11 +887,6 @@ button { cursor: pointer; }
 .blog-content { display: flex; flex-direction: column; gap: 6.4rem; }
 
 .blog-content .img-wrap { width: 100%; height: 0; overflow: hidden; padding-bottom: 70%; }
-
-@media (max-width: 1023px) { .blog-content .layout-ty01 { gap: 3rem; }
-  .blog-content .layout-ty01 article { width: calc((100% - 3rem) / 2); } }
-
-@media (max-width: 640px) { .blog-content .layout-ty01 article { width: 100%; } }
 
 /* //main blog CSS */
 .pricing-contents .our-price-content { padding-bottom: 0; }
