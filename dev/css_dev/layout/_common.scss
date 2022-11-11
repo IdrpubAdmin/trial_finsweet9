@@ -25,37 +25,37 @@ html {
 .tit-h1 {
   font-size: $font-54r;
   font-weight: $b;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 .tit-h2 {
   font-size: $font-48r;
   font-weight: $b;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 .tit-h3 {
   font-size: $font-38r;
   font-weight: $b;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 .tit-h4 {
   font-size: $font-36r;
   font-weight: $md;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 .tit-h5 {
   font-size: $font-32r;
   font-weight: $md;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 .tit-h6 {
   font-size: $font-24r;
   font-weight: $md;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 
@@ -76,13 +76,13 @@ html {
 .lb-txt-1 {
   font-size: $font-18r;
   font-weight: $md;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 .lb-txt-2 {
   font-size: $font-16r;
   font-weight: $md;
-  line-height: $ln-h-w;
+  line-height: $ln-h-r;
   color: $dark-blue;
 }
 
@@ -90,27 +90,21 @@ html {
 @include t-l {
   .tit-h1 {
     font-size: $font-48r;
-    line-height: $ln-h-r;
   }
   .tit-h2 {
     font-size: $font-38r;
-    line-height: $ln-h-r;
   }
   .tit-h3 {
     font-size: $font-36r;
-    line-height: $ln-h-r;
   }
   .tit-h4 {
     font-size: $font-32r;
-    line-height: $ln-h-r;
   }
   .tit-h5 {
     font-size: $font-24r;
-    line-height: $ln-h-r;
   }
   .tit-h6 {
     font-size: $font-20r;
-    line-height: $ln-h-r;
   }
   .txt-r {
     font-size: $font-14r;
@@ -122,53 +116,41 @@ html {
   }
   .lb-txt-1 {
     font-size: $font-16r;
-    line-height: $ln-h-r;
   }
   .lb-txt-2 {
     font-size: $font-14r;
-    line-height: $ln-h-r;
   }
 }
 @include m-l {
   .tit-h1 {
     font-size: $font-38r;
-    line-height: $ln-h-r;
   }
   .tit-h2 {
     font-size: $font-36r;
-    line-height: $ln-h-r;
   }
   .tit-h3 {
     font-size: $font-32r;
-    line-height: $ln-h-r;
   }
   .tit-h4 {
     font-size: $font-24r;
-    line-height: $ln-h-r;
   }
   .tit-h5 {
     font-size: $font-20r;
-    line-height: $ln-h-r;
   }
   .tit-h6 {
     font-size: $font-18r;
-    line-height: $ln-h-r;
   }
   .txt-r {
     font-size: $font-12r;
-    line-height: $ln-h-n;
   }
   .txt-md {
     font-size: $font-12r;
-    line-height: $ln-h-n;
   }
   .lb-txt-1 {
     font-size: $font-14r;
-    line-height: $ln-h-r;
   }
   .lb-txt-2 {
     font-size: $font-12r;
-    line-height: $ln-h-r;
   }
 }
 
