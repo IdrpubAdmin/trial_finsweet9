@@ -401,6 +401,9 @@
                 display: block;
               }
             }
+            .img-box {
+              padding-bottom: 71%;
+            }
           }
         }
       }
@@ -442,7 +445,7 @@
       .img-box {
         width: 100%;
         height: 0;
-        padding-bottom: 71%;
+        padding-bottom: 70%;
         overflow: hidden;
 
         img {
@@ -560,6 +563,14 @@
     display: flex;
     align-items: center;
     gap: 1.4rem;
+    .prf-img {
+      width: 5rem;
+      height: 5rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -689,7 +700,7 @@
       flex-basis: 50%;
       background-image: url("../images/img_bg_inq_001.png");
       background-size: 200% 100%;
-      background-position: 40% center ;
+      background-position: center center ;
       background-repeat: no-repeat;
       padding: 9.6rem;
       box-sizing: border-box;
