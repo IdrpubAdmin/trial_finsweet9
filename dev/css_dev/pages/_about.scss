@@ -679,6 +679,15 @@
     }
   }
 }
-
-
 /* //meat our team content CSS */
+
+/* dark mode css */
+.dark-mode{
+  .who-we-content section .txt-box {
+    background-color: $tint-blue;
+  }
+  .team-content section .team-item {
+    background-color: #000;
+  }
+}
+/* //dark mode css */

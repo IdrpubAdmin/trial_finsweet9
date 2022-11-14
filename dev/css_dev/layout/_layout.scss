@@ -151,6 +151,9 @@
     .art-media {
       width: 100%;
     }
+    img {
+      transition: transform 0.3s;
+    }
     .art-tet{
       margin-top: 4rem;
       .tit-h6{
@@ -163,7 +166,15 @@
         margin-top: 32px;
       }
     }
+    &:hover {
+      .img-wrap {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
+
 }
 
 // 아티클 type2 (교차되는 article)
@@ -181,9 +192,19 @@
       .art-media {
         width: 100%;
       }
+      img {
+        transition: transform 0.3s;
+      }
     }
     .art-tet{
       width: 50%;
+    }
+    &:hover {
+      .img-wrap {
+        img {
+          transform: scale(1.05);
+        }
+      }
     }
   }
 }
@@ -324,6 +345,20 @@
     .ico-list-ty {
       .ico-item {
         background-color: $grey;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .ico-list-wrap {
+    background-color: $tint-blue;
+    .ico-item {
+      background-color: rgb(32, 31, 31);;
+    }
+    &.ty02 {
+      .ico-list-ty .ico-item {
+        background-color: #000;
       }
     }
   }
