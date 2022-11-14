@@ -23,10 +23,9 @@ module.exports = {
       return this.$store.getters["ArticleData"].blgMainArticle;
     },
   },
-  methods: {},
   components: {
     BlgContent,
     ArticleType
-  }
+  },
 }
 </script>

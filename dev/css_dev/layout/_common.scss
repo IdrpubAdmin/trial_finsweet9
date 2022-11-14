@@ -219,3 +219,18 @@ button {
 .btn-ty02:hover {
   background-color: $dark-blue-hover;
 }
+
+.dark-mode{
+  background-color: rgb(32, 31, 31);
+  color: #fff;
+  .tit-h1,
+  .tit-h2,
+  .tit-h3,
+  .tit-h4,
+  .tit-h5,
+  .tit-h6
+  ,p
+  ,a{
+    color: #fff;
+  }
+}

@@ -12,19 +12,21 @@
           @click="slideOpen(i)" 
           :class="{'slide-on':faq.open}"
         >
-          <div class="item-tit">
-              <span class="tit-h6">{{faq.num}}</span>
-              <p class="tit-h6">{{faq.title}}</p>
-              <div class="faq-btn">
-                <span class="st-ln-1"></span>
-                <span class="st-ln-2"></span>
-              </div>
+          <div class="faq-text">
+            <div class="item-tit">
+                <span class="tit-h6">{{faq.num}}</span>
+                <p class="tit-h6">{{faq.title}}</p>
+                <div class="faq-btn">
+                  <span class="st-ln-1"></span>
+                  <span class="st-ln-2"></span>
+                </div>
+            </div>
+            <p class="hide-txt lb-txt-1">
+              Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
-          <p class="hide-txt lb-txt-1">
-            Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua.
-          </p>
         </li>
       </ul>
     </section>

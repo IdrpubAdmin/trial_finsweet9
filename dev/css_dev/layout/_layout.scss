@@ -22,63 +22,62 @@
   }
   section {
     flex-basis: 66%;
-    .faq-list {
-      .faq-item {
-        border-bottom: 1px solid rgba(194, 187, 255, 0.7);
-        cursor: pointer;
-        padding: 3rem 0 3rem 2.5rem;
-        &:first-child {
-          padding-top: 0;
-        }
-        .item-tit {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 5rem;
-          span {
-            display: block;
-            width: 30px;
-            color: $royal-blue;
-          }
-          p {
-            width: calc(100% - 156px);
-          }
-          .faq-btn {
-            width: 26px;
-            height: 26px;
-            position: relative;
-            span {
-              width: 16px;
-              height: 2px;
-              background: $dark-blue;
-              transition: transform 0.3s;
-              position: absolute;
-              top: 0; bottom: 0; right: 0; left: 0;
-              margin: auto;
-            }
-            .st-ln-2 {
-              transform:  rotate(90deg);
-            }
-          }
-        }
-        .hide-txt {
-          padding: 0 8rem;
-          margin-top: 16px;
-          display: none;
-        }
-        &.slide-on {
-          .hide-txt {
-            display: block;
-          }
-          .faq-btn {
-            .st-ln-1 {
-              transform: rotate(-45deg);
-            }
-            .st-ln-2 {
-              transform: rotate(45deg);
-            }
-          }
-        }
+  }
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(194, 187, 255, 0.7);
+  cursor: pointer;
+  padding: 3rem 0 3rem 2.5rem;
+  &:first-child {
+    padding-top: 0;
+  }
+  .item-tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    span {
+      display: block;
+      width: 30px;
+      color: $royal-blue;
+    }
+    p {
+      width: calc(100% - 156px);
+    }
+    .faq-btn {
+      width: 26px;
+      height: 26px;
+      position: relative;
+      span {
+        width: 16px;
+        height: 2px;
+        background: $dark-blue;
+        transition: transform 0.3s;
+        position: absolute;
+        top: 0; bottom: 0; right: 0; left: 0;
+        margin: auto;
+      }
+      .st-ln-2 {
+        transform:  rotate(90deg);
+      }
+    }
+  }
+  .hide-txt {
+    padding: 0 8rem;
+    margin-top: 16px;
+    display: none;
+  }
+  &.slide-on {
+    .hide-txt {
+      display: block;
+    }
+    .faq-btn {
+      .st-ln-1 {
+        transform: rotate(-45deg);
+      }
+      .st-ln-2 {
+        transform: rotate(45deg);
       }
     }
   }
