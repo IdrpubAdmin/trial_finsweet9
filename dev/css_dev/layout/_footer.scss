@@ -112,25 +112,25 @@
 
       &.facebook {
         &::after {
-          background-image: url("../images/ico_facebook.png");
+          background-image: url("../images/ico/ico_facebook.png");
         }
       }
 
       &.instagram {
         &::after {
-          background-image: url("../images/ico_instagram.png");
+          background-image: url("../images/ico/ico_instagram.png");
         }
       }
 
       &.twitter {
         &::after {
-          background-image: url("../images/ico_twitter.png");
+          background-image: url("../images/ico/ico_twitter.png");
         }
       }
 
       &.linkedin {
         &::after {
-          background-image: url("../images/ico_linkedin.png");
+          background-image: url("../images/ico/ico_linkedin.png");
         }
       }
     }
@@ -143,25 +143,25 @@
       button {
         &.facebook {
           &::after {
-            background-image: url("../images/ico_facebook_b.png");
+            background-image: url("../images/ico/ico_facebook_b.png");
           }
         }
 
         &.instagram {
           &::after {
-            background-image: url("../images/ico_instagram_b.png");
+            background-image: url("../images/ico/ico_instagram_b.png");
           }
         }
 
         &.twitter {
           &::after {
-            background-image: url("../images/ico_twitter_b.png");
+            background-image: url("../images/ico/ico_twitter_b.png");
           }
         }
 
         &.linkedin {
           &::after {
-            background-image: url("../images/ico_linkedin_b.png");
+            background-image: url("../images/ico/ico_linkedin_b.png");
           }
         }
       }

@@ -236,7 +236,7 @@
       display: inline-block;
       width: 25px;
       height: 12px;
-      background-image: url("../images/ico_arrow.png");
+      background-image: url("../images/ico/ico_arrow.png");
       background-size: cover;
       background-position: center;
       margin-left: 1.3rem;
@@ -244,17 +244,17 @@
   }
   &.w {
     a::after{
-      background-image: url("../images/ico_arrow_w.png");
+      background-image: url("../images/ico/ico_arrow_w.png");
     }
   }
   &.y {
     a::after{
-      background-image: url("../images/ico_arrow_y.png");
+      background-image: url("../images/ico/ico_arrow_y.png");
     }
   }
   &.b {
     a::after{
-      background-image: url("../images/ico_arrow_b.png");
+      background-image: url("../images/ico/ico_arrow_b.png");
     }
   }
 }
@@ -290,27 +290,27 @@
       background-repeat: no-repeat;
 
       &.ty01 {
-        background-image: url("../images/ico_list_001.png");
+        background-image: url("../images/ico/ico_list_001.png");
       }
 
       &.ty02 {
-        background-image: url("../images/ico_list_002.png");
+        background-image: url("../images/ico/ico_list_002.png");
       }
 
       &.ty03 {
-        background-image: url("../images/ico_list_003.png");
+        background-image: url("../images/ico/ico_list_003.png");
       }
 
       &.ty04 {
-        background-image: url("../images/ico_list_004.png");
+        background-image: url("../images/ico/ico_list_004.png");
       }
 
       &.ty05 {
-        background-image: url("../images/ico_list_005.png");
+        background-image: url("../images/ico/ico_list_005.png");
       }
 
       &.ty06 {
-        background-image: url("../images/ico_list_006.png");
+        background-image: url("../images/ico/ico_list_006.png");
       }
     }
 

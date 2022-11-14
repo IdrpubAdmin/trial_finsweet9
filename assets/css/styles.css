@@ -305,13 +305,13 @@ button { cursor: pointer; }
 
 .icon-link a { display: flex; align-items: center; }
 
-.icon-link a::after { content: ''; display: inline-block; width: 25px; height: 12px; background-image: url("../images/ico_arrow.png"); background-size: cover; background-position: center; margin-left: 1.3rem; }
+.icon-link a::after { content: ''; display: inline-block; width: 25px; height: 12px; background-image: url("../images/ico/ico_arrow.png"); background-size: cover; background-position: center; margin-left: 1.3rem; }
 
-.icon-link.w a::after { background-image: url("../images/ico_arrow_w.png"); }
+.icon-link.w a::after { background-image: url("../images/ico/ico_arrow_w.png"); }
 
-.icon-link.y a::after { background-image: url("../images/ico_arrow_y.png"); }
+.icon-link.y a::after { background-image: url("../images/ico/ico_arrow_y.png"); }
 
-.icon-link.b a::after { background-image: url("../images/ico_arrow_b.png"); }
+.icon-link.b a::after { background-image: url("../images/ico/ico_arrow_b.png"); }
 
 .ico-list-wrap { background-color: #F4F6FC; }
 
@@ -323,17 +323,17 @@ button { cursor: pointer; }
 
 .ico-list-wrap .ico-item .ico-box { width: 3.5rem; height: 3.5rem; background-size: contain; background-position: center center; background-repeat: no-repeat; }
 
-.ico-list-wrap .ico-item .ico-box.ty01 { background-image: url("../images/ico_list_001.png"); }
+.ico-list-wrap .ico-item .ico-box.ty01 { background-image: url("../images/ico/ico_list_001.png"); }
 
-.ico-list-wrap .ico-item .ico-box.ty02 { background-image: url("../images/ico_list_002.png"); }
+.ico-list-wrap .ico-item .ico-box.ty02 { background-image: url("../images/ico/ico_list_002.png"); }
 
-.ico-list-wrap .ico-item .ico-box.ty03 { background-image: url("../images/ico_list_003.png"); }
+.ico-list-wrap .ico-item .ico-box.ty03 { background-image: url("../images/ico/ico_list_003.png"); }
 
-.ico-list-wrap .ico-item .ico-box.ty04 { background-image: url("../images/ico_list_004.png"); }
+.ico-list-wrap .ico-item .ico-box.ty04 { background-image: url("../images/ico/ico_list_004.png"); }
 
-.ico-list-wrap .ico-item .ico-box.ty05 { background-image: url("../images/ico_list_005.png"); }
+.ico-list-wrap .ico-item .ico-box.ty05 { background-image: url("../images/ico/ico_list_005.png"); }
 
-.ico-list-wrap .ico-item .ico-box.ty06 { background-image: url("../images/ico_list_006.png"); }
+.ico-list-wrap .ico-item .ico-box.ty06 { background-image: url("../images/ico/ico_list_006.png"); }
 
 .ico-list-wrap .ico-item .txt-box { display: flex; flex-direction: column; gap: 1.2rem; }
 
@@ -423,21 +423,21 @@ button { cursor: pointer; }
 
 .sns-list .sns-item a::after, .sns-list .sns-item button::after { content: ''; display: block; width: 16px; height: 16px; background-size: 16px 16px; background-position: center center; }
 
-.sns-list .sns-item a.facebook::after, .sns-list .sns-item button.facebook::after { background-image: url("../images/ico_facebook.png"); }
+.sns-list .sns-item a.facebook::after, .sns-list .sns-item button.facebook::after { background-image: url("../images/ico/ico_facebook.png"); }
 
-.sns-list .sns-item a.instagram::after, .sns-list .sns-item button.instagram::after { background-image: url("../images/ico_instagram.png"); }
+.sns-list .sns-item a.instagram::after, .sns-list .sns-item button.instagram::after { background-image: url("../images/ico/ico_instagram.png"); }
 
-.sns-list .sns-item a.twitter::after, .sns-list .sns-item button.twitter::after { background-image: url("../images/ico_twitter.png"); }
+.sns-list .sns-item a.twitter::after, .sns-list .sns-item button.twitter::after { background-image: url("../images/ico/ico_twitter.png"); }
 
-.sns-list .sns-item a.linkedin::after, .sns-list .sns-item button.linkedin::after { background-image: url("../images/ico_linkedin.png"); }
+.sns-list .sns-item a.linkedin::after, .sns-list .sns-item button.linkedin::after { background-image: url("../images/ico/ico_linkedin.png"); }
 
-.sns-list.ty2 .sns-item a.facebook::after, .sns-list.ty2 .sns-item button.facebook::after { background-image: url("../images/ico_facebook_b.png"); }
+.sns-list.ty2 .sns-item a.facebook::after, .sns-list.ty2 .sns-item button.facebook::after { background-image: url("../images/ico/ico_facebook_b.png"); }
 
-.sns-list.ty2 .sns-item a.instagram::after, .sns-list.ty2 .sns-item button.instagram::after { background-image: url("../images/ico_instagram_b.png"); }
+.sns-list.ty2 .sns-item a.instagram::after, .sns-list.ty2 .sns-item button.instagram::after { background-image: url("../images/ico/ico_instagram_b.png"); }
 
-.sns-list.ty2 .sns-item a.twitter::after, .sns-list.ty2 .sns-item button.twitter::after { background-image: url("../images/ico_twitter_b.png"); }
+.sns-list.ty2 .sns-item a.twitter::after, .sns-list.ty2 .sns-item button.twitter::after { background-image: url("../images/ico/ico_twitter_b.png"); }
 
-.sns-list.ty2 .sns-item a.linkedin::after, .sns-list.ty2 .sns-item button.linkedin::after { background-image: url("../images/ico_linkedin_b.png"); }
+.sns-list.ty2 .sns-item a.linkedin::after, .sns-list.ty2 .sns-item button.linkedin::after { background-image: url("../images/ico/ico_linkedin_b.png"); }
 
 @media (max-width: 1439px) { .ft-contact { width: 100%; max-width: 90%; }
   .ft-contact .contact-box { flex-direction: column; gap: 2rem; }
@@ -741,9 +741,9 @@ button { cursor: pointer; }
 
 .main-banner .banner-img { flex-basis: 50%; display: flex; align-items: center; background-position: center center; background-size: contain; background-repeat: no-repeat; }
 
-.main-banner .banner-img.ty01 { background-image: url("../images/img_banner_001.png"); }
+.main-banner .banner-img.ty01 { background-image: url("../images/ico/img_banner_001.png"); }
 
-.main-banner .banner-img.ty02 { background-image: url("../images/img_banner_002.png"); }
+.main-banner .banner-img.ty02 { background-image: url("../images/ico/img_banner_002.png"); }
 
 .m-only { display: none; }
 
@@ -794,7 +794,7 @@ button { cursor: pointer; }
 
 .hww-content section .hww-list .hww-item { flex-basis: 48%; display: flex; flex-direction: column; gap: 0.8rem; }
 
-.hww-content section .hww-list .hww-item .ico-box { display: block; color: #ffffff; width: 5rem; height: 5rem; margin-bottom: 0.8rem; text-align: center; line-height: 5rem; background-image: url("../images/ico_bg_hww.png"); background-size: 5rem 5rem; }
+.hww-content section .hww-list .hww-item .ico-box { display: block; color: #ffffff; width: 5rem; height: 5rem; margin-bottom: 0.8rem; text-align: center; line-height: 5rem; background-image: url("../images/ico/ico_bg_hww.png"); background-size: 5rem 5rem; }
 
 .hww-content section .hww-list .hww-item .txt-r { width: 80%; }
 
@@ -888,7 +888,7 @@ button { cursor: pointer; }
 
 .swiper-button-next, .swiper-button-prev { position: absolute; top: unset; bottom: 0; width: var(--swiper-navigation-size); height: var(--swiper-navigation-size); margin-top: unset; cursor: pointer; color: var(--swiper-navigation-color, var(--swiper-theme-color)); }
 
-.swiper-button-next:hover::after, .swiper-button-prev:hover::after { background-color: #2405f2; background-image: url("../images/ico_btn_swiper_w.png"); }
+.swiper-button-next:hover::after, .swiper-button-prev:hover::after { background-color: #2405f2; background-image: url("../images/ico/ico_btn_swiper_w.png"); }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled { opacity: .35; cursor: auto; pointer-events: none; }
 
@@ -896,11 +896,11 @@ button { cursor: pointer; }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next { left: auto; right: calc(var(--swiper-navigation-size) + 20px); }
 
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after { background-image: url("../images/ico_btn_swiper_b.png"); transform: rotate(180deg); }
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after { background-image: url("../images/ico/ico_btn_swiper_b.png"); transform: rotate(180deg); }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev { right: 10px; left: auto; }
 
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after { background-image: url("../images/ico_btn_swiper_b.png"); }
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after { background-image: url("../images/ico/ico_btn_swiper_b.png"); }
 
 /* //swiper button CSS */
 /* //What our clients say about us CSS */

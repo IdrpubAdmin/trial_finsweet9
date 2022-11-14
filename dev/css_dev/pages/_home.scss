@@ -46,11 +46,11 @@
     background-repeat: no-repeat;
 
     &.ty01 {
-      background-image: url("../images/img_banner_001.png");
+      background-image: url("../images/ico/img_banner_001.png");
     }
 
     &.ty02 {
-      background-image: url("../images/img_banner_002.png");
+      background-image: url("../images/ico/img_banner_002.png");
     }
   }
 }
@@ -220,7 +220,7 @@
           margin-bottom: 0.8rem;
           text-align: center;
           line-height: 5rem;
-          background-image: url("../images/ico_bg_hww.png");
+          background-image: url("../images/ico/ico_bg_hww.png");
           background-size: 5rem 5rem;
         }
 
@@ -570,7 +570,7 @@
 .swiper-button-next:hover, .swiper-button-prev:hover {
   &::after {
     background-color: $royal-blue;
-    background-image: url("../images/ico_btn_swiper_w.png");
+    background-image: url("../images/ico/ico_btn_swiper_w.png");
   }
 }
 
@@ -599,7 +599,7 @@
 }
 
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
-  background-image: url("../images/ico_btn_swiper_b.png");
+  background-image: url("../images/ico/ico_btn_swiper_b.png");
   transform: rotate(180deg);
 }
 
@@ -609,7 +609,7 @@
 }
 
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
-  background-image: url("../images/ico_btn_swiper_b.png");
+  background-image: url("../images/ico/ico_btn_swiper_b.png");
 }
 
 /* //swiper button CSS */
