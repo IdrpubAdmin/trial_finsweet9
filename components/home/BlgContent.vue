@@ -14,6 +14,9 @@
 <script>
 module.exports = {
   name: "blogContent",
+  props: {
+    articleData: Object
+  },
   components: {
     ArticleType
   },
