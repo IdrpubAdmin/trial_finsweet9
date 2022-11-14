@@ -228,9 +228,13 @@ button {
   .tit-h3,
   .tit-h4,
   .tit-h5,
-  .tit-h6
-  ,p
-  ,a{
+  .tit-h6,
+  p,
+  a,
+  button{
     color: #fff;
+  }
+  .btn-ty01{
+    color: #1b1c2b;
   }
 }

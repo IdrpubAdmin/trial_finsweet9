@@ -133,6 +133,18 @@
   }
 }
 
+.dark-mode{
+  .faq-item {
+    .item-tit {
+      .faq-btn {
+        span {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
 // 아티클 type1
 .layout-ty01{
   display: flex;
@@ -258,6 +270,31 @@
   }
 }
 
+.dark-mode{
+  .icon-link{
+    a{
+      &::after {
+        background-image: url("../images/ico/ico_arrow_w.png");
+      }
+    }
+    &.w {
+      a::after{
+        background-image: url("../images/ico/ico_arrow_w.png");
+      }
+    }
+    &.y {
+      a::after{
+        background-image: url("../images/ico/ico_arrow_w.png");
+      }
+    }
+    &.b {
+      a::after{
+        background-image: url("../images/ico/ico_arrow_w.png");
+      }
+    }
+  }
+}
+
 // icon이 있는 list
 
 .ico-list-wrap {
@@ -370,4 +407,10 @@ height: 5px;
 background-color: $dark-blue;
 border-radius: 50%;
 margin-right: 1.6rem;
+}
+
+.dark-mode{
+  .info-item::before{
+    background-color: #fff;
+  }
 }

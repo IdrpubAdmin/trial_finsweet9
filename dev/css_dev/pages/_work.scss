@@ -142,23 +142,36 @@
                 margin-top: 6.4rem;
             }
         }
-        .category-list{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-evenly;
-            gap: 2rem;
-            padding: 2.4rem 0;
-            margin-top: 9.6rem;
-            border-top: 1px solid rgba(40, 41, 56, 0.2);
-            border-bottom: 1px solid rgba(40, 41, 56, 0.2);
-            .ctgy-item{
-                .lb-txt-1{
-                    &.active{
-                        color: $royal-blue;
-                        font-size: 2.4rem;
-                    }
+    }
+}
+
+.dark-mode{
+    .work-post-contents{
+        .post-main{
+            section{
+                .post-summary{
+                    border-bottom: 1px solid #fff;
                 }
+            }
+        }
+    }
+}
+
+.category-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2.4rem 0;
+    margin-top: 9.6rem;
+    border-top: 1px solid rgba(40, 41, 56, 0.2);
+    border-bottom: 1px solid rgba(40, 41, 56, 0.2);
+    .ctgy-item{
+        .lb-txt-1{
+            &.active{
+                color: $royal-blue;
+                font-size: 2.4rem;
             }
         }
     }
@@ -194,14 +207,15 @@
             section{
                 width: 90%; 
             }
-            .category-list{
-                .ctgy-item{
-                    .lb-txt-1{
-                        &.active{
-                            font-size: 2rem;
-                        }
-                    }
-                }
+        }
+    }
+}
+
+.category-list{
+    .ctgy-item{
+        .lb-txt-1{
+            &.active{
+                font-size: 2rem;
             }
         }
     }
@@ -213,15 +227,16 @@
             section{
                 width: 100%; 
             }
-            .category-list{
-                gap: 1rem;
-                .ctgy-item{
-                    .lb-txt-1{
-                        &.active{
-                            font-size: 1.8rem;
-                        }
-                    }
-                }
+        }
+    }
+}
+
+.category-list{
+    gap: 1rem;
+    .ctgy-item{
+        .lb-txt-1{
+            &.active{
+                font-size: 1.8rem;
             }
         }
     }

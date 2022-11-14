@@ -21,7 +21,7 @@
 .plan-item{
     width: calc((100% - 6rem) / 3);
     border-radius: 12px;
-    background-color: #f4f6fc;
+    background-color: $grey;
     .text-wrap{
         padding: 6.4rem 4.8rem;
         display: flex;
@@ -79,12 +79,17 @@
             width: 100%;
             display: inline-block;
             padding: 1.6rem 0;
+            background-color: $dark-blue;
+            color: $white;
+        }
+        a:hover{
+            background-color: $dark-blue-hover;
         }
     }
 }
 
 .plan-point{
-    background-color: #1c1e53;
+    background-color: $tint-blue;
     .plan-text{
         .plan-price{
             .sticker{
@@ -94,6 +99,15 @@
     }
     p, h5{
         color: #fff;
+    }
+    .btn-area{
+        a{
+            background-color: $yellow;
+            color: #1b1c2b;
+        }
+        a:hover{
+            background-color: $yellow-hover;
+        }
     }
 }
 
@@ -145,6 +159,29 @@
         }
         .text-wrap{
             height: 500px;
+        }
+    }
+}
+
+.dark-mode{
+    .plan-item{
+        background-color: $dark-blue-hover;
+        .plan-text{
+            .plan-price{
+                .sticker{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .plan-point{
+        background-color: $tint-blue;
+        .plan-text{
+            .plan-price{
+                .sticker{
+                    color: $yellow;
+                }
+            }
         }
     }
 }

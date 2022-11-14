@@ -19,7 +19,13 @@ const store = new Vuex.Store({
     },
     mutations: {
         themaBtn(state){
-            state.darkMode = !state.darkMode
+            if(state.darkMode === true){
+                state.darkMode = false
+                state.NavigationData.snsData02.type = 'ty02'
+            } else {
+                state.darkMode = true
+                state.NavigationData.snsData02.type = 'ty01'
+            }
         }
     },
     getters: {
