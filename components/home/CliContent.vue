@@ -16,8 +16,7 @@
             <li class="list-item swiper-slide" v-for="item in cliData" :key="item.id">
               <div class="cli-opi-item">
                 <div class="txt-box">
-                  <p class="tit-h5">"The best agency we’ve worked with so far. They understand our product and are able
-                    to add new features with a great focus."</p>
+                  <p class="tit-h5">{{ item.txt }}</p>
                 </div>
                 <div class="prf-box">
                   <div class="prf-img">

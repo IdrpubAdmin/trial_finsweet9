@@ -13,7 +13,7 @@ const store = new Vuex.Store({
     state: {
         darkMode: false,
         path: {
-            img: '../assets/images/',
+            img: '../assets/images/temp/',
             components: '../components/',
         },
     },

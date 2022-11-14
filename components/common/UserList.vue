@@ -8,7 +8,7 @@
     <div class="user-logo-box">
       <ul class="user-list">
         <li class="user-item" v-for="item in userListData" :key="item.id">
-          <img :src="`../assets/images/${item.url}.png`" :alt="item.name">
+          <img :src="`${path}${item.url}.png`" :alt="item.name">
         </li>
       </ul>
     </div>
@@ -22,6 +22,9 @@ module.exports = {
   computed: {
     userListData() {
       return this.$store.getters["ArticleData"].userListData
+    },
+    path() {
+      return this.$store.state.path.img
     }
   }
 }
