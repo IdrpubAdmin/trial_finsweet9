@@ -10,14 +10,9 @@
             <article class="team-item">
               <div class="img-box">
                 <div class="img-layer">
-                  <div class="sns-list-wrap">
-                    <ul class="sns-list">
-                      <li v-for="item in linkData" class="sns-item">
-                        <a :href="item.path" :title="`${ item.title } 이동`" :class="`${ item.title }`" target="_blank">
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  <!--  sns list  -->
+                  <sns-list :sns-data="linkData"></sns-list>
+                  <!--  //sns list  -->
                 </div>
                 <img :src="path+item.img" :alt="item.name">
               </div>
@@ -46,6 +41,9 @@ module.exports = {
     linkData() {
       return this.$store.getters["NavigationData/linkData"]
     }
+  },
+  components: {
+    SnsList
   }
 }
 </script>

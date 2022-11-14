@@ -61,14 +61,9 @@
               your UX/UI design challenges.
             </div>
           </div>
-          <div class="sns-list-wrap">
-            <ul class="sns-list">
-              <li v-for="item in snsData" class="sns-item" :key="item.id">
-                <a :href="item.path" :title="`${ item.title } 이동`" :class="`${ item.title }`" target="_blank">
-                </a>
-              </li>
-            </ul>
-          </div>
+          <!--  sns list  -->
+          <sns-list :sns-data="snsData"></sns-list>
+          <!--  //sns list  -->
         </div>
         <!--  //sns link section  -->
         <!--  contact yellow box  -->
@@ -122,6 +117,9 @@ module.exports = {
     snsData() {
       return this.$store.getters["NavigationData"].snsData;
     },
+  },
+  components: {
+    SnsList
   }
 }
 </script>

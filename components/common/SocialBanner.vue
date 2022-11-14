@@ -9,13 +9,9 @@
                   providing them with tools and technology to make 
                   the design-to-code process universally accessible.
               </p>
-              <div class="sns-list-wrap">
-                  <ul class="sns-list ty2">
-                    <li v-for="item in snsData" class="sns-item" :key="item.id">
-                      <a :href="item.path" :title="`${ item.title } 이동`" :class="`${ item.title }`" target="_blank"></a>
-                    </li>
-                  </ul>
-              </div> 
+            <!--  sns list  -->
+            <sns-list :sns-data="snsData"></sns-list>
+            <!--  //sns list  -->
           </section>
       </div>
   </div>
@@ -28,8 +24,11 @@ module.exports = {
       return this.$store.getters["BannerData"].BannerData
     },
     snsData() {
-      return this.$store.getters["NavigationData"].snsData;
+      return this.$store.getters["NavigationData"].snsData02;
     },
   },
+  components: {
+    SnsList
+  }
 }
 </script>

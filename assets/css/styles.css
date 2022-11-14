@@ -431,13 +431,13 @@ button { cursor: pointer; }
 
 .sns-list .sns-item a.linkedin::after, .sns-list .sns-item button.linkedin::after { background-image: url("../images/ico/ico_linkedin.png"); }
 
-.sns-list.ty2 .sns-item a.facebook::after, .sns-list.ty2 .sns-item button.facebook::after { background-image: url("../images/ico/ico_facebook_b.png"); }
+.sns-list.ty02 .sns-item a.facebook::after, .sns-list.ty02 .sns-item button.facebook::after { background-image: url("../images/ico/ico_facebook_b.png"); }
 
-.sns-list.ty2 .sns-item a.instagram::after, .sns-list.ty2 .sns-item button.instagram::after { background-image: url("../images/ico/ico_instagram_b.png"); }
+.sns-list.ty02 .sns-item a.instagram::after, .sns-list.ty02 .sns-item button.instagram::after { background-image: url("../images/ico/ico_instagram_b.png"); }
 
-.sns-list.ty2 .sns-item a.twitter::after, .sns-list.ty2 .sns-item button.twitter::after { background-image: url("../images/ico/ico_twitter_b.png"); }
+.sns-list.ty02 .sns-item a.twitter::after, .sns-list.ty02 .sns-item button.twitter::after { background-image: url("../images/ico/ico_twitter_b.png"); }
 
-.sns-list.ty2 .sns-item a.linkedin::after, .sns-list.ty2 .sns-item button.linkedin::after { background-image: url("../images/ico/ico_linkedin_b.png"); }
+.sns-list.ty02 .sns-item a.linkedin::after, .sns-list.ty02 .sns-item button.linkedin::after { background-image: url("../images/ico/ico_linkedin_b.png"); }
 
 @media (max-width: 1439px) { .ft-contact { width: 100%; max-width: 90%; }
   .ft-contact .contact-box { flex-direction: column; gap: 2rem; }

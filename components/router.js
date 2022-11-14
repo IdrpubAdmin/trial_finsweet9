@@ -11,6 +11,7 @@ const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.
 const UserList = httpVueLoader('../components/common/UserList.vue');
 const TextArticle = httpVueLoader('../components/common/TextArticle.vue');
 const BlgContent = httpVueLoader('../components/common/BlgContent.vue');
+const SnsList = httpVueLoader('../components/common/SnsList.vue');
 
 /* home components */
 const FinsweetMain = httpVueLoader('../components/home/FinsweetMain.vue');
