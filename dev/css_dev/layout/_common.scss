@@ -2,6 +2,11 @@
 body {
   font-family: $default_font;
 }
+// background 가상클래스로 생성되는 가로스크롤 해제
+#wrapper {
+  overflow: hidden;
+}
+
 // 웹접근성용 안내 문구 숨김
 .blind {
   font-size: 0;
@@ -229,11 +234,28 @@ button {
   .tit-h4,
   .tit-h5,
   .tit-h6,
+<<<<<<< HEAD
   p,
   a,
   button{
     color: #fff;
   }
+=======
+  .lb-txt-1,
+  .lb-txt-2,
+  p,
+  a,
+  address,
+  button {
+    color: #fff;
+  }
+  .grey {
+    background-color: $tint-blue;
+  }
+  .accent {
+    background-color: $tint-blue;
+  }
+>>>>>>> 24d0f1904d852dd2a3e99d08545791d6d77abbff
   .btn-ty01{
     color: #1b1c2b;
   }
