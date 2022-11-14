@@ -620,6 +620,38 @@ button { cursor: pointer; }
   .team-content section .team-item { padding: 3rem; } }
 
 /* //meat our team content CSS */
+.blog-post-contents .post-main { padding-bottom: 0; }
+
+.blog-post-contents .post-main section .post-texts { text-align: center; }
+
+.blog-post-contents .post-main section .post-texts p { margin-top: 1rem; }
+
+.blog-post-contents .post-main section .img-wrap { margin-top: 4.8rem; }
+
+.blog-post-contents .post-main section .img-wrap img { width: 100%; }
+
+.blog-post-contents .post-info { padding-top: 4.8rem; }
+
+.blog-post-contents .post-info section { width: 66%; margin: 5.6rem auto 0; }
+
+.blog-post-contents .post-info section:first-child { margin-top: 0; }
+
+.blog-post-contents .post-info section .text-article .txt1 { margin-top: 3.2rem; }
+
+.blog-post-contents .post-info section .text-article .txt2 { margin-top: 2.4rem; }
+
+.blog-post-contents .post-info section .img-wrap { margin-top: 3.2rem; }
+
+.blog-post-contents .post-info section .img-wrap img { width: 100%; }
+
+.blog-post-contents .post-info section .media-box { width: 100%; height: 0; padding-bottom: 42.5%; overflow: hidden; position: relative; margin-top: 3.2rem; }
+
+.blog-post-contents .post-info section .media-box iframe { position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; }
+
+@media (max-width: 1023px) { .blog-post-contents .post-info section { width: 90%; } }
+
+@media (max-width: 640px) { .blog-post-contents .post-info section { width: 100%; } }
+
 .contact-contents .contact-content .content-header { text-align: center; }
 
 .contact-contents .contact-content .content-header p { width: 40%; margin: 0 auto; }
@@ -973,7 +1005,7 @@ button { cursor: pointer; }
 
 .plan-item .plan-detail-list .plan-detail-item { margin-top: 2rem; display: flex; align-items: center; }
 
-.plan-item .plan-detail-list .plan-detail-item::before { content: ''; display: inline-block; width: 1.8rem; height: 2.6rem; background-image: url("../images/Pointer.png"); background-repeat: no-repeat; background-size: contain; margin-right: 1.2rem; }
+.plan-item .plan-detail-list .plan-detail-item::before { content: ''; display: inline-block; width: 1.8rem; height: 2.6rem; background-image: url("../images/ico/ico_Pointer.png"); background-repeat: no-repeat; background-size: contain; margin-right: 1.2rem; }
 
 .plan-item .plan-detail-list .plan-detail-item.disable::before { mix-blend-mode: luminosity; }
 

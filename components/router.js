@@ -55,6 +55,7 @@ const PrivacyPolicy = httpVueLoader('../components/contact/PrivacyPolicy.vue');
 
 /* blog components */
 const BlogMain = httpVueLoader('../components/blog/BlogMain.vue');
+const BlogPost = httpVueLoader('../components/blog/BlogPost.vue');
 /* //blog components */
 
 const router = new VueRouter({
@@ -108,6 +109,12 @@ const router = new VueRouter({
 			name: 'workPost',
 			path: '/work/:id',
 			component: WorkPost,
+			props: route => ({id:Number(route.params.id)}),
+		},
+		{
+			name: 'blogPost',
+			path: '/blog/:id',
+			component: BlogPost,
 			props: route => ({id:Number(route.params.id)}),
 		},
 	]
