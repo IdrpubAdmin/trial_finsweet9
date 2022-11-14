@@ -7,7 +7,7 @@
     <cli-content></cli-content>
     <faq-content></faq-content>
     <inq-content></inq-content>
-    <blg-content></blg-content>
+    <blg-content :article-data="homeBlgArticle"></blg-content>
   </div>
 </template>
 
@@ -30,6 +30,9 @@ module.exports = {
   computed: {
     bannerCont() {
       return this.$store.getters["MainBannerData"].MainBannerData;
+    },
+    homeBlgArticle() {
+      return this.$store.getters["ArticleData"].homeBlgArticle;
     },
   },
 }

@@ -10,6 +10,7 @@ const FeaturesList = httpVueLoader('../components/common/FeaturesList.vue');
 const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.vue');
 const UserList = httpVueLoader('../components/common/UserList.vue');
 const TextArticle = httpVueLoader('../components/common/TextArticle.vue');
+const BlgContent = httpVueLoader('../components/common/BlgContent.vue');
 
 /* home components */
 const FinsweetMain = httpVueLoader('../components/home/FinsweetMain.vue');
@@ -18,7 +19,6 @@ const MainProjContent = httpVueLoader('../components/home/MainProjContent.vue');
 const BenefitsContent = httpVueLoader('../components/home/BenefitsContent.vue');
 const CliContent = httpVueLoader('../components/home/CliContent.vue');
 const InqContent = httpVueLoader('../components/home/InqContent.vue');
-const BlgContent = httpVueLoader('../components/home/BlgContent.vue');
 /* //home components */
 
 /* about components */

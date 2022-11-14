@@ -1,0 +1,53 @@
+.container .content.blog-main-content {
+  padding-bottom: 0;
+}
+
+.blog-main-content {
+
+  .content-header {
+    text-align: center;
+    @include flex-col(3rem);
+    align-items: center;
+    .header-tit {
+      width: 75%;
+    }
+    .layout-ty01 {
+      article {
+        width: 100%;
+        @include flex-col();
+        align-items: center;
+        .img-wrap {
+          padding-bottom: 37.4%;
+        }
+        .art-tet  {
+          width: 75%;
+          .txt-md:first-child,
+          .tit-h6 {
+            display: none;
+          }
+          .icon-link {
+            a {
+              justify-content: center;
+              color: $royal-blue;
+              &::after {
+                content: unset;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.blog-contents {
+  .blog-content {
+    align-items: center;
+    gap: 4.8rem;
+    .layout-ty01 {
+      row-gap: 6rem;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 let ArticleData = {
     namespaced: true,
     state: {
-        homeArticle: {
+        homeBlgArticle: {
             type: "ty01",
             link: true,
             data: [
@@ -28,6 +28,77 @@ let ArticleData = {
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/blog',
                     src: "img_blog_003",
+                    linkTxt: "Read More",
+                }
+            ]
+        },
+        blgMainArticle : {
+            type: "ty01",
+            link: true,
+            data: [
+                {
+                    id: 1,
+                    title: "A UX Case Study on Creating a Studious Environment for Students",
+                    author: "Andrew Jonson",
+                    subTit: "27th January 2021",
+                    txt: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
+                    path: '/blog/1',
+                    src: "img_blog_010",
+                    linkTxt: "Read More",
+                }
+            ]
+        },
+        blgArticle: {
+            type: "ty01",
+            link: true,
+            data: [
+                {
+                    id: 1,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "27 Jan 2021",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    path: '/blog/1',
+                    src: "img_blog_004",
+                    linkTxt: "Read More",
+                }, {
+                    id: 2,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "27 Jan 2021",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    path: '/blog/2',
+                    src: "img_blog_005",
+                    linkTxt: "Read More",
+                }, {
+                    id: 3,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "27 Jan 2021",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    path: '/blog/3',
+                    src: "img_blog_006",
+                    linkTxt: "Read More",
+                }, {
+                    id: 4,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "27 Jan 2021",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    path: '/blog/4',
+                    src: "img_blog_007",
+                    linkTxt: "Read More",
+                }, {
+                    id: 5,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "27 Jan 2021",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    path: '/blog/5',
+                    src: "img_blog_008",
+                    linkTxt: "Read More",
+                }, {
+                    id: 6,
+                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    subTit: "27 Jan 2021",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    path: '/blog/6',
+                    src: "img_blog_009",
                     linkTxt: "Read More",
                 }
             ]

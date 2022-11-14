@@ -21,9 +21,7 @@ module.exports = {
     ArticleType
   },
   computed : {
-    articleData() {
-      return this.$store.getters["ArticleData"].homeArticle;
-    },
+
   }
 }
 </script>
