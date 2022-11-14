@@ -8,7 +8,7 @@
                     <p class="txt-md">{{postData.txt}}</p>
                 </div>
                 <div class="img-wrap">
-                    <img :src="'../assets/images/' + postData.src + '.png'" alt="article img">
+                    <img :src="'../assets/images/temp/' + postData.src + '.png'" alt="article img">
                 </div>
                 <ul class="post-summary">
                     <li>
@@ -30,7 +30,7 @@
             <section class="post-detail-1">
                 <text-article :text-data="textData[0]"></text-article>
                 <div class="img-wrap">
-                    <img src="../assets/images/img_work_post_001.png" alt="article img">
+                    <img src="../assets/images/temp/img_work_post_001.png" alt="article img">
                 </div>
             </section>
             <section class="post-detail-2">

@@ -14,7 +14,9 @@
                   <sns-list :sns-data="linkData"></sns-list>
                   <!--  //sns list  -->
                 </div>
-                <img :src="path+item.img" :alt="item.name">
+                <div class="img-wrap">
+                  <img :src="path+item.img" :alt="item.name">
+                </div>
               </div>
               <div class="txt-box">
                 <p class="prf-name tit-h6">{{ item.name }}</p>

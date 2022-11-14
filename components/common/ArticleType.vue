@@ -2,7 +2,7 @@
     <section :class="'layout-'+articleData.type">
         <article v-for="list in articleData.data" :key="list.id">
             <div class="img-wrap">
-              <img :src="'../assets/images/' + list.src + '.png'" alt="article img">
+              <img :src="path + list.src + '.png'" alt="article img">
             </div>
             <div class="art-tet">
               <template v-if="list.subTit">
@@ -26,6 +26,11 @@
 module.exports = {
   props : {
     articleData : Object
+  },
+  computed: {
+    path() {
+      return this.$store.state.path.img;
+    }
   }
 }
 </script>

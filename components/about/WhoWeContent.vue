@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="img-box">
-        <img src="../assets/images/img_about_004.png" alt="">
+        <img src="../assets/images/temp/img_about_004.png" alt="explain something image">
       </div>
     </section>
   </div>
