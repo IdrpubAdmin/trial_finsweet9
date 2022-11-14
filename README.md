@@ -109,7 +109,7 @@ pricing
 
 blog
 ├     BlogMain : Blog 메인 컴포넌트
-        
+└     PlogPost : Blog post 메인 컴포넌트
 
 contact
 ├     ContactMain : Contact 메인 컴포넌트
@@ -153,6 +153,7 @@ work
 │　├ /css : scss파일로 렌더링이 완료된 신규 css
 │　├ /fonts : 신규 font
 │　├ /images : 신규 images
+      └ /ico : icon 등 디자인 요소 img 파일 모음
 │　└ /js : 페이지 동작 실행 관련 신규 js
 │
 │
