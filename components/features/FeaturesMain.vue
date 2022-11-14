@@ -23,7 +23,5 @@ module.exports = {
       return this.$store.getters["ArticleData"].bnfTitData.featuresTit;
     }
   },
-  methods: {},
-
 }
 </script>

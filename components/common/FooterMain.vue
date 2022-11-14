@@ -104,12 +104,18 @@
           <!--  //gnb navigation menu list  -->
         </ul>
       </nav>
+      <button @click="themaBtn()">Dark</button>
     </div>
   </div>
 </template>
 
 <script>
 module.exports = {
+  methods: {
+    themaBtn() {
+      return this.$store.commit("themaBtn");
+    }
+  },
   computed: {
     gnbData() {
       return this.$store.getters["NavigationData"].categoryData;

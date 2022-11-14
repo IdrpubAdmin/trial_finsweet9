@@ -11,13 +11,21 @@ const store = new Vuex.Store({
         TextData: TextData,
     },
     state: {
+        darkMode: false,
         path: {
             img: '../assets/images/',
             components: '../components/',
         },
     },
-    mutations: {},
+    mutations: {
+        themaBtn(state){
+            state.darkMode = !state.darkMode
+        }
+    },
     getters: {
+        darkMode: function darkMode(state) {
+            return state.darkMode;
+        },
         NavigationData: function NavigationData(state) {
             return state.NavigationData;
         },

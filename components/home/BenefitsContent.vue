@@ -32,6 +32,6 @@ module.exports = {
   components: {
     FeaturesList,
     UserList
-  }
+  },
 }
 </script>
