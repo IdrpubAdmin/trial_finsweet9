@@ -13,8 +13,8 @@
                   <div class="sns-list-wrap">
                     <ul class="sns-list">
                       <li v-for="item in linkData" class="sns-item">
-                        <router-link to="/" :title="`${ item.title } 이동`" :class="`${ item.title }`">
-                        </router-link>
+                        <a :href="item.path" :title="`${ item.title } 이동`" :class="`${ item.title }`" target="_blank">
+                        </a>
                       </li>
                     </ul>
                   </div>

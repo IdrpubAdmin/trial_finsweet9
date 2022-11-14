@@ -10,15 +10,15 @@ let NavigationData = {
             {id: 6, title: "Blog", path: "/blog"},
         ],
         snsData: [
-            {id: 1, title: "facebook"},
-            {id: 2, title: "twitter"},
-            {id: 3, title: "instagram"},
-            {id: 4, title: "linkedin"},
+            {id: 1, title: "facebook", path: "https://ko-kr.facebook.com/"},
+            {id: 2, title: "twitter", path: "https://twitter.com/"},
+            {id: 3, title: "instagram", path: "https://www.instagram.com/"},
+            {id: 4, title: "linkedin", path: "https://kr.linkedin.com/"},
         ],
         linkData: [
-            {id: 1, title: "facebook"},
-            {id: 2, title: "twitter"},
-            {id: 3, title: "linkedin"},
+            {id: 1, title: "facebook", path: "https://ko-kr.facebook.com/"},
+            {id: 2, title: "twitter", path: "https://twitter.com/"},
+            {id: 3, title: "linkedin", path: "https://kr.linkedin.com/"},
         ]
     },
     getters: {
