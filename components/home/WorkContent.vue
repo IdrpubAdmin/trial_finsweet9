@@ -13,12 +13,14 @@
       <!--   content body | 본문   -->
       <section>
         <ul class="hww-list">
-          <li class="hww-item" v-for="item in hwwData" :key="item.id">
-            <div class="ico-box lb-txt-1">
-              {{ item.num }}
+          <li class="list-item" v-for="item in hwwData" :key="item.id">
+            <div class="hww-item">
+              <div class="ico-box lb-txt-1">
+                {{ item.num }}
+              </div>
+              <h5 class="tit-h5">{{ item.tit }}</h5>
+              <p class="txt-r">{{ item.txt }}</p>
             </div>
-            <h5 class="tit-h5">{{ item.tit }}</h5>
-            <p class="txt-r">{{ item.txt }}</p>
           </li>
         </ul>
       </section>
