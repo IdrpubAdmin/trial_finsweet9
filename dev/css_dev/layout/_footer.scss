@@ -250,4 +250,24 @@
      }
    }
  }
+
+ .btn-area{
+  button{
+    padding: 1rem 2rem;
+    font-size: 1.4rem
+  }
+ }
 /* // dark mode css */
+
+@include t-l{
+  .ft-gnb{
+    flex-direction: column;
+    gap: 1rem;
+    .ft-copyright{
+      order: 2;
+    }
+    .btn-area{
+      order: 3;
+    }
+  }
+}

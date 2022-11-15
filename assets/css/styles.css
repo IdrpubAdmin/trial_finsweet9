@@ -224,15 +224,11 @@ button { cursor: pointer; }
 
 .dark-mode { background-color: #201f1f; color: #fff; }
 
-<<<<<<< HEAD
-.dark-mode .tit-h1, .dark-mode .tit-h2, .dark-mode .tit-h3, .dark-mode .tit-h4, .dark-mode .tit-h5, .dark-mode .tit-h6, .dark-mode p, .dark-mode a, .dark-mode button { color: #fff; }
-=======
-.dark-mode .tit-h1, .dark-mode .tit-h2, .dark-mode .tit-h3, .dark-mode .tit-h4, .dark-mode .tit-h5, .dark-mode .tit-h6, .dark-mode .lb-txt-1, .dark-mode .lb-txt-2, .dark-mode p, .dark-mode a, .dark-mode address, .dark-mode button { color: #fff; }
+.dark-mode .tit-h1, .dark-mode .tit-h2, .dark-mode .tit-h3, .dark-mode .tit-h4, .dark-mode .tit-h5, .dark-mode .tit-h6, .dark-mode .lb-txt-2, .dark-mode p, .dark-mode a, .dark-mode address, .dark-mode button { color: #fff; }
 
 .dark-mode .grey { background-color: #1C1E53; }
 
 .dark-mode .accent { background-color: #1C1E53; }
->>>>>>> 24d0f1904d852dd2a3e99d08545791d6d77abbff
 
 .dark-mode .btn-ty01 { color: #1b1c2b; }
 
@@ -502,7 +498,13 @@ button { cursor: pointer; }
 /* dark mode css */
 .dark-mode .ft-gnb .gnb-list a, .dark-mode .ft-gnb .gnb-list button { color: #fff; }
 
+.btn-area button { padding: 1rem 2rem; font-size: 1.4rem; }
+
 /* // dark mode css */
+@media (max-width: 1023px) { .ft-gnb { flex-direction: column; gap: 1rem; }
+  .ft-gnb .ft-copyright { order: 2; }
+  .ft-gnb .btn-area { order: 3; } }
+
 .banner { width: calc((100% - 1.5rem) / 3 * 2); text-align: center; margin: 0 auto; }
 
 .banner .txt-md { width: 70%; margin: 20px auto 0; }

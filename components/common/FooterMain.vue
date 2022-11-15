@@ -104,7 +104,14 @@
           <!--  //gnb navigation menu list  -->
         </ul>
       </nav>
-      <button @click="themaBtn()">Dark</button>
+      <div class="btn-area">
+        <template v-if="darkMode">
+          <button @click="themaBtn()" class="btn-ty01">Light Mode</button>
+        </template>
+        <template v-else>
+          <button @click="themaBtn()" class="btn-ty02">Dark Mode</button>
+        </template>
+      </div>
     </div>
   </div>
 </template>
@@ -122,6 +129,9 @@ module.exports = {
     },
     snsData() {
       return this.$store.getters["NavigationData"].snsData;
+    },
+    darkMode() {
+      return this.$store.getters["darkMode"];
     },
   },
   components: {
