@@ -26,5 +26,8 @@ module.exports = {
       return this.$store.getters["TextData"].privacyData;
     }
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 }
 </script>

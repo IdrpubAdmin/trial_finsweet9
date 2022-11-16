@@ -8,6 +8,13 @@
   }
 }
 
+@include m-l{
+  .container {
+    position: relative;
+    top: 50px;
+  }
+}
+
 // 슬라이드 동작이 들어간 아티클 설정
 .faq-content {
   display: flex;

@@ -23,5 +23,8 @@ module.exports = {
       return this.$store.getters["ArticleData"].bnfTitData.featuresTit;
     }
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 }
 </script>

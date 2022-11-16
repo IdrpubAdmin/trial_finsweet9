@@ -35,5 +35,8 @@ module.exports = {
       return this.$store.getters["ArticleData"].homeBlgArticle;
     },
   },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
 }
 </script>
