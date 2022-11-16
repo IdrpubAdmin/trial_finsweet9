@@ -348,6 +348,28 @@ let ArticleData = {
                 img: `img_proj_003.png`,
             }
         ],
+        followData: [
+            {
+                id: 1,
+                tit: `Planning`,
+                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
+            },
+            {
+                id: 2,
+                tit: `Conception`,
+                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
+            },
+            {
+                id: 3,
+                tit: `Design`,
+                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
+            },
+            {
+                id: 4,
+                tit: `Development`,
+                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
+            },
+        ],
         teamData: [
             {
                 id: 1,

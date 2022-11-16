@@ -205,30 +205,33 @@
       justify-content: flex-start;
       flex-wrap: wrap;
       gap: 4.8rem 4%;
-
-      .hww-item {
+      .list-item {
         flex-basis: 48%;
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-
-        .ico-box {
-          display: block;
-          color: $white;
-          width: 5rem;
-          height: 5rem;
-          margin-bottom: 0.8rem;
-          text-align: center;
-          line-height: 5rem;
-          background-image: url("../images/ico/ico_bg_hww.png");
-          background-size: 5rem 5rem;
-        }
-
-        .txt-r {
-          width: 80%;
-        }
       }
+
     }
+  }
+}
+
+.hww-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  .ico-box {
+    display: block;
+    color: $white;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    line-height: 5rem;
+    background-image: url("../images/ico/ico_bg_hww.png");
+    background-size: 5rem 5rem;
+  }
+
+  .txt-r {
+    width: 80%;
   }
 }
 

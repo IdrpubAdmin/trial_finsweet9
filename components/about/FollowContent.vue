@@ -7,7 +7,8 @@
     </div>
     <section>
       <ul class="follow-list">
-        <li class="list-item">
+        <!--    process list    -->
+        <li class="list-item" v-for="item in followData" :key="item.id">
           <article class="follow-item">
             <div class="dia-box">
               <div class="dia-dot"></div>
@@ -15,62 +16,15 @@
             </div>
             <div class="txt-box">
               <p class="tit-h6">
-                Planning
+                {{ item.tit }}
               </p>
               <p class="txt-r">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                {{ item.txt }}
               </p>
             </div>
           </article>
         </li>
-        <li class="list-item">
-          <article class="follow-item">
-            <div class="dia-box">
-              <div class="dia-dot"></div>
-              <div class="dia-line"></div>
-            </div>
-            <div class="txt-box">
-              <p class="tit-h6">
-                Conception
-              </p>
-              <p class="txt-r">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-              </p>
-            </div>
-          </article>
-        </li>
-        <li class="list-item">
-          <article class="follow-item">
-            <div class="dia-box">
-              <div class="dia-dot"></div>
-              <div class="dia-line"></div>
-            </div>
-            <div class="txt-box">
-              <p class="tit-h6">
-                Design
-              </p>
-              <p class="txt-r">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-              </p>
-            </div>
-          </article>
-        </li>
-        <li class="list-item">
-          <article class="follow-item">
-            <div class="dia-box">
-              <div class="dia-dot"></div>
-              <div class="dia-line"></div>
-            </div>
-            <div class="txt-box">
-              <p class="tit-h6">
-                Development
-              </p>
-              <p class="txt-r">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-              </p>
-            </div>
-          </article>
-        </li>
+        <!--    //process list    -->
       </ul>
     </section>
   </div>
@@ -79,7 +33,11 @@
 <script>
 module.exports = {
   name: "FollowContent",
-
+  computed: {
+    followData() {
+      return this.$store.getters["ArticleData"].followData
+    }
+  }
 
 }
 </script>
