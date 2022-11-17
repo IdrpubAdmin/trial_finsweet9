@@ -524,26 +524,31 @@ let ArticleData = {
                 id: 1,
                 name: `user1`,
                 url: `img_logo_user_001`,
+                url2: `img_logo_user_w_001`,
             },
             {
                 id: 2,
                 name: `user2`,
                 url: `img_logo_user_002`,
+                url2: `img_logo_user_w_002`,
             },
             {
                 id: 3,
                 name: `user3`,
                 url: `img_logo_user_003`,
+                url2: `img_logo_user_w_003`,
             },
             {
                 id: 4,
                 name: `user4`,
                 url: `img_logo_user_004`,
+                url2: `img_logo_user_w_004`,
             },
             {
                 id: 5,
                 name: `user5`,
                 url: `img_logo_user_005`,
+                url2: `img_logo_user_w_005`,
             },
         ]
     },
