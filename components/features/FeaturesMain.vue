@@ -1,6 +1,6 @@
 <template>
   <div class="features-contents">
-    <main-banner :banner-cont="bannerCont"></main-banner>
+    <main-banner02 :banner-cont="bannerCont"></main-banner02>
     <benefits-content02 :tit="featuresTit"></benefits-content02>
     <features-content></features-content>
     <faq-content></faq-content>
@@ -10,7 +10,7 @@
 <script>
 module.exports = {
   components: {
-    MainBanner,
+    MainBanner02,
     BenefitsContent02,
     FeaturesContent,
     FaqContent,

@@ -6,8 +6,6 @@
 
 // main-banner 컴포넌트 css 시작
 .main-banner {
-  display: flex;
-  gap: 5%;
 
   .banner-txt {
     flex-basis: 45%;
@@ -36,21 +34,25 @@
       }
     }
   }
-
-  .banner-img {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    &.ty01 {
-      background-image: url("../images/ico/img_banner_001.png");
-    }
-
-    &.ty02 {
-      background-image: url("../images/ico/img_banner_002.png");
+  
+  // main-bis-swiper
+  .main-bis-swiper {
+    .swiper-slide {
+      display: flex;
+      gap: 5%;
+      .banner-img {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+        &.ty01 {
+          background-image: url("../images/ico/img_banner_001.png");
+        }
+    
+      }
     }
   }
 }
@@ -63,9 +65,6 @@
 
 @include t-l {
   .main-banner {
-    gap: 3.5rem;
-    flex-direction: column;
-    align-items: center;
 
     .banner-txt {
       align-items: center;
@@ -76,9 +75,16 @@
       }
     }
 
-    .banner-img {
-      width: 66.66%;
-      padding-top: 44.44%;
+    .main-bis-swiper {
+      .swiper-slide {
+        gap: 3.5rem;
+        flex-direction: column;
+        align-items: center;
+        .banner-img {
+          width: 66.66%;
+          padding-top: 44.44%;
+        }
+      }
     }
   }
 
@@ -349,12 +355,12 @@
         bottom: 0;
         @include flex-col(1rem);
         justify-content: flex-end;
-        left: -100%;
+        right: -100%;
         width: 100%;
         padding: 4.5rem 3.5rem;
         box-sizing: border-box;
         background: linear-gradient(330deg, $tint-blue -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
-        transition: left 0.5s;
+        transition: right 0.5s;
 
         .tit-h6,
         .mpc-desc {
@@ -386,7 +392,7 @@
 
       &:hover {
         .txt-box {
-          left: 0;
+          right: 0;
         }
       }
     }
@@ -423,7 +429,7 @@
 
       .mpc-item {
         .txt-box {
-          left: 0;
+          right: -100%;
           padding: 3rem;
 
           .mpc-desc {

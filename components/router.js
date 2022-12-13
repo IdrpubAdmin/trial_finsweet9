@@ -6,6 +6,7 @@ const ArticleType = httpVueLoader('../components/common/ArticleType.vue');
 const ButtonBanner = httpVueLoader('../components/common/ButtonBanner.vue');
 const SocialBanner = httpVueLoader('../components/common/SocialBanner.vue');
 const MainBanner = httpVueLoader('../components/common/MainBanner.vue');
+const MainBanner02 = httpVueLoader('../components/common/MainBanner02.vue');
 const FeaturesList = httpVueLoader('../components/common/FeaturesList.vue');
 const BenefitsContent02 = httpVueLoader('../components/common/BenefitsContent02.vue');
 const UserList = httpVueLoader('../components/common/UserList.vue');

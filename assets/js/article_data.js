@@ -557,9 +557,6 @@ let ArticleData = {
             if(state.faqData[payload].open === true){
                 state.faqData[payload].open = false
             } else{
-                for (let i = 0; i < state.faqData.length; i++) {
-                    state.faqData[i].open = false
-                }
                 state.faqData[payload].open = true
             }  
         },

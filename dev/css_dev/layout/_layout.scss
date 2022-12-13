@@ -72,12 +72,15 @@
   }
   .hide-txt {
     padding: 0 8rem;
-    margin-top: 16px;
-    display: none;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 0;
+    position: relative;
   }
   &.slide-on {
     .hide-txt {
-      display: block;
+      margin-top: 16px;
+      height: 60px;
     }
     .faq-btn {
       .st-ln-1 {

@@ -1,3 +1,16 @@
+.features-contents {
+  .main-banner {
+    display: flex;
+    gap: 5%;
+
+    .banner-img {
+      &.ty02 {
+        background-image: url("../images/ico/img_banner_002.png");
+      }
+    }
+  }
+}
+
 
 .features-contents {
   .bnf-comp {
