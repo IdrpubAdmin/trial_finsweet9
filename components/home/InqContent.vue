@@ -19,15 +19,26 @@
             labore.</p>
         </div>
         <div class="input-box">
-          <form>
+          <form @submit="checkForm.prevent">
             <fieldset>
               <legend class="blind">견적서 요청</legend>
-              <input type="text" placeholder="Your Name">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Paste your Figma design URL">
+
+              <label for="name">이름</label>
+              <input type="text" placeholder="Your Name" v-model="form.name">
+
+              <label for="email">이메일<label>
+              <input type="email" placeholder="Email" v-model="form.email">
+
+              <label for="figma">figma url<label>
+              <input type="text" placeholder="Paste your Figma design URL" v-model="form.url">
+
+              <div class="error-message">
+                {{ error }}
+              </div>
+
             </fieldset>
             <div class="btn-wrap">
-              <router-link to="/privacy" class="btn-ty01">
+              <router-link to="/contact" class="btn-ty01" @click.native="check">
                 Send an Inquiry
               </router-link>
             </div>
@@ -48,12 +59,50 @@
 <script>
 module.exports = {
   name: "inqContent",
+  data: {
+    form: {
+      name: '',
+      email: '',
+      url: '',
+    },
+    errors: [],
+  },
   computed: {
     mpcData() {
       return this.$store.getters["ArticleData"].mpcData.slice(0, 3);
     },
     path() {
       return this.$store.state.path.img
+    }
+  },
+  methods: {
+      // check(e) {
+      //   const e_RegExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+      //   const objEmail = document.getElementById("email")
+      //   const error = document.querySelector(".error-message")
+
+      //   if(!e_RegExp.test(objEmail.value)){
+            
+      //       error.textContent ="Invalid email address or Figma URL"
+      //       return false;
+      //   }
+      // },
+    checkForm(e) {
+      e.preventDefault();
+      this.errors = [];
+      if (!this.email) {
+        this.errors.push("이름은 필수입니다.");
+      }
+      if (!this.figma) {
+        this.errors.push("이메일은 필수입니다.");
+      } else if (!this.validEmail(this.email)) {
+        this.errors.push("이메일 형식을 확인하세요.");
+      }
+      if (!this.errors.length) return true;
+    },
+    validEmail(email) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
     }
   }
 }
