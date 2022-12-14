@@ -8,7 +8,7 @@
             }
         }
         .contact-section{
-            width: 83%;
+            width: 100%;
             margin: 6.4rem auto 0;
             border-radius: 12px;
             background-color: #f4f6fc;
@@ -46,6 +46,7 @@
                         border: 1px solid rgba(0, 0, 0, 0.12);
                         box-sizing: border-box;
                         background-color: transparent;
+                        resize:none;
                     }
                     textarea::placeholder{
                         color: #000;
@@ -91,7 +92,7 @@
                 }
             }
         }
-    } 
+    }
 }
 
 @include m-l{
@@ -111,7 +112,7 @@
                 }
             }
         }
-    } 
+    }
 }
 
 

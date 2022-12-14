@@ -49,7 +49,7 @@ let ArticleData = {
             ]
         },
         blgArticle: {
-            type: "ty01",
+            type: "ty02",
             link: true,
             data: [
                 {
@@ -64,7 +64,7 @@ let ArticleData = {
                     id: 5,
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
-                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract See how pivoting to Webflow changed one person’s",
                     path: '/blog/5',
                     src: "img_blog_005",
                     linkTxt: "Read More",
@@ -558,7 +558,7 @@ let ArticleData = {
                 state.faqData[payload].open = false
             } else{
                 state.faqData[payload].open = true
-            }  
+            }
         },
     },
 };

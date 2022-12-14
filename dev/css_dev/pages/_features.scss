@@ -15,8 +15,7 @@
 .features-contents {
   .bnf-comp {
     .content {
-      padding: 96px 0 0;
-
+      padding: 96px 3rem 0 3rem;
       .content-header {
         order: 1;
       }
@@ -41,7 +40,7 @@
     section {
       article {
         max-width: 1280px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         padding: 128px 0;
         box-sizing: border-box;
@@ -108,6 +107,7 @@
   .features-contents {
     .features-content {
       .layout-ty02 {
+        padding: 0 3rem;
         article {
           .art-tet {
             h6 {

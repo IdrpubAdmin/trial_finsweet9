@@ -11,8 +11,8 @@
 
 // footer contact section
 .ft-contact {
-  width: $pc-cont;
-  max-width: 90%;
+  width: $pc-cont_re;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 9.6rem;
   display: flex;
@@ -55,7 +55,7 @@
     color: $dark-blue;
     display: flex;
     gap: 3rem;
-    padding: 1.6rem 3.6rem;
+    padding: 1.6rem 2.5rem;
     box-sizing: border-box;
   }
 
@@ -67,7 +67,7 @@
 
 // footer gnb section
 .ft-gnb {
-  width: $pc-cont;
+  width: $pc-cont_re;
   margin: 0 auto;
   padding: 2.4rem 0;
   display: flex;

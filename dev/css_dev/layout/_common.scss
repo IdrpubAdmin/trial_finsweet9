@@ -251,4 +251,26 @@ button {
   .btn-ty01{
     color: #1b1c2b;
   }
+  .contact-contents {
+    .contact-content{
+      .contact-section{
+        background-color: rgb(32, 31, 31);
+        border: 1px solid #fff;
+        .input-wrap input{
+          background-color: #fff;
+        }
+        .text-input-wrap{
+          textarea{
+            background-color: #fff;
+          }
+        }
+        .btn-area{
+          a{
+            background-color: transparent;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
 }

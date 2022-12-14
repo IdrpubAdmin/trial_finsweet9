@@ -23,7 +23,7 @@
     border-radius: 12px;
     background-color: $grey;
     .text-wrap{
-        padding: 6.4rem 4.8rem;
+        padding: 6.4rem 3.8rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -111,13 +111,13 @@
     }
 }
 
-@include p-s{    
+@include p-s{
     .plan-item{
         width: calc((100% - 3rem) / 2);
     }
 }
 
-@include t-l{    
+@include t-l{
     .pricing-contents{
         .our-price-content{
             .content-header{
@@ -138,12 +138,13 @@
     }
 }
 
-@include m-l{    
+@include m-l{
     .pricing-contents{
         .our-price-content{
             .content-header{
                 p{
-                    width: 100%;
+                    width: auto;
+                    padding: 0 3rem;
                 }
             }
             .plan-list{

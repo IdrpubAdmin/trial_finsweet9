@@ -1,10 +1,17 @@
 // 컨테이너 설정
 .container {
   .content {
-    max-width: $pc-cont;
-    width: 90%;
+    max-width: $pc-cont_re;
+    width: auto;
     margin: 0 auto;
     padding: 128px 0;
+  }
+}
+@include t-l {
+  .container {
+    .content {
+      padding: 128px 3rem;
+    }
   }
 }
 
@@ -220,6 +227,9 @@
     }
     .art-tet{
       width: 50%;
+      .icon-link{
+        margin-top: 32px;
+      }
     }
     &:hover {
       .img-wrap {
