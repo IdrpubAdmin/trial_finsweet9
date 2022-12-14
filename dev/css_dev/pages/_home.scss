@@ -36,26 +36,53 @@
   }
 
   // main-bis-swiper
+  .banner-img {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+}
+
+  // main-bis-swiper
   .main-bis-swiper {
-    .swiper-slide {
-      display: flex;
-      gap: 5%;
-      .banner-img {
-        flex-basis: 50%;
-        display: flex;
-        align-items: center;
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        &.ty01 {
-          background-image: url("../images/ico/img_banner_001.png");
+    position: relative;
+    .swiper-wrapper {
+      .swiper-slide {
+        .item-wrap {
+          display: flex;
+          gap: 5%;
+          .banner-img {
+            &.ty01 {
+              background-image: url("../images/ico/img_banner_001.png");
+            }
+          }
         }
-
+      }
+      li:nth-child(1) {
+        background-color: $tint-blue;
+      }
+      li:nth-child(2) {
+        background-color: $royal-blue;
+      }
+      li:nth-child(3) {
+        background-color: $dark-blue-hover;
+      }
+      li:nth-child(4) {
+        background-color: $dark-blue;
+      }
+    }
+    .swiper-pagination {
+      bottom: 40px;
+      .swiper-pagination-bullet {
+        background: #fff;
       }
     }
   }
-}
+
 
 // mobile 환경 br 태그 활성화용 class
 .m-only {
@@ -77,12 +104,14 @@
 
     .main-bis-swiper {
       .swiper-slide {
-        gap: 3.5rem;
-        flex-direction: column;
-        align-items: center;
-        .banner-img {
-          width: 66.66%;
-          padding-top: 44.44%;
+        .item-wrap {
+          gap: 3.5rem;
+          flex-direction: column;
+          align-items: center;
+          .banner-img {
+            width: 66.66%;
+            padding-top: 44.44%;
+          }
         }
       }
     }
@@ -680,6 +709,10 @@
               border-radius: 8px;
               width: 100%;
               color: $grey;
+            }
+            .error-message {
+              color: red;
+              font-size: 14px;
             }
           }
           .btn-wrap {

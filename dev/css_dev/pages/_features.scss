@@ -120,6 +120,15 @@
         }
       }
     }
+    .main-banner {
+      gap: 3.5rem;
+      flex-direction: column;
+      align-items: center;
+      .banner-img {
+        width: 66.66%;
+        padding-top: 44.44%;
+      }
+    }
   }
 }
 

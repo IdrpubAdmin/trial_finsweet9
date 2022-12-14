@@ -285,7 +285,7 @@ button { cursor: pointer; }
   .faq-content section .faq-list .faq-item { padding: 1.5rem 0; }
   .faq-content section .faq-list .faq-item .item-tit { gap: 3rem; }
   .faq-content section .faq-list .faq-item .item-tit p { width: calc(100% - 116px); }
-  .faq-content section .faq-list .faq-item .hide-txt { padding: 0 6rem; margin-top: 12px; } }
+  .faq-content section .faq-list .faq-item .hide-txt { padding: 0 6rem; } }
 
 @media (max-width: 640px) { .faq-content section .faq-list .faq-item .item-tit { gap: 2rem; }
   .faq-content section .faq-list .faq-item .item-tit p { width: calc(100% - 96px); }
@@ -848,7 +848,9 @@ button { cursor: pointer; }
 .features-contents .features-content section article .art-tet .txt-r { width: 90%; }
 
 @media (max-width: 1023px) { .features-contents .features-content .layout-ty02 { padding: 0 3rem; }
-  .features-contents .features-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.6rem; font-weight: 500; } }
+  .features-contents .features-content .layout-ty02 article .art-tet h6.tit-h6 { font-size: 3.6rem; font-weight: 500; }
+  .features-contents .main-banner { gap: 3.5rem; flex-direction: column; align-items: center; }
+  .features-contents .main-banner .banner-img { width: 66.66%; padding-top: 44.44%; } }
 
 @media (max-width: 767px) { .features-contents .features-content .layout-ty02 article { display: flex; flex-direction: column-reverse; }
   .features-contents .features-content .layout-ty02 article .img-wrap, .features-contents .features-content .layout-ty02 article .art-media { width: 100%; }
@@ -870,18 +872,32 @@ button { cursor: pointer; }
 
 .main-banner .banner-txt .btn-wrap a { width: fit-content; display: block; }
 
-.main-banner .main-bis-swiper .swiper-slide { display: flex; gap: 5%; }
+.main-banner .banner-img { flex-basis: 50%; display: flex; align-items: center; background-position: center center; background-size: contain; background-repeat: no-repeat; }
 
-.main-banner .main-bis-swiper .swiper-slide .banner-img { flex-basis: 50%; display: flex; align-items: center; background-position: center center; background-size: contain; background-repeat: no-repeat; }
+.main-bis-swiper { position: relative; }
 
-.main-banner .main-bis-swiper .swiper-slide .banner-img.ty01 { background-image: url("../images/ico/img_banner_001.png"); }
+.main-bis-swiper .swiper-wrapper .swiper-slide .item-wrap { display: flex; gap: 5%; }
+
+.main-bis-swiper .swiper-wrapper .swiper-slide .item-wrap .banner-img.ty01 { background-image: url("../images/ico/img_banner_001.png"); }
+
+.main-bis-swiper .swiper-wrapper li:nth-child(1) { background-color: #1C1E53; }
+
+.main-bis-swiper .swiper-wrapper li:nth-child(2) { background-color: #2405f2; }
+
+.main-bis-swiper .swiper-wrapper li:nth-child(3) { background-color: #535460; }
+
+.main-bis-swiper .swiper-wrapper li:nth-child(4) { background-color: #282938; }
+
+.main-bis-swiper .swiper-pagination { bottom: 40px; }
+
+.main-bis-swiper .swiper-pagination .swiper-pagination-bullet { background: #fff; }
 
 .m-only { display: none; }
 
 @media (max-width: 1023px) { .main-banner .banner-txt { align-items: center; }
   .main-banner .banner-txt .tit-h1, .main-banner .banner-txt .txt-md { text-align: center; }
-  .main-banner .main-bis-swiper .swiper-slide { gap: 3.5rem; flex-direction: column; align-items: center; }
-  .main-banner .main-bis-swiper .swiper-slide .banner-img { width: 66.66%; padding-top: 44.44%; }
+  .main-banner .main-bis-swiper .swiper-slide .item-wrap { gap: 3.5rem; flex-direction: column; align-items: center; }
+  .main-banner .main-bis-swiper .swiper-slide .item-wrap .banner-img { width: 66.66%; padding-top: 44.44%; }
   .m-only { display: block; } }
 
 @media (max-width: 640px) { .main-banner .banner-txt .btn-wrap { flex-direction: column; gap: 3rem; } }
@@ -1059,6 +1075,8 @@ button { cursor: pointer; }
 .inq-content-wrap .inq-content .inq-section .input-box form fieldset { display: flex; flex-direction: column; gap: 1.6rem; }
 
 .inq-content-wrap .inq-content .inq-section .input-box form fieldset input { padding: 18px 32px; box-sizing: border-box; background: none; border: 1px solid #FFFFFF11; border-radius: 8px; width: 100%; color: #F4F6FC; }
+
+.inq-content-wrap .inq-content .inq-section .input-box form fieldset .error-message { color: red; font-size: 14px; }
 
 .inq-content-wrap .inq-content .inq-section .input-box form .btn-wrap .btn-ty01 { display: block; width: 100%; padding: 16px 0; text-align: center; }
 

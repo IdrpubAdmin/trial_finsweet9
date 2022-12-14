@@ -68,6 +68,7 @@ module.exports = {
       loop: true,
       pagination: false,
       autoplay: true,
+      autoHeight : true,
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
@@ -80,6 +81,7 @@ module.exports = {
         }
       }
     });
+
   }
 }
 

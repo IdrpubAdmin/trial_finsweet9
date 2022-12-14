@@ -301,7 +301,9 @@ let ArticleData = {
                 name: `Jenny wilson`,
                 tit: `Vice President`,
                 txt: `"The best agency we’ve worked with so far. They understand our product and are able
-                    to add new features with a great focus."`
+                    to add new features with a great focus. The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus. The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus. "`
             },
             {
                 id: 2,
@@ -309,6 +311,7 @@ let ArticleData = {
                 name: `Jacob wilson`,
                 tit: `Vice President`,
                 txt: `"The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus. The best agency we’ve worked with so far. They understand our product and are able
                     to add new features with a great focus."`
             },
             {
@@ -325,6 +328,7 @@ let ArticleData = {
                 name: `harry wilson`,
                 tit: `Vice President`,
                 txt: `"The best agency we’ve worked with so far. They understand our product and are able
+                    to add new features with a great focus. The best agency we’ve worked with so far. They understand our product and are able
                     to add new features with a great focus."`
             },
         ],
