@@ -19,29 +19,36 @@
             labore.</p>
         </div>
         <div class="input-box">
-          <form @submit="checkForm.prevent">
+          <form @submit.prevent="checkForm()" novalidate="true" ref="form">
             <fieldset>
               <legend class="blind">견적서 요청</legend>
 
-              <label for="name">이름</label>
-              <input type="text" placeholder="Your Name" v-model="form.name">
+              <!-- <label for="name">이름</label> -->
+              <input type="text" placeholder="Your Name">
 
-              <label for="email">이메일<label>
-              <input type="email" placeholder="Email" v-model="form.email">
+              <!-- <label for="email">이메일<label> -->
+              <input type="email" name="email" placeholder="Email" id="email" v-model="user.email">
+              <div class="error-message">{{ errors.email }}</div>
 
-              <label for="figma">figma url<label>
-              <input type="text" placeholder="Paste your Figma design URL" v-model="form.url">
-
-              <div class="error-message">
-                {{ error }}
-              </div>
+              <!-- <label for="figma">figma url<label> -->
+              <input type="text" name="url" placeholder="Paste your Figma design URL" id="url" v-model="user.url">
+              <div class="error-message">{{ errors.url }}</div>
 
             </fieldset>
-            <div class="btn-wrap">
-              <router-link to="/contact" class="btn-ty01" @click.native="check">
+
+            <!-- 22.12.15 : 주석처리 -->
+            <!-- <div class="btn-wrap">
+              <router-link to="/contact" class="btn-ty01" value="Submit">
                 Send an Inquiry
               </router-link>
+            </div> -->
+            
+            <div class="btn-wrap">
+              <button class="btn-ty01" type="submit">
+                Send an Inquiry
+              </button>
             </div>
+
           </form>
           <div class="icon-link w">
             <router-link to="/contact" class="lb-txt-2">
@@ -59,13 +66,14 @@
 <script>
 module.exports = {
   name: "inqContent",
-  data: {
-    form: {
-      name: '',
-      email: '',
-      url: '',
-    },
-    errors: [],
+  data() {
+    return {
+      user: {
+        email: '',
+        url: '',
+      },
+      errors: [],
+    }
   },
   computed: {
     mpcData() {
@@ -73,36 +81,54 @@ module.exports = {
     },
     path() {
       return this.$store.state.path.img
-    }
+    },
   },
   methods: {
-      // check(e) {
-      //   const e_RegExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-      //   const objEmail = document.getElementById("email")
-      //   const error = document.querySelector(".error-message")
+    checkForm() {
 
-      //   if(!e_RegExp.test(objEmail.value)){
-            
-      //       error.textContent ="Invalid email address or Figma URL"
-      //       return false;
-      //   }
-      // },
-    checkForm(e) {
-      e.preventDefault();
+      const validateEmail = email => {
+        if (!email.length) {
+          return { valid: false, error: "This field is required" };
+        }
+        if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+          return { valid: false, error: "Invalid email address" };
+        } else {
+          router.push('/contact')
+        }
+        return true;
+      };
+
+      const validateUrl = url => {
+        if (!url.length) {
+          return { valid: false, error: "This field is required" };
+        }
+        if (!url.match('https://www.figma.com/file/')) {
+          return { valid: false, error: "Invalid Figma url" };
+        } else {
+          router.push('/contact')
+        }
+        return true;
+        
+      } 
+
       this.errors = [];
-      if (!this.email) {
-        this.errors.push("이름은 필수입니다.");
+
+      const validEmail = validateEmail(this.user.email);
+      this.errors.email = validEmail.error;
+      if (this.valid) {
+        this.valid = validEmail.valid
       }
-      if (!this.figma) {
-        this.errors.push("이메일은 필수입니다.");
-      } else if (!this.validEmail(this.email)) {
-        this.errors.push("이메일 형식을 확인하세요.");
+
+      const validUrl = validateUrl(this.user.url)
+      this.errors.url = validUrl.error
+      if (this.valid) {
+        this.valid = validUrl.valid
       }
-      if (!this.errors.length) return true;
-    },
-    validEmail(email) {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
+
+      if(this.errors.length == 0) {
+        return true
+      }
+
     }
   }
 }

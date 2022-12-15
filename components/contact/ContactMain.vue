@@ -15,7 +15,7 @@
                   </div>
                   <div class="input-wrap">
                     <label class="lb-txt-1" for="">Email</label>
-                    <input class="txt-r" type="email" placeholder="Enter your Emial">
+                    <input class="txt-r" type="email" placeholder="Enter your Email">
                   </div>
                   <div class="input-wrap">
                     <label class="lb-txt-1" for="">Subject</label>
