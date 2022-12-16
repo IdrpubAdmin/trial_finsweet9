@@ -1116,9 +1116,9 @@ button { cursor: pointer; }
 
 .pricing-contents .our-price-content .plan-list { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 3rem; margin-top: 6.4rem; }
 
-.plan-item { width: calc((100% - 6rem) / 3); border-radius: 12px; background-color: #F4F6FC; }
+.plan-item { position: relative; overflow: hidden; width: calc((100% - 6rem) / 3); border-radius: 12px; background-color: #F4F6FC; }
 
-.plan-item .text-wrap { padding: 6.4rem 3.8rem; display: flex; flex-direction: column; justify-content: space-between; height: 617px; }
+.plan-item .text-wrap { padding: 6.4rem 3.8rem 11rem 3.8rem; display: flex; flex-direction: column; height: auto; }
 
 .plan-item .plan-text .plan-price { display: flex; align-items: center; }
 
@@ -1136,7 +1136,7 @@ button { cursor: pointer; }
 
 .plan-item .plan-detail-list .plan-detail-item.disable .txt-r { color: #aaa; }
 
-.plan-item .btn-area { width: 80%; padding-top: 5rem; margin: 0 auto; text-align: center; }
+.plan-item .btn-area { width: 80%; position: absolute; left: 50%; bottom: 3%; transform: translateX(-50%); margin: 0 auto; text-align: center; }
 
 .plan-item .btn-area a { width: 100%; display: inline-block; padding: 1.6rem 0; background-color: #282938; color: #ffffff; }
 
@@ -1155,14 +1155,13 @@ button { cursor: pointer; }
 @media (max-width: 1279px) { .plan-item { width: calc((100% - 3rem) / 2); } }
 
 @media (max-width: 1023px) { .pricing-contents .our-price-content .content-header p { width: 80%; }
-  .plan-item .text-wrap { padding: 4.4rem 2.8rem; height: 540px; }
+  .plan-item .text-wrap { padding: 4.4rem 2.8rem; }
   .plan-item .btn-area { padding-top: 2rem; } }
 
 @media (max-width: 640px) { .pricing-contents .our-price-content .content-header p { width: auto; padding: 0 3rem; }
   .pricing-contents .our-price-content .plan-list { display: block; }
   .plan-item { width: 100%; margin-top: 3rem; }
-  .plan-item:first-child { margin-top: 0; }
-  .plan-item .text-wrap { height: 500px; } }
+  .plan-item:first-child { margin-top: 0; } }
 
 .dark-mode .plan-item { background-color: #535460; }
 

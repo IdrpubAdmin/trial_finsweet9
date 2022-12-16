@@ -4,7 +4,7 @@
             <section>
                 <div class="post-texts">
                     <h3 class="tit-h2">{{articleData.title}}</h3>
-                    <p class="txt-md">{{articleData.txt}}</p>
+                    <p class="txt-md">{{articleData.subTxt + articleData.subTit}}</p>
                 </div>
                 <div class="img-wrap">
                     <img :src="'../assets/images/temp/' + articleData.src + '.png'" alt="article img">

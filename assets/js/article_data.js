@@ -57,6 +57,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    subTxt: "Andrew Jonson Posted on",
                     path: '/blog/4',
                     src: "img_blog_004",
                     media: "https://www.youtube.com/embed/w4JIcj64ikw",
@@ -66,6 +67,7 @@ let ArticleData = {
                     title: "What one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract See how pivoting to Webflow changed one person’s",
+                    subTxt: "Andrew Jonson Posted on",
                     path: '/blog/5',
                     src: "img_blog_005",
                     media: "https://www.youtube.com/embed/UXqxE-ngTqQ",
@@ -75,6 +77,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    subTxt: "Andrew Jonson Posted on",
                     path: '/blog/6',
                     src: "img_blog_006",
                     media: "https://www.youtube.com/embed/B6eL_N0N5KI",
@@ -84,6 +87,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    subTxt: "Andrew Jonson Posted on",
                     path: '/blog/7',
                     src: "img_blog_007",
                     media: "https://www.youtube.com/embed/kAM7wnaF6KM",
@@ -93,6 +97,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    subTxt: "Andrew Jonson Posted on",
                     path: '/blog/8',
                     src: "img_blog_008",
                     media: "https://www.youtube.com/embed/st2disxc7Wg",
@@ -102,6 +107,7 @@ let ArticleData = {
                     title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
+                    subTxt: "Andrew Jonson Posted on",
                     path: '/blog/9',
                     src: "img_blog_009",
                     media: "https://www.youtube.com/embed/_ysd-zHamjk",
@@ -478,6 +484,16 @@ let ArticleData = {
                         id: 5,
                         item: "Unlimited users",
                         type: true
+                    },{
+                        id: 6,
+                        item: "Unlimited users",
+                    },{
+                      id: 7,
+                      item: "Unlimited users",
+                    },{
+                      id: 8,
+                      item: "Chat support",
+                      type: true
                     },
                 ]
             },
@@ -505,6 +521,15 @@ let ArticleData = {
                     }, {
                         id: 5,
                         item: "Unlimited users"
+                    },{
+                        id: 6,
+                        item: "Unlimited users",
+                    },{
+                        id: 7,
+                        item: "Unlimited users",
+                    },{
+                        id: 8,
+                        item: "Chat support",
                     },
                 ]
             },
@@ -532,9 +557,6 @@ let ArticleData = {
                     }, {
                         id: 5,
                         item: "Unlimited users"
-                    }, {
-                        id: 6,
-                        item: "Assist and Help"
                     },
                 ]
             },
