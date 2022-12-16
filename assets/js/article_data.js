@@ -59,14 +59,16 @@ let ArticleData = {
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/blog/4',
                     src: "img_blog_004",
+                    media: "https://www.youtube.com/embed/w4JIcj64ikw",
                     linkTxt: "Read More",
                 }, {
                     id: 5,
-                    title: "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
+                    title: "What one Webflow user grew his single person consultancy from $0-100K in 14 months",
                     subTit: "27 Jan 2021",
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract See how pivoting to Webflow changed one person’s",
                     path: '/blog/5',
                     src: "img_blog_005",
+                    media: "https://www.youtube.com/embed/UXqxE-ngTqQ",
                     linkTxt: "Read More",
                 }, {
                     id: 6,
@@ -75,6 +77,7 @@ let ArticleData = {
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/blog/6',
                     src: "img_blog_006",
+                    media: "https://www.youtube.com/embed/B6eL_N0N5KI",
                     linkTxt: "Read More",
                 }, {
                     id: 7,
@@ -83,6 +86,7 @@ let ArticleData = {
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/blog/7',
                     src: "img_blog_007",
+                    media: "https://www.youtube.com/embed/kAM7wnaF6KM",
                     linkTxt: "Read More",
                 }, {
                     id: 8,
@@ -91,6 +95,7 @@ let ArticleData = {
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/blog/8',
                     src: "img_blog_008",
+                    media: "https://www.youtube.com/embed/st2disxc7Wg",
                     linkTxt: "Read More",
                 }, {
                     id: 9,
@@ -99,6 +104,7 @@ let ArticleData = {
                     txt: "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract",
                     path: '/blog/9',
                     src: "img_blog_009",
+                    media: "https://www.youtube.com/embed/_ysd-zHamjk",
                     linkTxt: "Read More",
                 }
             ]

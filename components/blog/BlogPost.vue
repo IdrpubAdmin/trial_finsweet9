@@ -3,11 +3,11 @@
         <div class="content post-main">
             <section>
                 <div class="post-texts">
-                    <h3 class="tit-h2">{{postData.title}}</h3>
-                    <p class="txt-md">{{postData.txt}}</p>
+                    <h3 class="tit-h2">{{articleData.title}}</h3>
+                    <p class="txt-md">{{articleData.txt}}</p>
                 </div>
                 <div class="img-wrap">
-                    <img :src="'../assets/images/temp/' + postData.src + '.png'" alt="article img">
+                    <img :src="'../assets/images/temp/' + articleData.src + '.png'" alt="article img">
                 </div>
             </section>
         </div>
@@ -15,7 +15,7 @@
             <section class="post-detail-1">
                 <text-article :text-data="textData[0]"></text-article>
                 <div class="media-box">
-                    <iframe :src="postData.media" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe :src="articleData.media" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
             <section class="post-detail-2">
@@ -38,11 +38,11 @@ module.exports = {
     ButtonBanner,
   },
   props: {
-    id: Number
+    id: Number,
   },
   computed: {
-    postData() {
-      let dataBase = this.$store.getters["PostData"].blogPost;
+    articleData() {
+      let dataBase = this.$store.getters["ArticleData"].blgArticle.data;
       for (let i = 0; i < dataBase.length; i++) {
         if (dataBase[i].id == this.$route.params.id) {
           return dataBase[i];
