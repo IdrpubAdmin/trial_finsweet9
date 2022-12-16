@@ -366,11 +366,21 @@ let ArticleData = {
             {
                 id: 3,
                 tit: `Design`,
-                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
+                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
             },
             {
                 id: 4,
                 tit: `Development`,
+                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
+            },
+            {
+                id: 5,
+                tit: `Development2`,
+                txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
+            },
+            {
+                id: 6,
+                tit: `Development3`,
                 txt: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr.`
             },
         ],
