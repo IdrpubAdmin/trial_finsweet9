@@ -270,9 +270,9 @@ button { cursor: pointer; }
 
 .faq-item .item-tit .faq-btn .st-ln-2 { transform: rotate(90deg); }
 
-.faq-item .hide-txt { padding: 0 8rem; overflow: hidden; transition: 0.5s; height: 0; position: relative; }
+.faq-item .hide-txt { padding: 0 8rem; overflow: hidden; transition: 0.4s ease-out; max-height: 0; }
 
-.faq-item.slide-on .hide-txt { margin-top: 16px; height: 60px; }
+.faq-item.slide-on .hide-txt { max-height: 15rem; margin-top: 16px; }
 
 .faq-item.slide-on .faq-btn .st-ln-1 { transform: rotate(-45deg); }
 
