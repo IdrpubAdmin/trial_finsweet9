@@ -8,6 +8,7 @@ let NavigationData = {
             {id: 4, title: "Pricing", path: "/pricing"},
             {id: 5, title: "Work", path: "/work"},
             {id: 6, title: "Blog", path: "/blog"},
+            {id: 7, title: "Promotion", path: "/promotion"},
         ],
         snsData: {
             type: '',

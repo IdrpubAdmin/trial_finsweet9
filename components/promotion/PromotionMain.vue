@@ -1,0 +1,259 @@
+<template>
+	<div>
+		<!--  style guide    -->
+		<div class="style-guide">
+
+				<!--  style guide header   -->
+				<div class="style-header-wrap">
+						<div class="style-header">
+								<h1 class="tit-h4">Style Guide section</h1>
+						</div>
+				</div>
+				<!--  //style guide header   -->
+
+				<!--  style guide container   -->
+				<div class="style-container">
+
+						<!--  font style   -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Font Style</h3>
+								</div>
+								<div class="font-area style-section">
+										<ul class="title-list">
+												<li class="title-item">
+														<p class="tit-h1">Heading H1</p>
+												</li>
+												<li class="title-item">
+														<p class="tit-h2">Heading H2</p>
+												</li>
+												<li class="title-item">
+														<p class="tit-h3">Heading H3</p>
+												</li>
+												<li class="title-item">
+														<p class="tit-h4">Heading H4</p>
+												</li>
+												<li class="title-item">
+														<p class="tit-h5">Heading H5</p>
+												</li>
+												<li class="title-item">
+														<p class="tit-h6">Heading H6</p>
+												</li>
+										</ul>
+										<ul class="text-list">
+												<li class="text-item">
+														<h6 class="tit-h6">Body 01</h6>
+														<p class="txt-r">Apparently we had reached a great height in the atmosphere, for the sky was
+																a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the
+																horizon of the sea to the level of the spectato</p>
+												</li>
+												<li class="text-item">
+														<h6 class="tit-h6">Body 02</h6>
+														<p class="txt-md">Apparently we had reached a great height in the atmosphere, for the sky
+																was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts
+																the horizon of the sea to the level of the spectato</p>
+												</li>
+												<li class="text-item">
+														<div class="label-area">
+																<h6 class="txt-r">Label 1</h6>
+																<p class="lb-txt-1">Apparently we had reached</p>
+														</div>
+														<div class="label-area">
+																<h6 class="txt-r">Label 2</h6>
+																<p class="lb-txt-2">Apparently we had reached</p>
+														</div>
+												</li>
+										</ul>
+								</div>
+						</div>
+						<!--  //font style   -->
+
+						<!--  list style   -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Info List</h3>
+								</div>
+								<ul class="info-list style-section">
+										<li><p class="txt-r">Lorem ipsum dolor sit amet, consectetur adipiscing</p></li>
+										<li><p class="txt-r">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p></li>
+										<li><p class="txt-r">Duis aute irure dolor in reprehenderit in voluptate velit esse</p></li>
+										<li><p class="txt-r">Excepteur sint occaecat cupidatat non proident, sunt in culpa</p></li>
+								</ul>
+						</div>
+						<!--  //list style   -->
+
+						<!--  color style   -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Color pallette</h3>
+								</div>
+								<ul class="color-list style-section">
+										<li class="color-item royal-blue">
+												<p class="txt-r point">#2405F2</p>
+										</li>
+										<li class="color-item dark-blue">
+												<p class="txt-r point">#282938</p>
+										</li>
+										<li class="color-item grey">
+												<p class="txt-r">#F4F6FC</p>
+										</li>
+										<li class="color-item yellow">
+												<p class="txt-r">#FCD980</p>
+										</li>
+										<li class="color-item tint-blue">
+												<p class="txt-r point">#1C1E53</p>
+										</li>
+										<li class="color-item accent">
+												<p class="txt-r">#EEF4FA</p>
+										</li>
+										<li class="color-item light-yellow">
+												<p class="txt-r">#FCD9801A</p>
+										</li>
+								</ul>
+						</div>
+						<!--  //color style   -->
+
+						<!--  button style   -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Button Hover states</h3>
+								</div>
+								<ul class="button-list style-section">
+										<li class="button-item">
+												<button class="btn-ty01">View our work</button>
+										</li>
+										<li class="button-item">
+												<button class="btn-ty02">View our work</button>
+										</li>
+								</ul>
+						</div>
+						<!--  //button style   -->
+
+						<!--  article-type(.type-01)   -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Article Type 01</h3>
+										<p class="txt-md">- 옆으로 나열된 포스트 형식</p>
+								</div>
+								<div class="style-section">
+										<article-type :article-data="articleType01"></article-type>
+								</div>
+						</div>
+						<!--  //article-type(.type-01)   -->
+
+						<!--  article-type(.type-02)   -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Article Type 02</h3>
+										<p class="txt-md">- 아래로 나열된 형식</p>
+								</div>
+								<div class="style-section">
+										<article-type :article-data="articleType02"></article-type>
+								</div>
+						</div>
+						<!--  //article-type(.type-02)   -->
+
+						<!--  faq-content   -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">FAQ Content</h3>
+								</div>
+								<div class="style-section">
+										<faq-content></faq-content>
+								</div>
+						</div>
+						<!--  //faq-content   -->
+
+						<!--  button-banner  -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Button Banner</h3>
+								</div>
+								<div class="style-section">
+										<button-banner></button-banner>
+								</div>
+						</div>
+						<!--  //button-banner  -->
+
+						<!--  main-banner -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Main Banner</h3>
+								</div>
+								<main-banner :banner-cont="bannerCont"></main-banner>
+						</div>
+						<!--  main-banner -->
+
+						<!--  features-list -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Features List Type 01 </h3>
+										<p class="txt-md">- 그레이 바탕 하얀 리스트</p>
+								</div>
+								<div class="style-section">
+										<features-list :article-data="featData"></features-list>
+								</div>
+						</div>
+						<!--  //features-list -->
+
+						<!--  features-list(.ty02) -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">Features List Type 02 </h3>
+										<p class="txt-md">- 하얀 바탕 그레이 리스트</p>
+								</div>
+								<div class="style-section">
+										<features-list :article-data="bnfData"></features-list>
+								</div>
+						</div>
+						<!--  //features-list(.ty02) -->
+
+						<!--  user-list -->
+						<div class="style-content">
+								<div class="style-title">
+										<h3 class="tit-h5">User List</h3>
+								</div>
+								<div class="style-section">
+										<user-list></user-list>
+								</div>
+						</div>
+						<!--  //user-list -->
+				</div>
+				<!--  //style guide container   -->
+		</div>
+		<!--  //style guide    -->
+	</div>
+</template>
+
+<script>
+module.exports = {
+  components: {
+		ButtonBanner,
+		ArticleType,
+		FaqContent,
+		MainBanner,
+		FeaturesList,
+		UserList
+  },
+	computed: {
+			articleType01() {
+					return this.$store.getters["ArticleData"].homeBlgArticle;
+			},
+			articleType02() {
+					return this.$store.getters["ArticleData"].featuresData;
+			},
+			bannerCont() {
+					return this.$store.getters["MainBannerData"].MainBannerData;
+			},
+			featData() {
+					return this.$store.getters["ArticleData"].featData;
+			},
+			bnfData() {
+					return this.$store.getters["ArticleData"].bnfData;
+			}
+	},
+  mounted() {
+    window.scrollTo(0, 0);
+  },
+}
+</script>

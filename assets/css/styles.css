@@ -593,7 +593,9 @@ button { cursor: pointer; }
 
 .follow-content .content-header { text-align: center; }
 
-.follow-content section .follow-list { display: flex; gap: 3rem; }
+.follow-content section .follow-list { display: flex; gap: 3rem; flex-wrap: wrap; }
+
+.follow-content section .follow-list .list-item { flex: 1 1 30%; }
 
 .follow-item { display: flex; flex-direction: column; gap: 3rem; }
 
@@ -612,7 +614,7 @@ button { cursor: pointer; }
 
 @media (max-width: 640px) { .follow-content section .follow-list { flex-wrap: wrap; }
   .follow-content section .follow-list .list-item { flex-basis: 100%; }
-  .follow-item { flex-direction: row; justify-content: center; }
+  .follow-item { flex-direction: row; }
   .follow-item .dia-box { flex-direction: column; gap: 1rem; }
   .follow-item .dia-box .dia-line { width: 2px; height: calc(100% - 3.4rem); border-bottom: unset; border-left: 2px dotted #2405f2; } }
 

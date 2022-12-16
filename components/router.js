@@ -60,6 +60,10 @@ const BlogMain = httpVueLoader('../components/blog/BlogMain.vue');
 const BlogPost = httpVueLoader('../components/blog/BlogPost.vue');
 /* //blog components */
 
+/* promotion components */
+const PromotionMain = httpVueLoader('../components/promotion/PromotionMain.vue');
+/* //promotioncomponents */
+
 const router = new VueRouter({
 	routes: [
 		{
@@ -118,6 +122,11 @@ const router = new VueRouter({
 			path: '/blog/:id',
 			component: BlogPost,
 			props: route => ({id:Number(route.params.id)}),
+		},
+		{
+			name: 'promotion',
+			path: '/promotion',
+			component: PromotionMain,
 		},
 	]
 })
