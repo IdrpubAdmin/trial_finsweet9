@@ -80,14 +80,14 @@
   .hide-txt {
     padding: 0 8rem;
     overflow: hidden;
-    transition: 0.5s;
-    height: 0;
-    position: relative;
+    transition: 0.4s ease-out;
+    max-height: 0;
   }
   &.slide-on {
+    
     .hide-txt {
+      max-height: 15rem;
       margin-top: 16px;
-      height: 60px;
     }
     .faq-btn {
       .st-ln-1 {
