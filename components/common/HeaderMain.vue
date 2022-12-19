@@ -60,9 +60,9 @@
         <nav class="gnb-list-wrap">
           <ul class="gnb-list">
             <!--  gnb navigation list  -->
-            <li class="gnb-item" v-for="item in gnbData" :key="item.id">
+            <li class="gnb-item" v-for="(item, i) in gnbData" :key="item.id">
               <h2 v-on:click="navChange">
-                <router-link :to="item.path" class="txt-md">{{ item.title }}</router-link>
+                <router-link :to="item.path" class="txt-md" :exact="i===0">{{ item.title }}</router-link>
               </h2>
             </li>
             <!--  //gnb navigation list  -->

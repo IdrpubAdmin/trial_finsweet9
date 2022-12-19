@@ -26,6 +26,13 @@
         box-sizing: border-box;
         background-color: $tint-blue;
       }
+      .gnb-list{
+        .gnb-item{
+          .router-link-active{
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }
@@ -42,7 +49,6 @@
     padding: 1rem 1.6rem;
     color: #BBBBCB;
     transition: color 0.3s;
-
     &:hover {
       color: $white;
     }

@@ -106,7 +106,7 @@ let CategoryData = {
                 state.workCategory[i].active = false
                 if(state.workCategory[i].id === payload.id){
                     state.workCategory[i].active = true
-                } 
+                }
             }
         }
     }

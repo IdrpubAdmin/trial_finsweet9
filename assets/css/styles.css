@@ -411,6 +411,8 @@ button { cursor: pointer; }
 
 .header-wrap #header .hd-gnb .btn-ty03 { display: block; padding: 1.6rem 4.8rem; font-size: 1.6rem; box-sizing: border-box; background-color: #1C1E53; }
 
+.header-wrap #header .hd-gnb .gnb-list .gnb-item .router-link-active { color: #fff; }
+
 .nav-btn-wrap { display: none; }
 
 .gnb-list { display: flex; }
