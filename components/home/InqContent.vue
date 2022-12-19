@@ -126,7 +126,7 @@ module.exports = {
         this.valid = validUrl.valid
       }
 
-      // 작동댐 근데 다시 할라그러면 안댐
+      // 작동댐 근데 다시 안댐
       if (this.valid) {
         router.push('/contact')
       }
