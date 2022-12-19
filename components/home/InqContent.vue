@@ -72,7 +72,9 @@ module.exports = {
         email: '',
         url: '',
       },
+      valid: true,
       errors: [],
+      success: false,
     }
   },
   computed: {
@@ -83,6 +85,9 @@ module.exports = {
       return this.$store.state.path.img
     },
   },
+  created() {
+
+  },
   methods: {
     checkForm() {
 
@@ -92,23 +97,19 @@ module.exports = {
         }
         if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
           return { valid: false, error: "Invalid email address" };
-        } else {
-          router.push('/contact')
         }
-        return true;
+        return { valid: true, error: null };
       };
 
+      // https://www.figma.com/file/
       const validateUrl = url => {
         if (!url.length) {
           return { valid: false, error: "This field is required" };
         }
-        if (!url.match('https://www.figma.com/file/')) {
+        if (!url.match('d')) {
           return { valid: false, error: "Invalid Figma url" };
-        } else {
-          router.push('/contact')
         }
-        return true;
-        
+        return { valid: true, error: null };
       } 
 
       this.errors = [];
@@ -125,8 +126,9 @@ module.exports = {
         this.valid = validUrl.valid
       }
 
-      if(this.errors.length == 0) {
-        return true
+      // 작동댐 근데 다시 할라그러면 안댐
+      if (this.valid) {
+        router.push('/contact')
       }
 
     }
