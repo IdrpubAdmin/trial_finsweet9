@@ -11,6 +11,11 @@ const store = new Vuex.Store({
         TextData: TextData,
     },
     state: {
+        user: {
+            name: '',
+            email: '',
+            url: '',
+        },
         darkMode: false,
         path: {
             img: '../assets/images/temp/',
@@ -26,6 +31,9 @@ const store = new Vuex.Store({
                 state.darkMode = true
                 state.NavigationData.snsData02.type = 'ty01'
             }
+        },
+        UserDadaLoaded(state, payload) {
+            state.user = payload
         }
     },
     getters: {
@@ -55,6 +63,9 @@ const store = new Vuex.Store({
         },
         TextData: function TextData(state) {
             return state.TextData;
+        },
+        UserData: function TextData(state) {
+            return state.user;
         },
     },
 });

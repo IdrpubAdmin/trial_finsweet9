@@ -19,18 +19,15 @@
             labore.</p>
         </div>
         <div class="input-box">
-          <form @submit.prevent="checkForm()" novalidate="true" ref="form">
+          <form @submit.prevent="checkForm()" novalidate="true">
             <fieldset>
               <legend class="blind">견적서 요청</legend>
 
-              <!-- <label for="name">이름</label> -->
-              <input type="text" placeholder="Your Name">
+              <input type="text" placeholder="Your Name" v-model="user.name">
 
-              <!-- <label for="email">이메일<label> -->
               <input type="email" name="email" placeholder="Email" id="email" v-model="user.email">
               <div class="error-message">{{ errors.email }}</div>
 
-              <!-- <label for="figma">figma url<label> -->
               <input type="text" name="url" placeholder="Paste your Figma design URL" id="url" v-model="user.url">
               <div class="error-message">{{ errors.url }}</div>
 
@@ -38,7 +35,7 @@
 
             <!-- 22.12.15 : 주석처리 -->
             <!-- <div class="btn-wrap">
-              <router-link to="/contact" class="btn-ty01" value="Submit">
+              <router-link to="/contact" class="btn-ty01" tag="button" type="submit">
                 Send an Inquiry
               </router-link>
             </div> -->
@@ -69,12 +66,13 @@ module.exports = {
   data() {
     return {
       user: {
+        name: '',
         email: '',
         url: '',
       },
-      valid: true,
+      validE: false,
+      validU: false,
       errors: [],
-      success: false,
     }
   },
   computed: {
@@ -92,6 +90,11 @@ module.exports = {
     checkForm() {
 
       const validateEmail = email => {
+        // valid는 email안의 valid임
+        // email { 
+        //    valid : true
+        //    error : null
+        // }
         if (!email.length) {
           return { valid: false, error: "This field is required" };
         }
@@ -101,8 +104,13 @@ module.exports = {
         return { valid: true, error: null };
       };
 
+
       // https://www.figma.com/file/
       const validateUrl = url => {
+        // url { 
+        //    valid : true
+        //    error : null
+        // }
         if (!url.length) {
           return { valid: false, error: "This field is required" };
         }
@@ -110,24 +118,36 @@ module.exports = {
           return { valid: false, error: "Invalid Figma url" };
         }
         return { valid: true, error: null };
-      } 
-
+      }
+      
       this.errors = [];
 
       const validEmail = validateEmail(this.user.email);
+      // 위에 있는 값을 가져와서 data에 넣은거
       this.errors.email = validEmail.error;
-      if (this.valid) {
-        this.valid = validEmail.valid
+      // true나 false를 data값에 넣음 : ex) false가 되면 data안의 validE도 false가 됨
+      // url { 
+      //    valid : true
+      //    error : null
+      // }
+      if (validEmail.valid) {
+      // true일 경우에 true로 바꿔라 
+        this.validE = validEmail.valid
       }
+
 
       const validUrl = validateUrl(this.user.url)
       this.errors.url = validUrl.error
-      if (this.valid) {
-        this.valid = validUrl.valid
-      }
+      if (validUrl.valid) {
+        this.validU = validUrl.valid
+      } 
 
-      // 작동댐 근데 다시 안댐
-      if (this.valid) {
+      console.log(this.validU)
+
+      // valid가 하나여서 여쪽부터 안넘어감 -> 계속 false인 상태
+      // 둘다 만족해야하니까 하나만 false되면 안됨
+      if (this.validE && this.validU) {
+        this.$store.commit('UserDadaLoaded', this.user);
         router.push('/contact')
       }
 

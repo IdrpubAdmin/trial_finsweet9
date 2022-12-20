@@ -11,15 +11,15 @@
                   <legend class="blind">견적서 요청</legend>
                   <div class="input-wrap">
                     <label class="lb-txt-1" for="">Name</label>
-                    <input class="txt-r" type="text" placeholder="Enter your name">
+                    <input class="txt-r" type="text" placeholder="Enter your name" :value="UserDataLoad.name">
                   </div>
                   <div class="input-wrap">
                     <label class="lb-txt-1" for="">Email</label>
-                    <input class="txt-r" type="email" placeholder="Enter your Email">
+                    <input class="txt-r" type="email" placeholder="Enter your Email" :value="UserDataLoad.email">
                   </div>
                   <div class="input-wrap">
-                    <label class="lb-txt-1" for="">Subject</label>
-                    <input class="txt-r" type="text" placeholder="Provide context">
+                    <label class="lb-txt-1" for="">Figma Url</label>
+                    <input class="txt-r" type="text" placeholder="Provide context" :value="UserDataLoad.url">
                   </div>
                   <div class="input-wrap">
                     <label class="lb-txt-1" for="">Subject</label>
@@ -44,5 +44,10 @@ module.exports = {
   mounted() {
     window.scrollTo(0, 0);
   },
+  computed: {
+    UserDataLoad() {
+      return this.$store.getters["UserData"];
+    }
+  }
 }
 </script>
