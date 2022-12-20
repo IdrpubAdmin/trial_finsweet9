@@ -1,5 +1,5 @@
 <template>
-  <div class="content-bg-wrap grey">
+  <div id="skip" class="content-bg-wrap grey">
     <div class="content hww-content">
       <!-- content header | 제목 -->
       <div class="content-header">

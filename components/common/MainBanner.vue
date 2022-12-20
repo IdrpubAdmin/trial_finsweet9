@@ -38,7 +38,8 @@
           <!--  //banner img  -->
         </ul>
         <div class="swiper-pagination"></div>
-      </div> 
+      </div>
+    </div>
   </div>
   <!-- //content | main-banner 컴포넌트 -->
 

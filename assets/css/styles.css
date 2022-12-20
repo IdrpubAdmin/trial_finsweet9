@@ -405,6 +405,14 @@ button { cursor: pointer; }
 
 .header-wrap { width: 100%; height: fit-content; background-color: #1C1E53; z-index: 100; }
 
+.header-wrap .skip { position: relative; z-index: 3000; }
+
+.header-wrap .skip li > a { position: absolute; top: -20rem; left: 0; width: 14rem; text-align: center; }
+
+.header-wrap .skip li > a span { display: inline-block; padding: .2rem .6rem 0 0; font-size: 1.4rem; line-height: 2rem; color: #fff; white-space: nowrap; }
+
+.header-wrap .skip li > a:focus { top: 0; z-index: 1000; text-decoration: none; }
+
 .header-wrap #header { max-width: 1000px; width: 90%; height: 92px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 
 .header-wrap #header .hd-gnb { display: flex; justify-content: flex-end; gap: 4.8rem; align-items: center; }

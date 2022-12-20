@@ -1,5 +1,12 @@
 <template>
   <div class="header-wrap" :class="{inactive : inactivate}">
+
+    <ul class="skip">
+      <li>
+        <router-link class="txt-md" to="" v-on:click="skipNavi"><span>본문 영역 바로가기</span></router-link>
+      </li>
+    </ul>
+
     <div id="header">
       <!--   logo   -->
       <h1 class="hd-logo">
@@ -97,6 +104,13 @@ module.exports = {
     },
     handleScroll() {
       this.$store.commit('HeaderData/handleScroll');
+    },
+    skipNavi(){
+      $router.push(
+        {
+            path: "/",
+            hash: "#skip"}
+      )
     }
   },
   created() {
