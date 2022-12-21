@@ -65,14 +65,6 @@ const PromotionMain = httpVueLoader('../components/promotion/PromotionMain.vue')
 /* //promotioncomponents */
 
 const router = new VueRouter({
-  scrollBehavior: (to) => {
-    if (to.hash) { // if has a hash...
-        console.log(to.hash);
-        return {
-            selector: to.hash,
-        }; // scroll to the element
-    }
-  },
 	routes: [
 		{
 			name: 'home',

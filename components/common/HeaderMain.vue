@@ -3,7 +3,7 @@
 
     <ul class="skip">
       <li>
-        <router-link class="txt-md" to="" v-on:click="skipNavi"><span>본문 영역 바로가기</span></router-link>
+        <router-link class="txt-md" to="#skip"><span>본문 영역 바로가기</span></router-link>
       </li>
     </ul>
 
@@ -105,13 +105,6 @@ module.exports = {
     handleScroll() {
       this.$store.commit('HeaderData/handleScroll');
     },
-    skipNavi(){
-      $router.push(
-        {
-            path: "/",
-            hash: "#skip"}
-      )
-    }
   },
   created() {
     window.addEventListener('scroll', this.handleScroll)
