@@ -3,10 +3,10 @@
 
     <ul class="skip">
       <li>
-        <router-link class="txt-md" to="#skip"><span>본문 영역 바로가기</span></router-link>
+        <button class="txt-md" @click="skip"><span>본문 영역 바로가기</span></button>
       </li>
     </ul>
-
+    
     <div id="header">
       <!--   logo   -->
       <h1 class="hd-logo">
@@ -105,6 +105,11 @@ module.exports = {
     handleScroll() {
       this.$store.commit('HeaderData/handleScroll');
     },
+    skip() {
+      const skipTop = document.querySelector('#skip')
+
+      skipTop.scrollIntoView({ behavior: 'smooth' }, true );
+    }
   },
   created() {
     window.addEventListener('scroll', this.handleScroll)
