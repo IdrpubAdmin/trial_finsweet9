@@ -700,7 +700,7 @@
         form {
           @include flex-col(4rem);
           fieldset {
-            @include flex-col(1.6rem);
+            @include flex-col(0.6rem);
             input {
               padding: 18px 32px;
               box-sizing: border-box;
@@ -709,6 +709,9 @@
               border-radius: 8px;
               width: 100%;
               color: $grey;
+            }
+            input#name {
+              margin-bottom: 8px;
             }
             .error-message {
               color: red;

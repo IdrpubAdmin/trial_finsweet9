@@ -1084,9 +1084,11 @@ button { cursor: pointer; }
 
 .inq-content-wrap .inq-content .inq-section .input-box form { display: flex; flex-direction: column; gap: 4rem; }
 
-.inq-content-wrap .inq-content .inq-section .input-box form fieldset { display: flex; flex-direction: column; gap: 1.6rem; }
+.inq-content-wrap .inq-content .inq-section .input-box form fieldset { display: flex; flex-direction: column; gap: 0.6rem; }
 
 .inq-content-wrap .inq-content .inq-section .input-box form fieldset input { padding: 18px 32px; box-sizing: border-box; background: none; border: 1px solid #FFFFFF11; border-radius: 8px; width: 100%; color: #F4F6FC; }
+
+.inq-content-wrap .inq-content .inq-section .input-box form fieldset input#name { margin-bottom: 8px; }
 
 .inq-content-wrap .inq-content .inq-section .input-box form fieldset .error-message { color: red; font-size: 14px; }
 

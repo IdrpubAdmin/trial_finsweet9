@@ -23,12 +23,15 @@
             <fieldset>
               <legend class="blind">견적서 요청</legend>
 
-              <input type="text" placeholder="Your Name" v-model="user.name">
+              <label for="name"><span class="blind">name</span></label>
+              <input type="text" placeholder="Your Name" v-model="user.name" id="name">
 
-              <input type="email" name="email" placeholder="Email" id="email" v-model="user.email">
+              <label for="email"><span class="blind">email</span></label>
+              <input type="email" name="email" placeholder="Email" v-model="user.email" id="email">
               <div class="error-message">{{ errors.email }}</div>
 
-              <input type="text" name="url" placeholder="Paste your Figma design URL" id="url" v-model="user.url">
+              <label for="url"><span class="blind">url</span></label>
+              <input type="text" name="url" placeholder="Paste your Figma design URL" v-model="user.url" id="url" >
               <div class="error-message">{{ errors.url }}</div>
 
             </fieldset>
