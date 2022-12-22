@@ -107,8 +107,6 @@ module.exports = {
         return { valid: true, error: null };
       };
 
-
-      // https://www.figma.com/file/
       const validateUrl = url => {
         // url { 
         //    valid : true
@@ -117,7 +115,7 @@ module.exports = {
         if (!url.length) {
           return { valid: false, error: "This field is required" };
         }
-        if (!url.match('d')) {
+        if (!url.match('https://www.figma.com/file/')) {
           return { valid: false, error: "Invalid Figma url" };
         }
         return { valid: true, error: null };
