@@ -22,7 +22,7 @@
 
     - Mobile : ~ 640px
     - Tablet : 641px ~ 1023px
-    - PC : 1024px ~ 
+    - PC : 1024px ~
 - style.css 구조
 ```
 // abstracts
@@ -80,7 +80,7 @@ common
 ├    HeaderMain : Header 공통 컴포넌트
 ├    SocialBanner : SNS 링크가 포함된 베너 컴포넌트
 ├    UserList : BnenfitsContent 내부 고객사 시그니처 리스트를 출력하는 공통 컴포넌트
-   
+
 home
 ├     FinsweetMain: Home Main 컴포넌트
       ├   WorkContent : How we work Content 본문
@@ -105,7 +105,7 @@ features
 
 pricing
 ├     PricingMain : Pricing의 메인 컴포넌트
-      └   PricingArticle : PricingMain의 Content 본문 
+      └   PricingArticle : PricingMain의 Content 본문
 
 blog
 ├     BlogMain : Blog 메인 컴포넌트
@@ -114,14 +114,14 @@ blog
 contact
 ├     ContactMain : Contact 메인 컴포넌트
       └  PrivacyPolicy : Form 작성 후 제출 시 이동되는 개인정보처리동의 컴포넌트
-    
+
 work
 ├     WorkMain : work 메인 컴포넌트
       └    WorkArticle : WorkMain의 content 본문
 └     WorkPost : work post 메인 컴포넌트
 ```
 - 네이밍 가이드
-  - 컴포넌트명 : 파스칼 케이스 사용 (TestVariableOne) 
+  - 컴포넌트명 : 파스칼 케이스 사용 (TestVariableOne)
   - 파일명 : 스네이크 케이스 사용 (test_variable_one)
   - 클래스명 : 케밥 케이스 사용 (test-variable-one)
 
@@ -141,7 +141,7 @@ work
 │
 │　└ /page_dev : gulp-html-extend 구동용 자료(퍼블 전용)
 │
-│　└ /js_dev : 페이지 동작 관련 js 생성 자료(퍼블 전용) 
+│　└ /js_dev : 페이지 동작 관련 js 생성 자료(퍼블 전용)
 │
 │　├ gulpfile.js : gulp 작동을 위한 스크립트
 │　├ layout_template.html : gulp-html-extend용 html 파일(퍼블 전용)
@@ -169,3 +169,9 @@ work
 └ README.md : 퍼블리싱 산출물 index
 
 ```
+
+## branch
+
+- main : 은석, 원섭 작업원본
+- dev-edit-v1 : 송희, 지수 수정작업본
+
